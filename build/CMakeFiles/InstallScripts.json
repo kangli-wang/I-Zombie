@@ -1,0 +1,12 @@
+{
+	"InstallScripts" : 
+	[
+		"C:/Users/29972/Desktop/i_zombie/build/cmake_install.cmake",
+		"C:/Users/29972/Desktop/i_zombie/build/SOIL/cmake_install.cmake",
+		"C:/Users/29972/Desktop/i_zombie/build/freeglut/cmake_install.cmake",
+		"C:/Users/29972/Desktop/i_zombie/build/src/Framework/cmake_install.cmake",
+		"C:/Users/29972/Desktop/i_zombie/build/src/GameObject/cmake_install.cmake",
+		"C:/Users/29972/Desktop/i_zombie/build/src/GameWorld/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

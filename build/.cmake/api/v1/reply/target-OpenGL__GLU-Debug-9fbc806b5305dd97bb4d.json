@@ -1,0 +1,76 @@
+{
+	"abstract" : true,
+	"backtrace" : 3,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"FIND_PACKAGE",
+			"set_target_properties"
+		],
+		"files" : 
+		[
+			"C:/Program Files/CMake/share/cmake-4.3/Modules/FindOpenGL.cmake",
+			"third_party/freeglut/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 272,
+				"parent" : 0
+			},
+			{
+				"file" : 0,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 871,
+				"parent" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 875,
+				"parent" : 2
+			}
+		]
+	},
+	"codemodelVersion" : 
+	{
+		"major" : 2,
+		"minor" : 10
+	},
+	"id" : "OpenGL::GLU::@9f489802bb4ec236f2d4",
+	"imported" : true,
+	"interfaceCompileDependencies" : 
+	[
+		{
+			"backtrace" : 4,
+			"id" : "OpenGL::GL::@9f489802bb4ec236f2d4"
+		}
+	],
+	"interfaceLinkLibraries" : 
+	[
+		{
+			"backtrace" : 4,
+			"id" : "OpenGL::GL::@9f489802bb4ec236f2d4"
+		}
+	],
+	"local" : true,
+	"name" : "OpenGL::GLU",
+	"paths" : 
+	{
+		"build" : "freeglut",
+		"source" : "third_party/freeglut"
+	},
+	"sources" : [],
+	"type" : "INTERFACE_LIBRARY"
+}

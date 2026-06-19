@@ -1,0 +1,566 @@
+[
+{
+  "directory": "C:/Users/29972/Desktop/i_zombie/build",
+  "command": "D:\\mingw64\\bin\\g++.exe -DPVZ_SOURCE_DIR=\\\"C:/Users/29972/Desktop/i_zombie/attachment\\\" @CMakeFiles/PvZ.dir/includes_CXX.rsp -g -std=gnu++17 -Wall -Wextra -Wpedantic -Wno-unused-variable -o CMakeFiles\\PvZ.dir\\src\\main.cpp.obj -c C:\\Users\\29972\\Desktop\\i_zombie\\attachment\\src\\main.cpp",
+  "file": "C:/Users/29972/Desktop/i_zombie/attachment/src/main.cpp",
+  "output": "CMakeFiles/PvZ.dir/src/main.cpp.obj"
+},
+{
+  "directory": "C:/Users/29972/Desktop/i_zombie/build/SOIL",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DPVZ_SOURCE_DIR=\\\"C:/Users/29972/Desktop/i_zombie/attachment\\\" @CMakeFiles/SOIL.dir/includes_C.rsp -g -o CMakeFiles\\SOIL.dir\\src\\image_dxt.c.obj -c C:\\Users\\29972\\Desktop\\i_zombie\\attachment\\third_party\\SOIL\\src\\image_dxt.c",
+  "file": "C:/Users/29972/Desktop/i_zombie/attachment/third_party/SOIL/src/image_dxt.c",
+  "output": "SOIL/CMakeFiles/SOIL.dir/src/image_dxt.c.obj"
+},
+{
+  "directory": "C:/Users/29972/Desktop/i_zombie/build/SOIL",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DPVZ_SOURCE_DIR=\\\"C:/Users/29972/Desktop/i_zombie/attachment\\\" @CMakeFiles/SOIL.dir/includes_C.rsp -g -o CMakeFiles\\SOIL.dir\\src\\image_helper.c.obj -c C:\\Users\\29972\\Desktop\\i_zombie\\attachment\\third_party\\SOIL\\src\\image_helper.c",
+  "file": "C:/Users/29972/Desktop/i_zombie/attachment/third_party/SOIL/src/image_helper.c",
+  "output": "SOIL/CMakeFiles/SOIL.dir/src/image_helper.c.obj"
+},
+{
+  "directory": "C:/Users/29972/Desktop/i_zombie/build/SOIL",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DPVZ_SOURCE_DIR=\\\"C:/Users/29972/Desktop/i_zombie/attachment\\\" @CMakeFiles/SOIL.dir/includes_C.rsp -g -o CMakeFiles\\SOIL.dir\\src\\soil.c.obj -c C:\\Users\\29972\\Desktop\\i_zombie\\attachment\\third_party\\SOIL\\src\\soil.c",
+  "file": "C:/Users/29972/Desktop/i_zombie/attachment/third_party/SOIL/src/soil.c",
+  "output": "SOIL/CMakeFiles/SOIL.dir/src/soil.c.obj"
+},
+{
+  "directory": "C:/Users/29972/Desktop/i_zombie/build/SOIL",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DPVZ_SOURCE_DIR=\\\"C:/Users/29972/Desktop/i_zombie/attachment\\\" @CMakeFiles/SOIL.dir/includes_C.rsp -g -o CMakeFiles\\SOIL.dir\\src\\stb_image_aug.c.obj -c C:\\Users\\29972\\Desktop\\i_zombie\\attachment\\third_party\\SOIL\\src\\stb_image_aug.c",
+  "file": "C:/Users/29972/Desktop/i_zombie/attachment/third_party/SOIL/src/stb_image_aug.c",
+  "output": "SOIL/CMakeFiles/SOIL.dir/src/stb_image_aug.c.obj"
+},
+{
+  "directory": "C:/Users/29972/Desktop/i_zombie/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_EXPORTS -DHAVE_CONFIG_H -DPVZ_SOURCE_DIR=\\\"C:/Users/29972/Desktop/i_zombie/attachment\\\" -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -Dfreeglut_EXPORTS @CMakeFiles/freeglut.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut.dir\\src\\fg_callbacks.c.obj -c C:\\Users\\29972\\Desktop\\i_zombie\\attachment\\third_party\\freeglut\\src\\fg_callbacks.c",
+  "file": "C:/Users/29972/Desktop/i_zombie/attachment/third_party/freeglut/src/fg_callbacks.c",
+  "output": "freeglut/CMakeFiles/freeglut.dir/src/fg_callbacks.c.obj"
+},
+{
+  "directory": "C:/Users/29972/Desktop/i_zombie/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_EXPORTS -DHAVE_CONFIG_H -DPVZ_SOURCE_DIR=\\\"C:/Users/29972/Desktop/i_zombie/attachment\\\" -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -Dfreeglut_EXPORTS @CMakeFiles/freeglut.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut.dir\\src\\fg_cursor.c.obj -c C:\\Users\\29972\\Desktop\\i_zombie\\attachment\\third_party\\freeglut\\src\\fg_cursor.c",
+  "file": "C:/Users/29972/Desktop/i_zombie/attachment/third_party/freeglut/src/fg_cursor.c",
+  "output": "freeglut/CMakeFiles/freeglut.dir/src/fg_cursor.c.obj"
+},
+{
+  "directory": "C:/Users/29972/Desktop/i_zombie/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_EXPORTS -DHAVE_CONFIG_H -DPVZ_SOURCE_DIR=\\\"C:/Users/29972/Desktop/i_zombie/attachment\\\" -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -Dfreeglut_EXPORTS @CMakeFiles/freeglut.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut.dir\\src\\fg_display.c.obj -c C:\\Users\\29972\\Desktop\\i_zombie\\attachment\\third_party\\freeglut\\src\\fg_display.c",
+  "file": "C:/Users/29972/Desktop/i_zombie/attachment/third_party/freeglut/src/fg_display.c",
+  "output": "freeglut/CMakeFiles/freeglut.dir/src/fg_display.c.obj"
+},
+{
+  "directory": "C:/Users/29972/Desktop/i_zombie/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_EXPORTS -DHAVE_CONFIG_H -DPVZ_SOURCE_DIR=\\\"C:/Users/29972/Desktop/i_zombie/attachment\\\" -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -Dfreeglut_EXPORTS @CMakeFiles/freeglut.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut.dir\\src\\fg_ext.c.obj -c C:\\Users\\29972\\Desktop\\i_zombie\\attachment\\third_party\\freeglut\\src\\fg_ext.c",
+  "file": "C:/Users/29972/Desktop/i_zombie/attachment/third_party/freeglut/src/fg_ext.c",
+  "output": "freeglut/CMakeFiles/freeglut.dir/src/fg_ext.c.obj"
+},
+{
+  "directory": "C:/Users/29972/Desktop/i_zombie/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_EXPORTS -DHAVE_CONFIG_H -DPVZ_SOURCE_DIR=\\\"C:/Users/29972/Desktop/i_zombie/attachment\\\" -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -Dfreeglut_EXPORTS @CMakeFiles/freeglut.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut.dir\\src\\fg_font_data.c.obj -c C:\\Users\\29972\\Desktop\\i_zombie\\attachment\\third_party\\freeglut\\src\\fg_font_data.c",
+  "file": "C:/Users/29972/Desktop/i_zombie/attachment/third_party/freeglut/src/fg_font_data.c",
+  "output": "freeglut/CMakeFiles/freeglut.dir/src/fg_font_data.c.obj"
+},
+{
+  "directory": "C:/Users/29972/Desktop/i_zombie/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_EXPORTS -DHAVE_CONFIG_H -DPVZ_SOURCE_DIR=\\\"C:/Users/29972/Desktop/i_zombie/attachment\\\" -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -Dfreeglut_EXPORTS @CMakeFiles/freeglut.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut.dir\\src\\fg_gamemode.c.obj -c C:\\Users\\29972\\Desktop\\i_zombie\\attachment\\third_party\\freeglut\\src\\fg_gamemode.c",
+  "file": "C:/Users/29972/Desktop/i_zombie/attachment/third_party/freeglut/src/fg_gamemode.c",
+  "output": "freeglut/CMakeFiles/freeglut.dir/src/fg_gamemode.c.obj"
+},
+{
+  "directory": "C:/Users/29972/Desktop/i_zombie/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_EXPORTS -DHAVE_CONFIG_H -DPVZ_SOURCE_DIR=\\\"C:/Users/29972/Desktop/i_zombie/attachment\\\" -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -Dfreeglut_EXPORTS @CMakeFiles/freeglut.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut.dir\\src\\fg_geometry.c.obj -c C:\\Users\\29972\\Desktop\\i_zombie\\attachment\\third_party\\freeglut\\src\\fg_geometry.c",
+  "file": "C:/Users/29972/Desktop/i_zombie/attachment/third_party/freeglut/src/fg_geometry.c",
+  "output": "freeglut/CMakeFiles/freeglut.dir/src/fg_geometry.c.obj"
+},
+{
+  "directory": "C:/Users/29972/Desktop/i_zombie/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_EXPORTS -DHAVE_CONFIG_H -DPVZ_SOURCE_DIR=\\\"C:/Users/29972/Desktop/i_zombie/attachment\\\" -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -Dfreeglut_EXPORTS @CMakeFiles/freeglut.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut.dir\\src\\fg_gl2.c.obj -c C:\\Users\\29972\\Desktop\\i_zombie\\attachment\\third_party\\freeglut\\src\\fg_gl2.c",
+  "file": "C:/Users/29972/Desktop/i_zombie/attachment/third_party/freeglut/src/fg_gl2.c",
+  "output": "freeglut/CMakeFiles/freeglut.dir/src/fg_gl2.c.obj"
+},
+{
+  "directory": "C:/Users/29972/Desktop/i_zombie/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_EXPORTS -DHAVE_CONFIG_H -DPVZ_SOURCE_DIR=\\\"C:/Users/29972/Desktop/i_zombie/attachment\\\" -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -Dfreeglut_EXPORTS @CMakeFiles/freeglut.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut.dir\\src\\fg_init.c.obj -c C:\\Users\\29972\\Desktop\\i_zombie\\attachment\\third_party\\freeglut\\src\\fg_init.c",
+  "file": "C:/Users/29972/Desktop/i_zombie/attachment/third_party/freeglut/src/fg_init.c",
+  "output": "freeglut/CMakeFiles/freeglut.dir/src/fg_init.c.obj"
+},
+{
+  "directory": "C:/Users/29972/Desktop/i_zombie/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_EXPORTS -DHAVE_CONFIG_H -DPVZ_SOURCE_DIR=\\\"C:/Users/29972/Desktop/i_zombie/attachment\\\" -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -Dfreeglut_EXPORTS @CMakeFiles/freeglut.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut.dir\\src\\fg_input_devices.c.obj -c C:\\Users\\29972\\Desktop\\i_zombie\\attachment\\third_party\\freeglut\\src\\fg_input_devices.c",
+  "file": "C:/Users/29972/Desktop/i_zombie/attachment/third_party/freeglut/src/fg_input_devices.c",
+  "output": "freeglut/CMakeFiles/freeglut.dir/src/fg_input_devices.c.obj"
+},
+{
+  "directory": "C:/Users/29972/Desktop/i_zombie/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_EXPORTS -DHAVE_CONFIG_H -DPVZ_SOURCE_DIR=\\\"C:/Users/29972/Desktop/i_zombie/attachment\\\" -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -Dfreeglut_EXPORTS @CMakeFiles/freeglut.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut.dir\\src\\fg_joystick.c.obj -c C:\\Users\\29972\\Desktop\\i_zombie\\attachment\\third_party\\freeglut\\src\\fg_joystick.c",
+  "file": "C:/Users/29972/Desktop/i_zombie/attachment/third_party/freeglut/src/fg_joystick.c",
+  "output": "freeglut/CMakeFiles/freeglut.dir/src/fg_joystick.c.obj"
+},
+{
+  "directory": "C:/Users/29972/Desktop/i_zombie/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_EXPORTS -DHAVE_CONFIG_H -DPVZ_SOURCE_DIR=\\\"C:/Users/29972/Desktop/i_zombie/attachment\\\" -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -Dfreeglut_EXPORTS @CMakeFiles/freeglut.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut.dir\\src\\fg_main.c.obj -c C:\\Users\\29972\\Desktop\\i_zombie\\attachment\\third_party\\freeglut\\src\\fg_main.c",
+  "file": "C:/Users/29972/Desktop/i_zombie/attachment/third_party/freeglut/src/fg_main.c",
+  "output": "freeglut/CMakeFiles/freeglut.dir/src/fg_main.c.obj"
+},
+{
+  "directory": "C:/Users/29972/Desktop/i_zombie/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_EXPORTS -DHAVE_CONFIG_H -DPVZ_SOURCE_DIR=\\\"C:/Users/29972/Desktop/i_zombie/attachment\\\" -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -Dfreeglut_EXPORTS @CMakeFiles/freeglut.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut.dir\\src\\fg_misc.c.obj -c C:\\Users\\29972\\Desktop\\i_zombie\\attachment\\third_party\\freeglut\\src\\fg_misc.c",
+  "file": "C:/Users/29972/Desktop/i_zombie/attachment/third_party/freeglut/src/fg_misc.c",
+  "output": "freeglut/CMakeFiles/freeglut.dir/src/fg_misc.c.obj"
+},
+{
+  "directory": "C:/Users/29972/Desktop/i_zombie/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_EXPORTS -DHAVE_CONFIG_H -DPVZ_SOURCE_DIR=\\\"C:/Users/29972/Desktop/i_zombie/attachment\\\" -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -Dfreeglut_EXPORTS @CMakeFiles/freeglut.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut.dir\\src\\fg_overlay.c.obj -c C:\\Users\\29972\\Desktop\\i_zombie\\attachment\\third_party\\freeglut\\src\\fg_overlay.c",
+  "file": "C:/Users/29972/Desktop/i_zombie/attachment/third_party/freeglut/src/fg_overlay.c",
+  "output": "freeglut/CMakeFiles/freeglut.dir/src/fg_overlay.c.obj"
+},
+{
+  "directory": "C:/Users/29972/Desktop/i_zombie/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_EXPORTS -DHAVE_CONFIG_H -DPVZ_SOURCE_DIR=\\\"C:/Users/29972/Desktop/i_zombie/attachment\\\" -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -Dfreeglut_EXPORTS @CMakeFiles/freeglut.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut.dir\\src\\fg_spaceball.c.obj -c C:\\Users\\29972\\Desktop\\i_zombie\\attachment\\third_party\\freeglut\\src\\fg_spaceball.c",
+  "file": "C:/Users/29972/Desktop/i_zombie/attachment/third_party/freeglut/src/fg_spaceball.c",
+  "output": "freeglut/CMakeFiles/freeglut.dir/src/fg_spaceball.c.obj"
+},
+{
+  "directory": "C:/Users/29972/Desktop/i_zombie/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_EXPORTS -DHAVE_CONFIG_H -DPVZ_SOURCE_DIR=\\\"C:/Users/29972/Desktop/i_zombie/attachment\\\" -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -Dfreeglut_EXPORTS @CMakeFiles/freeglut.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut.dir\\src\\fg_state.c.obj -c C:\\Users\\29972\\Desktop\\i_zombie\\attachment\\third_party\\freeglut\\src\\fg_state.c",
+  "file": "C:/Users/29972/Desktop/i_zombie/attachment/third_party/freeglut/src/fg_state.c",
+  "output": "freeglut/CMakeFiles/freeglut.dir/src/fg_state.c.obj"
+},
+{
+  "directory": "C:/Users/29972/Desktop/i_zombie/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_EXPORTS -DHAVE_CONFIG_H -DPVZ_SOURCE_DIR=\\\"C:/Users/29972/Desktop/i_zombie/attachment\\\" -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -Dfreeglut_EXPORTS @CMakeFiles/freeglut.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut.dir\\src\\fg_stroke_mono_roman.c.obj -c C:\\Users\\29972\\Desktop\\i_zombie\\attachment\\third_party\\freeglut\\src\\fg_stroke_mono_roman.c",
+  "file": "C:/Users/29972/Desktop/i_zombie/attachment/third_party/freeglut/src/fg_stroke_mono_roman.c",
+  "output": "freeglut/CMakeFiles/freeglut.dir/src/fg_stroke_mono_roman.c.obj"
+},
+{
+  "directory": "C:/Users/29972/Desktop/i_zombie/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_EXPORTS -DHAVE_CONFIG_H -DPVZ_SOURCE_DIR=\\\"C:/Users/29972/Desktop/i_zombie/attachment\\\" -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -Dfreeglut_EXPORTS @CMakeFiles/freeglut.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut.dir\\src\\fg_stroke_roman.c.obj -c C:\\Users\\29972\\Desktop\\i_zombie\\attachment\\third_party\\freeglut\\src\\fg_stroke_roman.c",
+  "file": "C:/Users/29972/Desktop/i_zombie/attachment/third_party/freeglut/src/fg_stroke_roman.c",
+  "output": "freeglut/CMakeFiles/freeglut.dir/src/fg_stroke_roman.c.obj"
+},
+{
+  "directory": "C:/Users/29972/Desktop/i_zombie/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_EXPORTS -DHAVE_CONFIG_H -DPVZ_SOURCE_DIR=\\\"C:/Users/29972/Desktop/i_zombie/attachment\\\" -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -Dfreeglut_EXPORTS @CMakeFiles/freeglut.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut.dir\\src\\fg_structure.c.obj -c C:\\Users\\29972\\Desktop\\i_zombie\\attachment\\third_party\\freeglut\\src\\fg_structure.c",
+  "file": "C:/Users/29972/Desktop/i_zombie/attachment/third_party/freeglut/src/fg_structure.c",
+  "output": "freeglut/CMakeFiles/freeglut.dir/src/fg_structure.c.obj"
+},
+{
+  "directory": "C:/Users/29972/Desktop/i_zombie/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_EXPORTS -DHAVE_CONFIG_H -DPVZ_SOURCE_DIR=\\\"C:/Users/29972/Desktop/i_zombie/attachment\\\" -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -Dfreeglut_EXPORTS @CMakeFiles/freeglut.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut.dir\\src\\fg_teapot.c.obj -c C:\\Users\\29972\\Desktop\\i_zombie\\attachment\\third_party\\freeglut\\src\\fg_teapot.c",
+  "file": "C:/Users/29972/Desktop/i_zombie/attachment/third_party/freeglut/src/fg_teapot.c",
+  "output": "freeglut/CMakeFiles/freeglut.dir/src/fg_teapot.c.obj"
+},
+{
+  "directory": "C:/Users/29972/Desktop/i_zombie/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_EXPORTS -DHAVE_CONFIG_H -DPVZ_SOURCE_DIR=\\\"C:/Users/29972/Desktop/i_zombie/attachment\\\" -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -Dfreeglut_EXPORTS @CMakeFiles/freeglut.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut.dir\\src\\fg_videoresize.c.obj -c C:\\Users\\29972\\Desktop\\i_zombie\\attachment\\third_party\\freeglut\\src\\fg_videoresize.c",
+  "file": "C:/Users/29972/Desktop/i_zombie/attachment/third_party/freeglut/src/fg_videoresize.c",
+  "output": "freeglut/CMakeFiles/freeglut.dir/src/fg_videoresize.c.obj"
+},
+{
+  "directory": "C:/Users/29972/Desktop/i_zombie/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_EXPORTS -DHAVE_CONFIG_H -DPVZ_SOURCE_DIR=\\\"C:/Users/29972/Desktop/i_zombie/attachment\\\" -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -Dfreeglut_EXPORTS @CMakeFiles/freeglut.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut.dir\\src\\fg_window.c.obj -c C:\\Users\\29972\\Desktop\\i_zombie\\attachment\\third_party\\freeglut\\src\\fg_window.c",
+  "file": "C:/Users/29972/Desktop/i_zombie/attachment/third_party/freeglut/src/fg_window.c",
+  "output": "freeglut/CMakeFiles/freeglut.dir/src/fg_window.c.obj"
+},
+{
+  "directory": "C:/Users/29972/Desktop/i_zombie/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_EXPORTS -DHAVE_CONFIG_H -DPVZ_SOURCE_DIR=\\\"C:/Users/29972/Desktop/i_zombie/attachment\\\" -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -Dfreeglut_EXPORTS @CMakeFiles/freeglut.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut.dir\\src\\fg_font.c.obj -c C:\\Users\\29972\\Desktop\\i_zombie\\attachment\\third_party\\freeglut\\src\\fg_font.c",
+  "file": "C:/Users/29972/Desktop/i_zombie/attachment/third_party/freeglut/src/fg_font.c",
+  "output": "freeglut/CMakeFiles/freeglut.dir/src/fg_font.c.obj"
+},
+{
+  "directory": "C:/Users/29972/Desktop/i_zombie/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_EXPORTS -DHAVE_CONFIG_H -DPVZ_SOURCE_DIR=\\\"C:/Users/29972/Desktop/i_zombie/attachment\\\" -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -Dfreeglut_EXPORTS @CMakeFiles/freeglut.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut.dir\\src\\fg_menu.c.obj -c C:\\Users\\29972\\Desktop\\i_zombie\\attachment\\third_party\\freeglut\\src\\fg_menu.c",
+  "file": "C:/Users/29972/Desktop/i_zombie/attachment/third_party/freeglut/src/fg_menu.c",
+  "output": "freeglut/CMakeFiles/freeglut.dir/src/fg_menu.c.obj"
+},
+{
+  "directory": "C:/Users/29972/Desktop/i_zombie/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_EXPORTS -DHAVE_CONFIG_H -DPVZ_SOURCE_DIR=\\\"C:/Users/29972/Desktop/i_zombie/attachment\\\" -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -Dfreeglut_EXPORTS @CMakeFiles/freeglut.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut.dir\\src\\mswin\\fg_cursor_mswin.c.obj -c C:\\Users\\29972\\Desktop\\i_zombie\\attachment\\third_party\\freeglut\\src\\mswin\\fg_cursor_mswin.c",
+  "file": "C:/Users/29972/Desktop/i_zombie/attachment/third_party/freeglut/src/mswin/fg_cursor_mswin.c",
+  "output": "freeglut/CMakeFiles/freeglut.dir/src/mswin/fg_cursor_mswin.c.obj"
+},
+{
+  "directory": "C:/Users/29972/Desktop/i_zombie/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_EXPORTS -DHAVE_CONFIG_H -DPVZ_SOURCE_DIR=\\\"C:/Users/29972/Desktop/i_zombie/attachment\\\" -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -Dfreeglut_EXPORTS @CMakeFiles/freeglut.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut.dir\\src\\mswin\\fg_display_mswin.c.obj -c C:\\Users\\29972\\Desktop\\i_zombie\\attachment\\third_party\\freeglut\\src\\mswin\\fg_display_mswin.c",
+  "file": "C:/Users/29972/Desktop/i_zombie/attachment/third_party/freeglut/src/mswin/fg_display_mswin.c",
+  "output": "freeglut/CMakeFiles/freeglut.dir/src/mswin/fg_display_mswin.c.obj"
+},
+{
+  "directory": "C:/Users/29972/Desktop/i_zombie/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_EXPORTS -DHAVE_CONFIG_H -DPVZ_SOURCE_DIR=\\\"C:/Users/29972/Desktop/i_zombie/attachment\\\" -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -Dfreeglut_EXPORTS @CMakeFiles/freeglut.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut.dir\\src\\mswin\\fg_ext_mswin.c.obj -c C:\\Users\\29972\\Desktop\\i_zombie\\attachment\\third_party\\freeglut\\src\\mswin\\fg_ext_mswin.c",
+  "file": "C:/Users/29972/Desktop/i_zombie/attachment/third_party/freeglut/src/mswin/fg_ext_mswin.c",
+  "output": "freeglut/CMakeFiles/freeglut.dir/src/mswin/fg_ext_mswin.c.obj"
+},
+{
+  "directory": "C:/Users/29972/Desktop/i_zombie/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_EXPORTS -DHAVE_CONFIG_H -DPVZ_SOURCE_DIR=\\\"C:/Users/29972/Desktop/i_zombie/attachment\\\" -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -Dfreeglut_EXPORTS @CMakeFiles/freeglut.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut.dir\\src\\mswin\\fg_gamemode_mswin.c.obj -c C:\\Users\\29972\\Desktop\\i_zombie\\attachment\\third_party\\freeglut\\src\\mswin\\fg_gamemode_mswin.c",
+  "file": "C:/Users/29972/Desktop/i_zombie/attachment/third_party/freeglut/src/mswin/fg_gamemode_mswin.c",
+  "output": "freeglut/CMakeFiles/freeglut.dir/src/mswin/fg_gamemode_mswin.c.obj"
+},
+{
+  "directory": "C:/Users/29972/Desktop/i_zombie/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_EXPORTS -DHAVE_CONFIG_H -DPVZ_SOURCE_DIR=\\\"C:/Users/29972/Desktop/i_zombie/attachment\\\" -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -Dfreeglut_EXPORTS @CMakeFiles/freeglut.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut.dir\\src\\mswin\\fg_init_mswin.c.obj -c C:\\Users\\29972\\Desktop\\i_zombie\\attachment\\third_party\\freeglut\\src\\mswin\\fg_init_mswin.c",
+  "file": "C:/Users/29972/Desktop/i_zombie/attachment/third_party/freeglut/src/mswin/fg_init_mswin.c",
+  "output": "freeglut/CMakeFiles/freeglut.dir/src/mswin/fg_init_mswin.c.obj"
+},
+{
+  "directory": "C:/Users/29972/Desktop/i_zombie/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_EXPORTS -DHAVE_CONFIG_H -DPVZ_SOURCE_DIR=\\\"C:/Users/29972/Desktop/i_zombie/attachment\\\" -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -Dfreeglut_EXPORTS @CMakeFiles/freeglut.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut.dir\\src\\mswin\\fg_input_devices_mswin.c.obj -c C:\\Users\\29972\\Desktop\\i_zombie\\attachment\\third_party\\freeglut\\src\\mswin\\fg_input_devices_mswin.c",
+  "file": "C:/Users/29972/Desktop/i_zombie/attachment/third_party/freeglut/src/mswin/fg_input_devices_mswin.c",
+  "output": "freeglut/CMakeFiles/freeglut.dir/src/mswin/fg_input_devices_mswin.c.obj"
+},
+{
+  "directory": "C:/Users/29972/Desktop/i_zombie/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_EXPORTS -DHAVE_CONFIG_H -DPVZ_SOURCE_DIR=\\\"C:/Users/29972/Desktop/i_zombie/attachment\\\" -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -Dfreeglut_EXPORTS @CMakeFiles/freeglut.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut.dir\\src\\mswin\\fg_joystick_mswin.c.obj -c C:\\Users\\29972\\Desktop\\i_zombie\\attachment\\third_party\\freeglut\\src\\mswin\\fg_joystick_mswin.c",
+  "file": "C:/Users/29972/Desktop/i_zombie/attachment/third_party/freeglut/src/mswin/fg_joystick_mswin.c",
+  "output": "freeglut/CMakeFiles/freeglut.dir/src/mswin/fg_joystick_mswin.c.obj"
+},
+{
+  "directory": "C:/Users/29972/Desktop/i_zombie/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_EXPORTS -DHAVE_CONFIG_H -DPVZ_SOURCE_DIR=\\\"C:/Users/29972/Desktop/i_zombie/attachment\\\" -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -Dfreeglut_EXPORTS @CMakeFiles/freeglut.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut.dir\\src\\mswin\\fg_main_mswin.c.obj -c C:\\Users\\29972\\Desktop\\i_zombie\\attachment\\third_party\\freeglut\\src\\mswin\\fg_main_mswin.c",
+  "file": "C:/Users/29972/Desktop/i_zombie/attachment/third_party/freeglut/src/mswin/fg_main_mswin.c",
+  "output": "freeglut/CMakeFiles/freeglut.dir/src/mswin/fg_main_mswin.c.obj"
+},
+{
+  "directory": "C:/Users/29972/Desktop/i_zombie/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_EXPORTS -DHAVE_CONFIG_H -DPVZ_SOURCE_DIR=\\\"C:/Users/29972/Desktop/i_zombie/attachment\\\" -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -Dfreeglut_EXPORTS @CMakeFiles/freeglut.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut.dir\\src\\mswin\\fg_menu_mswin.c.obj -c C:\\Users\\29972\\Desktop\\i_zombie\\attachment\\third_party\\freeglut\\src\\mswin\\fg_menu_mswin.c",
+  "file": "C:/Users/29972/Desktop/i_zombie/attachment/third_party/freeglut/src/mswin/fg_menu_mswin.c",
+  "output": "freeglut/CMakeFiles/freeglut.dir/src/mswin/fg_menu_mswin.c.obj"
+},
+{
+  "directory": "C:/Users/29972/Desktop/i_zombie/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_EXPORTS -DHAVE_CONFIG_H -DPVZ_SOURCE_DIR=\\\"C:/Users/29972/Desktop/i_zombie/attachment\\\" -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -Dfreeglut_EXPORTS @CMakeFiles/freeglut.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut.dir\\src\\mswin\\fg_spaceball_mswin.c.obj -c C:\\Users\\29972\\Desktop\\i_zombie\\attachment\\third_party\\freeglut\\src\\mswin\\fg_spaceball_mswin.c",
+  "file": "C:/Users/29972/Desktop/i_zombie/attachment/third_party/freeglut/src/mswin/fg_spaceball_mswin.c",
+  "output": "freeglut/CMakeFiles/freeglut.dir/src/mswin/fg_spaceball_mswin.c.obj"
+},
+{
+  "directory": "C:/Users/29972/Desktop/i_zombie/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_EXPORTS -DHAVE_CONFIG_H -DPVZ_SOURCE_DIR=\\\"C:/Users/29972/Desktop/i_zombie/attachment\\\" -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -Dfreeglut_EXPORTS @CMakeFiles/freeglut.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut.dir\\src\\mswin\\fg_state_mswin.c.obj -c C:\\Users\\29972\\Desktop\\i_zombie\\attachment\\third_party\\freeglut\\src\\mswin\\fg_state_mswin.c",
+  "file": "C:/Users/29972/Desktop/i_zombie/attachment/third_party/freeglut/src/mswin/fg_state_mswin.c",
+  "output": "freeglut/CMakeFiles/freeglut.dir/src/mswin/fg_state_mswin.c.obj"
+},
+{
+  "directory": "C:/Users/29972/Desktop/i_zombie/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_EXPORTS -DHAVE_CONFIG_H -DPVZ_SOURCE_DIR=\\\"C:/Users/29972/Desktop/i_zombie/attachment\\\" -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -Dfreeglut_EXPORTS @CMakeFiles/freeglut.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut.dir\\src\\mswin\\fg_structure_mswin.c.obj -c C:\\Users\\29972\\Desktop\\i_zombie\\attachment\\third_party\\freeglut\\src\\mswin\\fg_structure_mswin.c",
+  "file": "C:/Users/29972/Desktop/i_zombie/attachment/third_party/freeglut/src/mswin/fg_structure_mswin.c",
+  "output": "freeglut/CMakeFiles/freeglut.dir/src/mswin/fg_structure_mswin.c.obj"
+},
+{
+  "directory": "C:/Users/29972/Desktop/i_zombie/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_EXPORTS -DHAVE_CONFIG_H -DPVZ_SOURCE_DIR=\\\"C:/Users/29972/Desktop/i_zombie/attachment\\\" -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -Dfreeglut_EXPORTS @CMakeFiles/freeglut.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut.dir\\src\\mswin\\fg_window_mswin.c.obj -c C:\\Users\\29972\\Desktop\\i_zombie\\attachment\\third_party\\freeglut\\src\\mswin\\fg_window_mswin.c",
+  "file": "C:/Users/29972/Desktop/i_zombie/attachment/third_party/freeglut/src/mswin/fg_window_mswin.c",
+  "output": "freeglut/CMakeFiles/freeglut.dir/src/mswin/fg_window_mswin.c.obj"
+},
+{
+  "directory": "C:/Users/29972/Desktop/i_zombie/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_EXPORTS -DHAVE_CONFIG_H -DPVZ_SOURCE_DIR=\\\"C:/Users/29972/Desktop/i_zombie/attachment\\\" -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 -Dfreeglut_EXPORTS @CMakeFiles/freeglut.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut.dir\\src\\util\\xparsegeometry_repl.c.obj -c C:\\Users\\29972\\Desktop\\i_zombie\\attachment\\third_party\\freeglut\\src\\util\\xparsegeometry_repl.c",
+  "file": "C:/Users/29972/Desktop/i_zombie/attachment/third_party/freeglut/src/util/xparsegeometry_repl.c",
+  "output": "freeglut/CMakeFiles/freeglut.dir/src/util/xparsegeometry_repl.c.obj"
+},
+{
+  "directory": "C:/Users/29972/Desktop/i_zombie/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_STATIC -DHAVE_CONFIG_H -DPVZ_SOURCE_DIR=\\\"C:/Users/29972/Desktop/i_zombie/attachment\\\" -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 @CMakeFiles/freeglut_static.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut_static.dir\\src\\fg_callbacks.c.obj -c C:\\Users\\29972\\Desktop\\i_zombie\\attachment\\third_party\\freeglut\\src\\fg_callbacks.c",
+  "file": "C:/Users/29972/Desktop/i_zombie/attachment/third_party/freeglut/src/fg_callbacks.c",
+  "output": "freeglut/CMakeFiles/freeglut_static.dir/src/fg_callbacks.c.obj"
+},
+{
+  "directory": "C:/Users/29972/Desktop/i_zombie/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_STATIC -DHAVE_CONFIG_H -DPVZ_SOURCE_DIR=\\\"C:/Users/29972/Desktop/i_zombie/attachment\\\" -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 @CMakeFiles/freeglut_static.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut_static.dir\\src\\fg_cursor.c.obj -c C:\\Users\\29972\\Desktop\\i_zombie\\attachment\\third_party\\freeglut\\src\\fg_cursor.c",
+  "file": "C:/Users/29972/Desktop/i_zombie/attachment/third_party/freeglut/src/fg_cursor.c",
+  "output": "freeglut/CMakeFiles/freeglut_static.dir/src/fg_cursor.c.obj"
+},
+{
+  "directory": "C:/Users/29972/Desktop/i_zombie/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_STATIC -DHAVE_CONFIG_H -DPVZ_SOURCE_DIR=\\\"C:/Users/29972/Desktop/i_zombie/attachment\\\" -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 @CMakeFiles/freeglut_static.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut_static.dir\\src\\fg_display.c.obj -c C:\\Users\\29972\\Desktop\\i_zombie\\attachment\\third_party\\freeglut\\src\\fg_display.c",
+  "file": "C:/Users/29972/Desktop/i_zombie/attachment/third_party/freeglut/src/fg_display.c",
+  "output": "freeglut/CMakeFiles/freeglut_static.dir/src/fg_display.c.obj"
+},
+{
+  "directory": "C:/Users/29972/Desktop/i_zombie/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_STATIC -DHAVE_CONFIG_H -DPVZ_SOURCE_DIR=\\\"C:/Users/29972/Desktop/i_zombie/attachment\\\" -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 @CMakeFiles/freeglut_static.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut_static.dir\\src\\fg_ext.c.obj -c C:\\Users\\29972\\Desktop\\i_zombie\\attachment\\third_party\\freeglut\\src\\fg_ext.c",
+  "file": "C:/Users/29972/Desktop/i_zombie/attachment/third_party/freeglut/src/fg_ext.c",
+  "output": "freeglut/CMakeFiles/freeglut_static.dir/src/fg_ext.c.obj"
+},
+{
+  "directory": "C:/Users/29972/Desktop/i_zombie/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_STATIC -DHAVE_CONFIG_H -DPVZ_SOURCE_DIR=\\\"C:/Users/29972/Desktop/i_zombie/attachment\\\" -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 @CMakeFiles/freeglut_static.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut_static.dir\\src\\fg_font_data.c.obj -c C:\\Users\\29972\\Desktop\\i_zombie\\attachment\\third_party\\freeglut\\src\\fg_font_data.c",
+  "file": "C:/Users/29972/Desktop/i_zombie/attachment/third_party/freeglut/src/fg_font_data.c",
+  "output": "freeglut/CMakeFiles/freeglut_static.dir/src/fg_font_data.c.obj"
+},
+{
+  "directory": "C:/Users/29972/Desktop/i_zombie/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_STATIC -DHAVE_CONFIG_H -DPVZ_SOURCE_DIR=\\\"C:/Users/29972/Desktop/i_zombie/attachment\\\" -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 @CMakeFiles/freeglut_static.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut_static.dir\\src\\fg_gamemode.c.obj -c C:\\Users\\29972\\Desktop\\i_zombie\\attachment\\third_party\\freeglut\\src\\fg_gamemode.c",
+  "file": "C:/Users/29972/Desktop/i_zombie/attachment/third_party/freeglut/src/fg_gamemode.c",
+  "output": "freeglut/CMakeFiles/freeglut_static.dir/src/fg_gamemode.c.obj"
+},
+{
+  "directory": "C:/Users/29972/Desktop/i_zombie/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_STATIC -DHAVE_CONFIG_H -DPVZ_SOURCE_DIR=\\\"C:/Users/29972/Desktop/i_zombie/attachment\\\" -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 @CMakeFiles/freeglut_static.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut_static.dir\\src\\fg_geometry.c.obj -c C:\\Users\\29972\\Desktop\\i_zombie\\attachment\\third_party\\freeglut\\src\\fg_geometry.c",
+  "file": "C:/Users/29972/Desktop/i_zombie/attachment/third_party/freeglut/src/fg_geometry.c",
+  "output": "freeglut/CMakeFiles/freeglut_static.dir/src/fg_geometry.c.obj"
+},
+{
+  "directory": "C:/Users/29972/Desktop/i_zombie/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_STATIC -DHAVE_CONFIG_H -DPVZ_SOURCE_DIR=\\\"C:/Users/29972/Desktop/i_zombie/attachment\\\" -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 @CMakeFiles/freeglut_static.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut_static.dir\\src\\fg_gl2.c.obj -c C:\\Users\\29972\\Desktop\\i_zombie\\attachment\\third_party\\freeglut\\src\\fg_gl2.c",
+  "file": "C:/Users/29972/Desktop/i_zombie/attachment/third_party/freeglut/src/fg_gl2.c",
+  "output": "freeglut/CMakeFiles/freeglut_static.dir/src/fg_gl2.c.obj"
+},
+{
+  "directory": "C:/Users/29972/Desktop/i_zombie/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_STATIC -DHAVE_CONFIG_H -DPVZ_SOURCE_DIR=\\\"C:/Users/29972/Desktop/i_zombie/attachment\\\" -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 @CMakeFiles/freeglut_static.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut_static.dir\\src\\fg_init.c.obj -c C:\\Users\\29972\\Desktop\\i_zombie\\attachment\\third_party\\freeglut\\src\\fg_init.c",
+  "file": "C:/Users/29972/Desktop/i_zombie/attachment/third_party/freeglut/src/fg_init.c",
+  "output": "freeglut/CMakeFiles/freeglut_static.dir/src/fg_init.c.obj"
+},
+{
+  "directory": "C:/Users/29972/Desktop/i_zombie/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_STATIC -DHAVE_CONFIG_H -DPVZ_SOURCE_DIR=\\\"C:/Users/29972/Desktop/i_zombie/attachment\\\" -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 @CMakeFiles/freeglut_static.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut_static.dir\\src\\fg_input_devices.c.obj -c C:\\Users\\29972\\Desktop\\i_zombie\\attachment\\third_party\\freeglut\\src\\fg_input_devices.c",
+  "file": "C:/Users/29972/Desktop/i_zombie/attachment/third_party/freeglut/src/fg_input_devices.c",
+  "output": "freeglut/CMakeFiles/freeglut_static.dir/src/fg_input_devices.c.obj"
+},
+{
+  "directory": "C:/Users/29972/Desktop/i_zombie/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_STATIC -DHAVE_CONFIG_H -DPVZ_SOURCE_DIR=\\\"C:/Users/29972/Desktop/i_zombie/attachment\\\" -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 @CMakeFiles/freeglut_static.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut_static.dir\\src\\fg_joystick.c.obj -c C:\\Users\\29972\\Desktop\\i_zombie\\attachment\\third_party\\freeglut\\src\\fg_joystick.c",
+  "file": "C:/Users/29972/Desktop/i_zombie/attachment/third_party/freeglut/src/fg_joystick.c",
+  "output": "freeglut/CMakeFiles/freeglut_static.dir/src/fg_joystick.c.obj"
+},
+{
+  "directory": "C:/Users/29972/Desktop/i_zombie/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_STATIC -DHAVE_CONFIG_H -DPVZ_SOURCE_DIR=\\\"C:/Users/29972/Desktop/i_zombie/attachment\\\" -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 @CMakeFiles/freeglut_static.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut_static.dir\\src\\fg_main.c.obj -c C:\\Users\\29972\\Desktop\\i_zombie\\attachment\\third_party\\freeglut\\src\\fg_main.c",
+  "file": "C:/Users/29972/Desktop/i_zombie/attachment/third_party/freeglut/src/fg_main.c",
+  "output": "freeglut/CMakeFiles/freeglut_static.dir/src/fg_main.c.obj"
+},
+{
+  "directory": "C:/Users/29972/Desktop/i_zombie/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_STATIC -DHAVE_CONFIG_H -DPVZ_SOURCE_DIR=\\\"C:/Users/29972/Desktop/i_zombie/attachment\\\" -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 @CMakeFiles/freeglut_static.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut_static.dir\\src\\fg_misc.c.obj -c C:\\Users\\29972\\Desktop\\i_zombie\\attachment\\third_party\\freeglut\\src\\fg_misc.c",
+  "file": "C:/Users/29972/Desktop/i_zombie/attachment/third_party/freeglut/src/fg_misc.c",
+  "output": "freeglut/CMakeFiles/freeglut_static.dir/src/fg_misc.c.obj"
+},
+{
+  "directory": "C:/Users/29972/Desktop/i_zombie/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_STATIC -DHAVE_CONFIG_H -DPVZ_SOURCE_DIR=\\\"C:/Users/29972/Desktop/i_zombie/attachment\\\" -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 @CMakeFiles/freeglut_static.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut_static.dir\\src\\fg_overlay.c.obj -c C:\\Users\\29972\\Desktop\\i_zombie\\attachment\\third_party\\freeglut\\src\\fg_overlay.c",
+  "file": "C:/Users/29972/Desktop/i_zombie/attachment/third_party/freeglut/src/fg_overlay.c",
+  "output": "freeglut/CMakeFiles/freeglut_static.dir/src/fg_overlay.c.obj"
+},
+{
+  "directory": "C:/Users/29972/Desktop/i_zombie/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_STATIC -DHAVE_CONFIG_H -DPVZ_SOURCE_DIR=\\\"C:/Users/29972/Desktop/i_zombie/attachment\\\" -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 @CMakeFiles/freeglut_static.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut_static.dir\\src\\fg_spaceball.c.obj -c C:\\Users\\29972\\Desktop\\i_zombie\\attachment\\third_party\\freeglut\\src\\fg_spaceball.c",
+  "file": "C:/Users/29972/Desktop/i_zombie/attachment/third_party/freeglut/src/fg_spaceball.c",
+  "output": "freeglut/CMakeFiles/freeglut_static.dir/src/fg_spaceball.c.obj"
+},
+{
+  "directory": "C:/Users/29972/Desktop/i_zombie/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_STATIC -DHAVE_CONFIG_H -DPVZ_SOURCE_DIR=\\\"C:/Users/29972/Desktop/i_zombie/attachment\\\" -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 @CMakeFiles/freeglut_static.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut_static.dir\\src\\fg_state.c.obj -c C:\\Users\\29972\\Desktop\\i_zombie\\attachment\\third_party\\freeglut\\src\\fg_state.c",
+  "file": "C:/Users/29972/Desktop/i_zombie/attachment/third_party/freeglut/src/fg_state.c",
+  "output": "freeglut/CMakeFiles/freeglut_static.dir/src/fg_state.c.obj"
+},
+{
+  "directory": "C:/Users/29972/Desktop/i_zombie/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_STATIC -DHAVE_CONFIG_H -DPVZ_SOURCE_DIR=\\\"C:/Users/29972/Desktop/i_zombie/attachment\\\" -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 @CMakeFiles/freeglut_static.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut_static.dir\\src\\fg_stroke_mono_roman.c.obj -c C:\\Users\\29972\\Desktop\\i_zombie\\attachment\\third_party\\freeglut\\src\\fg_stroke_mono_roman.c",
+  "file": "C:/Users/29972/Desktop/i_zombie/attachment/third_party/freeglut/src/fg_stroke_mono_roman.c",
+  "output": "freeglut/CMakeFiles/freeglut_static.dir/src/fg_stroke_mono_roman.c.obj"
+},
+{
+  "directory": "C:/Users/29972/Desktop/i_zombie/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_STATIC -DHAVE_CONFIG_H -DPVZ_SOURCE_DIR=\\\"C:/Users/29972/Desktop/i_zombie/attachment\\\" -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 @CMakeFiles/freeglut_static.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut_static.dir\\src\\fg_stroke_roman.c.obj -c C:\\Users\\29972\\Desktop\\i_zombie\\attachment\\third_party\\freeglut\\src\\fg_stroke_roman.c",
+  "file": "C:/Users/29972/Desktop/i_zombie/attachment/third_party/freeglut/src/fg_stroke_roman.c",
+  "output": "freeglut/CMakeFiles/freeglut_static.dir/src/fg_stroke_roman.c.obj"
+},
+{
+  "directory": "C:/Users/29972/Desktop/i_zombie/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_STATIC -DHAVE_CONFIG_H -DPVZ_SOURCE_DIR=\\\"C:/Users/29972/Desktop/i_zombie/attachment\\\" -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 @CMakeFiles/freeglut_static.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut_static.dir\\src\\fg_structure.c.obj -c C:\\Users\\29972\\Desktop\\i_zombie\\attachment\\third_party\\freeglut\\src\\fg_structure.c",
+  "file": "C:/Users/29972/Desktop/i_zombie/attachment/third_party/freeglut/src/fg_structure.c",
+  "output": "freeglut/CMakeFiles/freeglut_static.dir/src/fg_structure.c.obj"
+},
+{
+  "directory": "C:/Users/29972/Desktop/i_zombie/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_STATIC -DHAVE_CONFIG_H -DPVZ_SOURCE_DIR=\\\"C:/Users/29972/Desktop/i_zombie/attachment\\\" -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 @CMakeFiles/freeglut_static.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut_static.dir\\src\\fg_teapot.c.obj -c C:\\Users\\29972\\Desktop\\i_zombie\\attachment\\third_party\\freeglut\\src\\fg_teapot.c",
+  "file": "C:/Users/29972/Desktop/i_zombie/attachment/third_party/freeglut/src/fg_teapot.c",
+  "output": "freeglut/CMakeFiles/freeglut_static.dir/src/fg_teapot.c.obj"
+},
+{
+  "directory": "C:/Users/29972/Desktop/i_zombie/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_STATIC -DHAVE_CONFIG_H -DPVZ_SOURCE_DIR=\\\"C:/Users/29972/Desktop/i_zombie/attachment\\\" -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 @CMakeFiles/freeglut_static.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut_static.dir\\src\\fg_videoresize.c.obj -c C:\\Users\\29972\\Desktop\\i_zombie\\attachment\\third_party\\freeglut\\src\\fg_videoresize.c",
+  "file": "C:/Users/29972/Desktop/i_zombie/attachment/third_party/freeglut/src/fg_videoresize.c",
+  "output": "freeglut/CMakeFiles/freeglut_static.dir/src/fg_videoresize.c.obj"
+},
+{
+  "directory": "C:/Users/29972/Desktop/i_zombie/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_STATIC -DHAVE_CONFIG_H -DPVZ_SOURCE_DIR=\\\"C:/Users/29972/Desktop/i_zombie/attachment\\\" -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 @CMakeFiles/freeglut_static.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut_static.dir\\src\\fg_window.c.obj -c C:\\Users\\29972\\Desktop\\i_zombie\\attachment\\third_party\\freeglut\\src\\fg_window.c",
+  "file": "C:/Users/29972/Desktop/i_zombie/attachment/third_party/freeglut/src/fg_window.c",
+  "output": "freeglut/CMakeFiles/freeglut_static.dir/src/fg_window.c.obj"
+},
+{
+  "directory": "C:/Users/29972/Desktop/i_zombie/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_STATIC -DHAVE_CONFIG_H -DPVZ_SOURCE_DIR=\\\"C:/Users/29972/Desktop/i_zombie/attachment\\\" -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 @CMakeFiles/freeglut_static.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut_static.dir\\src\\fg_font.c.obj -c C:\\Users\\29972\\Desktop\\i_zombie\\attachment\\third_party\\freeglut\\src\\fg_font.c",
+  "file": "C:/Users/29972/Desktop/i_zombie/attachment/third_party/freeglut/src/fg_font.c",
+  "output": "freeglut/CMakeFiles/freeglut_static.dir/src/fg_font.c.obj"
+},
+{
+  "directory": "C:/Users/29972/Desktop/i_zombie/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_STATIC -DHAVE_CONFIG_H -DPVZ_SOURCE_DIR=\\\"C:/Users/29972/Desktop/i_zombie/attachment\\\" -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 @CMakeFiles/freeglut_static.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut_static.dir\\src\\fg_menu.c.obj -c C:\\Users\\29972\\Desktop\\i_zombie\\attachment\\third_party\\freeglut\\src\\fg_menu.c",
+  "file": "C:/Users/29972/Desktop/i_zombie/attachment/third_party/freeglut/src/fg_menu.c",
+  "output": "freeglut/CMakeFiles/freeglut_static.dir/src/fg_menu.c.obj"
+},
+{
+  "directory": "C:/Users/29972/Desktop/i_zombie/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_STATIC -DHAVE_CONFIG_H -DPVZ_SOURCE_DIR=\\\"C:/Users/29972/Desktop/i_zombie/attachment\\\" -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 @CMakeFiles/freeglut_static.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut_static.dir\\src\\mswin\\fg_cursor_mswin.c.obj -c C:\\Users\\29972\\Desktop\\i_zombie\\attachment\\third_party\\freeglut\\src\\mswin\\fg_cursor_mswin.c",
+  "file": "C:/Users/29972/Desktop/i_zombie/attachment/third_party/freeglut/src/mswin/fg_cursor_mswin.c",
+  "output": "freeglut/CMakeFiles/freeglut_static.dir/src/mswin/fg_cursor_mswin.c.obj"
+},
+{
+  "directory": "C:/Users/29972/Desktop/i_zombie/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_STATIC -DHAVE_CONFIG_H -DPVZ_SOURCE_DIR=\\\"C:/Users/29972/Desktop/i_zombie/attachment\\\" -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 @CMakeFiles/freeglut_static.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut_static.dir\\src\\mswin\\fg_display_mswin.c.obj -c C:\\Users\\29972\\Desktop\\i_zombie\\attachment\\third_party\\freeglut\\src\\mswin\\fg_display_mswin.c",
+  "file": "C:/Users/29972/Desktop/i_zombie/attachment/third_party/freeglut/src/mswin/fg_display_mswin.c",
+  "output": "freeglut/CMakeFiles/freeglut_static.dir/src/mswin/fg_display_mswin.c.obj"
+},
+{
+  "directory": "C:/Users/29972/Desktop/i_zombie/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_STATIC -DHAVE_CONFIG_H -DPVZ_SOURCE_DIR=\\\"C:/Users/29972/Desktop/i_zombie/attachment\\\" -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 @CMakeFiles/freeglut_static.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut_static.dir\\src\\mswin\\fg_ext_mswin.c.obj -c C:\\Users\\29972\\Desktop\\i_zombie\\attachment\\third_party\\freeglut\\src\\mswin\\fg_ext_mswin.c",
+  "file": "C:/Users/29972/Desktop/i_zombie/attachment/third_party/freeglut/src/mswin/fg_ext_mswin.c",
+  "output": "freeglut/CMakeFiles/freeglut_static.dir/src/mswin/fg_ext_mswin.c.obj"
+},
+{
+  "directory": "C:/Users/29972/Desktop/i_zombie/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_STATIC -DHAVE_CONFIG_H -DPVZ_SOURCE_DIR=\\\"C:/Users/29972/Desktop/i_zombie/attachment\\\" -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 @CMakeFiles/freeglut_static.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut_static.dir\\src\\mswin\\fg_gamemode_mswin.c.obj -c C:\\Users\\29972\\Desktop\\i_zombie\\attachment\\third_party\\freeglut\\src\\mswin\\fg_gamemode_mswin.c",
+  "file": "C:/Users/29972/Desktop/i_zombie/attachment/third_party/freeglut/src/mswin/fg_gamemode_mswin.c",
+  "output": "freeglut/CMakeFiles/freeglut_static.dir/src/mswin/fg_gamemode_mswin.c.obj"
+},
+{
+  "directory": "C:/Users/29972/Desktop/i_zombie/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_STATIC -DHAVE_CONFIG_H -DPVZ_SOURCE_DIR=\\\"C:/Users/29972/Desktop/i_zombie/attachment\\\" -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 @CMakeFiles/freeglut_static.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut_static.dir\\src\\mswin\\fg_init_mswin.c.obj -c C:\\Users\\29972\\Desktop\\i_zombie\\attachment\\third_party\\freeglut\\src\\mswin\\fg_init_mswin.c",
+  "file": "C:/Users/29972/Desktop/i_zombie/attachment/third_party/freeglut/src/mswin/fg_init_mswin.c",
+  "output": "freeglut/CMakeFiles/freeglut_static.dir/src/mswin/fg_init_mswin.c.obj"
+},
+{
+  "directory": "C:/Users/29972/Desktop/i_zombie/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_STATIC -DHAVE_CONFIG_H -DPVZ_SOURCE_DIR=\\\"C:/Users/29972/Desktop/i_zombie/attachment\\\" -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 @CMakeFiles/freeglut_static.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut_static.dir\\src\\mswin\\fg_input_devices_mswin.c.obj -c C:\\Users\\29972\\Desktop\\i_zombie\\attachment\\third_party\\freeglut\\src\\mswin\\fg_input_devices_mswin.c",
+  "file": "C:/Users/29972/Desktop/i_zombie/attachment/third_party/freeglut/src/mswin/fg_input_devices_mswin.c",
+  "output": "freeglut/CMakeFiles/freeglut_static.dir/src/mswin/fg_input_devices_mswin.c.obj"
+},
+{
+  "directory": "C:/Users/29972/Desktop/i_zombie/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_STATIC -DHAVE_CONFIG_H -DPVZ_SOURCE_DIR=\\\"C:/Users/29972/Desktop/i_zombie/attachment\\\" -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 @CMakeFiles/freeglut_static.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut_static.dir\\src\\mswin\\fg_joystick_mswin.c.obj -c C:\\Users\\29972\\Desktop\\i_zombie\\attachment\\third_party\\freeglut\\src\\mswin\\fg_joystick_mswin.c",
+  "file": "C:/Users/29972/Desktop/i_zombie/attachment/third_party/freeglut/src/mswin/fg_joystick_mswin.c",
+  "output": "freeglut/CMakeFiles/freeglut_static.dir/src/mswin/fg_joystick_mswin.c.obj"
+},
+{
+  "directory": "C:/Users/29972/Desktop/i_zombie/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_STATIC -DHAVE_CONFIG_H -DPVZ_SOURCE_DIR=\\\"C:/Users/29972/Desktop/i_zombie/attachment\\\" -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 @CMakeFiles/freeglut_static.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut_static.dir\\src\\mswin\\fg_main_mswin.c.obj -c C:\\Users\\29972\\Desktop\\i_zombie\\attachment\\third_party\\freeglut\\src\\mswin\\fg_main_mswin.c",
+  "file": "C:/Users/29972/Desktop/i_zombie/attachment/third_party/freeglut/src/mswin/fg_main_mswin.c",
+  "output": "freeglut/CMakeFiles/freeglut_static.dir/src/mswin/fg_main_mswin.c.obj"
+},
+{
+  "directory": "C:/Users/29972/Desktop/i_zombie/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_STATIC -DHAVE_CONFIG_H -DPVZ_SOURCE_DIR=\\\"C:/Users/29972/Desktop/i_zombie/attachment\\\" -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 @CMakeFiles/freeglut_static.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut_static.dir\\src\\mswin\\fg_menu_mswin.c.obj -c C:\\Users\\29972\\Desktop\\i_zombie\\attachment\\third_party\\freeglut\\src\\mswin\\fg_menu_mswin.c",
+  "file": "C:/Users/29972/Desktop/i_zombie/attachment/third_party/freeglut/src/mswin/fg_menu_mswin.c",
+  "output": "freeglut/CMakeFiles/freeglut_static.dir/src/mswin/fg_menu_mswin.c.obj"
+},
+{
+  "directory": "C:/Users/29972/Desktop/i_zombie/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_STATIC -DHAVE_CONFIG_H -DPVZ_SOURCE_DIR=\\\"C:/Users/29972/Desktop/i_zombie/attachment\\\" -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 @CMakeFiles/freeglut_static.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut_static.dir\\src\\mswin\\fg_spaceball_mswin.c.obj -c C:\\Users\\29972\\Desktop\\i_zombie\\attachment\\third_party\\freeglut\\src\\mswin\\fg_spaceball_mswin.c",
+  "file": "C:/Users/29972/Desktop/i_zombie/attachment/third_party/freeglut/src/mswin/fg_spaceball_mswin.c",
+  "output": "freeglut/CMakeFiles/freeglut_static.dir/src/mswin/fg_spaceball_mswin.c.obj"
+},
+{
+  "directory": "C:/Users/29972/Desktop/i_zombie/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_STATIC -DHAVE_CONFIG_H -DPVZ_SOURCE_DIR=\\\"C:/Users/29972/Desktop/i_zombie/attachment\\\" -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 @CMakeFiles/freeglut_static.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut_static.dir\\src\\mswin\\fg_state_mswin.c.obj -c C:\\Users\\29972\\Desktop\\i_zombie\\attachment\\third_party\\freeglut\\src\\mswin\\fg_state_mswin.c",
+  "file": "C:/Users/29972/Desktop/i_zombie/attachment/third_party/freeglut/src/mswin/fg_state_mswin.c",
+  "output": "freeglut/CMakeFiles/freeglut_static.dir/src/mswin/fg_state_mswin.c.obj"
+},
+{
+  "directory": "C:/Users/29972/Desktop/i_zombie/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_STATIC -DHAVE_CONFIG_H -DPVZ_SOURCE_DIR=\\\"C:/Users/29972/Desktop/i_zombie/attachment\\\" -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 @CMakeFiles/freeglut_static.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut_static.dir\\src\\mswin\\fg_structure_mswin.c.obj -c C:\\Users\\29972\\Desktop\\i_zombie\\attachment\\third_party\\freeglut\\src\\mswin\\fg_structure_mswin.c",
+  "file": "C:/Users/29972/Desktop/i_zombie/attachment/third_party/freeglut/src/mswin/fg_structure_mswin.c",
+  "output": "freeglut/CMakeFiles/freeglut_static.dir/src/mswin/fg_structure_mswin.c.obj"
+},
+{
+  "directory": "C:/Users/29972/Desktop/i_zombie/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_STATIC -DHAVE_CONFIG_H -DPVZ_SOURCE_DIR=\\\"C:/Users/29972/Desktop/i_zombie/attachment\\\" -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 @CMakeFiles/freeglut_static.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut_static.dir\\src\\mswin\\fg_window_mswin.c.obj -c C:\\Users\\29972\\Desktop\\i_zombie\\attachment\\third_party\\freeglut\\src\\mswin\\fg_window_mswin.c",
+  "file": "C:/Users/29972/Desktop/i_zombie/attachment/third_party/freeglut/src/mswin/fg_window_mswin.c",
+  "output": "freeglut/CMakeFiles/freeglut_static.dir/src/mswin/fg_window_mswin.c.obj"
+},
+{
+  "directory": "C:/Users/29972/Desktop/i_zombie/build/freeglut",
+  "command": "D:\\mingw64\\bin\\gcc.exe -DFREEGLUT_STATIC -DHAVE_CONFIG_H -DPVZ_SOURCE_DIR=\\\"C:/Users/29972/Desktop/i_zombie/attachment\\\" -DWINVER=0x0601 -D_CRT_SECURE_NO_WARNINGS -D_WIN32_WINNT=0x0601 @CMakeFiles/freeglut_static.dir/includes_C.rsp  -Wall -pedantic -g -o CMakeFiles\\freeglut_static.dir\\src\\util\\xparsegeometry_repl.c.obj -c C:\\Users\\29972\\Desktop\\i_zombie\\attachment\\third_party\\freeglut\\src\\util\\xparsegeometry_repl.c",
+  "file": "C:/Users/29972/Desktop/i_zombie/attachment/third_party/freeglut/src/util/xparsegeometry_repl.c",
+  "output": "freeglut/CMakeFiles/freeglut_static.dir/src/util/xparsegeometry_repl.c.obj"
+},
+{
+  "directory": "C:/Users/29972/Desktop/i_zombie/build/src/Framework",
+  "command": "D:\\mingw64\\bin\\g++.exe -DPVZ_SOURCE_DIR=\\\"C:/Users/29972/Desktop/i_zombie/attachment\\\" @CMakeFiles/Framework.dir/includes_CXX.rsp -g -std=gnu++17 -Wall -Wextra -Wpedantic -Wno-unused-variable -o CMakeFiles\\Framework.dir\\ObjectBase.cpp.obj -c C:\\Users\\29972\\Desktop\\i_zombie\\attachment\\src\\Framework\\ObjectBase.cpp",
+  "file": "C:/Users/29972/Desktop/i_zombie/attachment/src/Framework/ObjectBase.cpp",
+  "output": "src/Framework/CMakeFiles/Framework.dir/ObjectBase.cpp.obj"
+},
+{
+  "directory": "C:/Users/29972/Desktop/i_zombie/build/src/Framework",
+  "command": "D:\\mingw64\\bin\\g++.exe -DPVZ_SOURCE_DIR=\\\"C:/Users/29972/Desktop/i_zombie/attachment\\\" @CMakeFiles/Framework.dir/includes_CXX.rsp -g -std=gnu++17 -Wall -Wextra -Wpedantic -Wno-unused-variable -o CMakeFiles\\Framework.dir\\TextBase.cpp.obj -c C:\\Users\\29972\\Desktop\\i_zombie\\attachment\\src\\Framework\\TextBase.cpp",
+  "file": "C:/Users/29972/Desktop/i_zombie/attachment/src/Framework/TextBase.cpp",
+  "output": "src/Framework/CMakeFiles/Framework.dir/TextBase.cpp.obj"
+},
+{
+  "directory": "C:/Users/29972/Desktop/i_zombie/build/src/Framework",
+  "command": "D:\\mingw64\\bin\\g++.exe -DPVZ_SOURCE_DIR=\\\"C:/Users/29972/Desktop/i_zombie/attachment\\\" @CMakeFiles/Framework.dir/includes_CXX.rsp -g -std=gnu++17 -Wall -Wextra -Wpedantic -Wno-unused-variable -o CMakeFiles\\Framework.dir\\GameManager.cpp.obj -c C:\\Users\\29972\\Desktop\\i_zombie\\attachment\\src\\Framework\\GameManager.cpp",
+  "file": "C:/Users/29972/Desktop/i_zombie/attachment/src/Framework/GameManager.cpp",
+  "output": "src/Framework/CMakeFiles/Framework.dir/GameManager.cpp.obj"
+},
+{
+  "directory": "C:/Users/29972/Desktop/i_zombie/build/src/Framework",
+  "command": "D:\\mingw64\\bin\\g++.exe -DPVZ_SOURCE_DIR=\\\"C:/Users/29972/Desktop/i_zombie/attachment\\\" @CMakeFiles/Framework.dir/includes_CXX.rsp -g -std=gnu++17 -Wall -Wextra -Wpedantic -Wno-unused-variable -o CMakeFiles\\Framework.dir\\SpriteManager.cpp.obj -c C:\\Users\\29972\\Desktop\\i_zombie\\attachment\\src\\Framework\\SpriteManager.cpp",
+  "file": "C:/Users/29972/Desktop/i_zombie/attachment/src/Framework/SpriteManager.cpp",
+  "output": "src/Framework/CMakeFiles/Framework.dir/SpriteManager.cpp.obj"
+},
+{
+  "directory": "C:/Users/29972/Desktop/i_zombie/build/src/GameObject",
+  "command": "D:\\mingw64\\bin\\g++.exe -DPVZ_SOURCE_DIR=\\\"C:/Users/29972/Desktop/i_zombie/attachment\\\" @CMakeFiles/GameObject.dir/includes_CXX.rsp -g -std=gnu++17 -Wall -Wextra -Wpedantic -Wno-unused-variable -o CMakeFiles\\GameObject.dir\\GameObject.cpp.obj -c C:\\Users\\29972\\Desktop\\i_zombie\\attachment\\src\\GameObject\\GameObject.cpp",
+  "file": "C:/Users/29972/Desktop/i_zombie/attachment/src/GameObject/GameObject.cpp",
+  "output": "src/GameObject/CMakeFiles/GameObject.dir/GameObject.cpp.obj"
+},
+{
+  "directory": "C:/Users/29972/Desktop/i_zombie/build/src/GameObject",
+  "command": "D:\\mingw64\\bin\\g++.exe -DPVZ_SOURCE_DIR=\\\"C:/Users/29972/Desktop/i_zombie/attachment\\\" @CMakeFiles/GameObject.dir/includes_CXX.rsp -g -std=gnu++17 -Wall -Wextra -Wpedantic -Wno-unused-variable -o CMakeFiles\\GameObject.dir\\Background.cpp.obj -c C:\\Users\\29972\\Desktop\\i_zombie\\attachment\\src\\GameObject\\Background.cpp",
+  "file": "C:/Users/29972/Desktop/i_zombie/attachment/src/GameObject/Background.cpp",
+  "output": "src/GameObject/CMakeFiles/GameObject.dir/Background.cpp.obj"
+},
+{
+  "directory": "C:/Users/29972/Desktop/i_zombie/build/src/GameObject",
+  "command": "D:\\mingw64\\bin\\g++.exe -DPVZ_SOURCE_DIR=\\\"C:/Users/29972/Desktop/i_zombie/attachment\\\" @CMakeFiles/GameObject.dir/includes_CXX.rsp -g -std=gnu++17 -Wall -Wextra -Wpedantic -Wno-unused-variable -o CMakeFiles\\GameObject.dir\\Brain.cpp.obj -c C:\\Users\\29972\\Desktop\\i_zombie\\attachment\\src\\GameObject\\Brain.cpp",
+  "file": "C:/Users/29972/Desktop/i_zombie/attachment/src/GameObject/Brain.cpp",
+  "output": "src/GameObject/CMakeFiles/GameObject.dir/Brain.cpp.obj"
+},
+{
+  "directory": "C:/Users/29972/Desktop/i_zombie/build/src/GameObject",
+  "command": "D:\\mingw64\\bin\\g++.exe -DPVZ_SOURCE_DIR=\\\"C:/Users/29972/Desktop/i_zombie/attachment\\\" @CMakeFiles/GameObject.dir/includes_CXX.rsp -g -std=gnu++17 -Wall -Wextra -Wpedantic -Wno-unused-variable -o CMakeFiles\\GameObject.dir\\ProgressMeter.cpp.obj -c C:\\Users\\29972\\Desktop\\i_zombie\\attachment\\src\\GameObject\\ProgressMeter.cpp",
+  "file": "C:/Users/29972/Desktop/i_zombie/attachment/src/GameObject/ProgressMeter.cpp",
+  "output": "src/GameObject/CMakeFiles/GameObject.dir/ProgressMeter.cpp.obj"
+},
+{
+  "directory": "C:/Users/29972/Desktop/i_zombie/build/src/GameObject",
+  "command": "D:\\mingw64\\bin\\g++.exe -DPVZ_SOURCE_DIR=\\\"C:/Users/29972/Desktop/i_zombie/attachment\\\" @CMakeFiles/GameObject.dir/includes_CXX.rsp -g -std=gnu++17 -Wall -Wextra -Wpedantic -Wno-unused-variable -o CMakeFiles\\GameObject.dir\\RedLine.cpp.obj -c C:\\Users\\29972\\Desktop\\i_zombie\\attachment\\src\\GameObject\\RedLine.cpp",
+  "file": "C:/Users/29972/Desktop/i_zombie/attachment/src/GameObject/RedLine.cpp",
+  "output": "src/GameObject/CMakeFiles/GameObject.dir/RedLine.cpp.obj"
+},
+{
+  "directory": "C:/Users/29972/Desktop/i_zombie/build/src/GameObject",
+  "command": "D:\\mingw64\\bin\\g++.exe -DPVZ_SOURCE_DIR=\\\"C:/Users/29972/Desktop/i_zombie/attachment\\\" @CMakeFiles/GameObject.dir/includes_CXX.rsp -g -std=gnu++17 -Wall -Wextra -Wpedantic -Wno-unused-variable -o CMakeFiles\\GameObject.dir\\ZombieCard.cpp.obj -c C:\\Users\\29972\\Desktop\\i_zombie\\attachment\\src\\GameObject\\ZombieCard.cpp",
+  "file": "C:/Users/29972/Desktop/i_zombie/attachment/src/GameObject/ZombieCard.cpp",
+  "output": "src/GameObject/CMakeFiles/GameObject.dir/ZombieCard.cpp.obj"
+},
+{
+  "directory": "C:/Users/29972/Desktop/i_zombie/build/src/GameObject",
+  "command": "D:\\mingw64\\bin\\g++.exe -DPVZ_SOURCE_DIR=\\\"C:/Users/29972/Desktop/i_zombie/attachment\\\" @CMakeFiles/GameObject.dir/includes_CXX.rsp -g -std=gnu++17 -Wall -Wextra -Wpedantic -Wno-unused-variable -o CMakeFiles\\GameObject.dir\\DeployZombie.cpp.obj -c C:\\Users\\29972\\Desktop\\i_zombie\\attachment\\src\\GameObject\\DeployZombie.cpp",
+  "file": "C:/Users/29972/Desktop/i_zombie/attachment/src/GameObject/DeployZombie.cpp",
+  "output": "src/GameObject/CMakeFiles/GameObject.dir/DeployZombie.cpp.obj"
+},
+{
+  "directory": "C:/Users/29972/Desktop/i_zombie/build/src/GameObject",
+  "command": "D:\\mingw64\\bin\\g++.exe -DPVZ_SOURCE_DIR=\\\"C:/Users/29972/Desktop/i_zombie/attachment\\\" @CMakeFiles/GameObject.dir/includes_CXX.rsp -g -std=gnu++17 -Wall -Wextra -Wpedantic -Wno-unused-variable -o CMakeFiles\\GameObject.dir\\RegularZombie.cpp.obj -c C:\\Users\\29972\\Desktop\\i_zombie\\attachment\\src\\GameObject\\RegularZombie.cpp",
+  "file": "C:/Users/29972/Desktop/i_zombie/attachment/src/GameObject/RegularZombie.cpp",
+  "output": "src/GameObject/CMakeFiles/GameObject.dir/RegularZombie.cpp.obj"
+},
+{
+  "directory": "C:/Users/29972/Desktop/i_zombie/build/src/GameWorld",
+  "command": "D:\\mingw64\\bin\\g++.exe -DPVZ_SOURCE_DIR=\\\"C:/Users/29972/Desktop/i_zombie/attachment\\\" @CMakeFiles/GameWorld.dir/includes_CXX.rsp -g -std=gnu++17 -Wall -Wextra -Wpedantic -Wno-unused-variable -o CMakeFiles\\GameWorld.dir\\GameWorld.cpp.obj -c C:\\Users\\29972\\Desktop\\i_zombie\\attachment\\src\\GameWorld\\GameWorld.cpp",
+  "file": "C:/Users/29972/Desktop/i_zombie/attachment/src/GameWorld/GameWorld.cpp",
+  "output": "src/GameWorld/CMakeFiles/GameWorld.dir/GameWorld.cpp.obj"
+}
+]

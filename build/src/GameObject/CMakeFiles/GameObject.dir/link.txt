@@ -1,0 +1,2 @@
+D:\mingw64\bin\ar.exe qc ..\..\lib\libGameObject.a CMakeFiles/GameObject.dir/GameObject.cpp.obj CMakeFiles/GameObject.dir/Background.cpp.obj CMakeFiles/GameObject.dir/Brain.cpp.obj CMakeFiles/GameObject.dir/ProgressMeter.cpp.obj CMakeFiles/GameObject.dir/RedLine.cpp.obj CMakeFiles/GameObject.dir/ZombieCard.cpp.obj CMakeFiles/GameObject.dir/DeployZombie.cpp.obj CMakeFiles/GameObject.dir/RegularZombie.cpp.obj
+D:\mingw64\bin\ranlib.exe ..\..\lib\libGameObject.a
