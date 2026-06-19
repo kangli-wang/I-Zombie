@@ -185,12 +185,19 @@ LevelStatus GameWorld::Update() {
       }
     }       
     if (m_sunCount < 50 && !hasZombie) {
-      std::cout << "💀 GAME LOSE! No sun, no zombies, brains remain!" << std::endl;
+      std::cout << "GAME LOSE! No sun, no zombies, brains remain!" << std::endl;
       CleanUp();
       return LevelStatus::LOSING;
     }
   }
   RemoveDeadObjects();
+  m_sunCountText->SetText(std::to_string(m_sunCount));
+  int remaining = 0;
+  for (int i = 0; i < 5; ++i) {
+    if (!m_brainEaten[i]) remaining++;
+  }
+  m_brainEatenText->SetText("Brains: " + std::to_string(remaining) + "/5");
+  m_stageText->SetText("Stage: " + std::to_string(m_currentStage + 1) + "/5");
   return LevelStatus::ONGOING;
 }
 
