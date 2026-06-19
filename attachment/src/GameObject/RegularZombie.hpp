@@ -15,6 +15,8 @@ public:
     void StartEating() { m_isEating = true; PlayAnimation(AnimID::EAT); }
     void StopEating() { m_isEating = false; PlayAnimation(AnimID::WALK); }
     
+    bool IsZombie() const override { return true; }
+    
 private:
     int m_hp;
     bool m_isEating;

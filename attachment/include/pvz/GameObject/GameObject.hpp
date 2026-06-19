@@ -22,6 +22,8 @@ public:
     void SetWorld(GameWorld* world) { m_world = world; }
     GameWorld* GetWorld() const { return m_world; }
 
+    virtual bool IsZombie() const { return false; }
+    virtual bool IsBrain() const { return false; }
 private:
     bool m_isDead;
     GameWorld* m_world = nullptr;

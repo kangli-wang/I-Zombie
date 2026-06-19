@@ -5,7 +5,7 @@
 #include "../GameObject/RedLine.hpp"
 #include "../GameObject/ZombieCard.hpp"
 #include "../GameObject/DeployZombie.hpp"
-
+#include <iostream>  // 用于调试输出
 void GameWorld::Init() {
   m_objects.clear();
   
@@ -94,6 +94,27 @@ LevelStatus GameWorld::Update() {
       obj->Update();
     }
   }
+
+  for (auto& zombieObj : m_objects) {
+    if (!zombieObj->IsZombie()) continue;
+    if (zombieObj->IsDead()) continue;
+    for (auto& brainObj : m_objects) {
+      if (!brainObj->IsBrain()) continue;
+      if (brainObj->IsDead()) continue;     
+      Brain* brain = static_cast<Brain*>(brainObj.get());
+      if (brain->isEaten()) continue;
+      if (IsColliding(zombieObj.get(), brainObj.get())) {
+        // Zombie eats the brain
+        brain->setEaten();
+        zombieObj->SetDead();
+        m_brainEaten[brain->GetRow()] = true;      
+        // Print debug information
+        std::cout << "Brain eaten in row " << brain->GetRow() << "!" << std::endl;    
+        // TODO: Check if all brains are eaten
+        break;
+      }
+    }
+  }
   RemoveDeadObjects();
   return LevelStatus::ONGOING;
 }
@@ -116,4 +137,18 @@ void GameWorld::RemoveDeadObjects() {
       ++it;
     }
   }
+}
+
+bool GameWorld::IsColliding(GameObject* a, GameObject* b) {
+    int ax1 = a->GetX() - a->GetWidth() / 2;
+    int ax2 = a->GetX() + a->GetWidth() / 2;
+    int ay1 = a->GetY() - a->GetHeight() / 2;
+    int ay2 = a->GetY() + a->GetHeight() / 2;
+    
+    int bx1 = b->GetX() - b->GetWidth() / 2;
+    int bx2 = b->GetX() + b->GetWidth() / 2;
+    int by1 = b->GetY() - b->GetHeight() / 2;
+    int by2 = b->GetY() + b->GetHeight() / 2;
+    
+    return !(ax2 < bx1 || ax1 > bx2 || ay2 < by1 || ay1 > by2);
 }

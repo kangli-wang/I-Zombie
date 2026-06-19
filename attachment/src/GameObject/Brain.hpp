@@ -15,6 +15,8 @@ public:
     bool isEaten() const { return m_isEaten; }
     void setEaten() { m_isEaten = true; SetDead();}
 
+    bool IsBrain() const override { return true; }
+    
 private:
     int m_row;
     bool m_isEaten = false;

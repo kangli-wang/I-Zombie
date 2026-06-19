@@ -55,6 +55,8 @@ private:
 
   // Zombie card for player to select
   std::shared_ptr<ZombieCard> m_regularCard;
+
+  bool IsColliding(GameObject* a, GameObject* b);
 };
 
 #endif // !GAMEWORLD_HPP__
