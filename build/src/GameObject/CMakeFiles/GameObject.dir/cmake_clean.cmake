@@ -15,6 +15,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/GameObject.dir/RedLine.cpp.obj.d"
   "CMakeFiles/GameObject.dir/RegularZombie.cpp.obj"
   "CMakeFiles/GameObject.dir/RegularZombie.cpp.obj.d"
+  "CMakeFiles/GameObject.dir/SunFlower.cpp.obj"
+  "CMakeFiles/GameObject.dir/SunFlower.cpp.obj.d"
   "CMakeFiles/GameObject.dir/ZombieCard.cpp.obj"
   "CMakeFiles/GameObject.dir/ZombieCard.cpp.obj.d"
 )

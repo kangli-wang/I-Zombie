@@ -5,6 +5,8 @@
 #include "../GameObject/RedLine.hpp"
 #include "../GameObject/ZombieCard.hpp"
 #include "../GameObject/DeployZombie.hpp"
+#include "../GameObject/SunFlower.hpp"
+#include "../GameObject/RegularZombie.hpp"
 #include <iostream>  // 用于调试输出
 void GameWorld::Init() {
   m_objects.clear();
@@ -86,6 +88,12 @@ void GameWorld::Init() {
       m_objects.push_back(zone);
     }
   }
+
+  auto sunflower = std::make_shared<Sunflower>(
+    FIRST_COL_CENTER + 2 * LAWN_GRID_WIDTH,
+    FIRST_ROW_CENTER + 1 * LAWN_GRID_HEIGHT
+  );
+  m_objects.push_back(sunflower);
 }
 
 LevelStatus GameWorld::Update() {
@@ -108,8 +116,6 @@ LevelStatus GameWorld::Update() {
         brain->setEaten();
         zombieObj->SetDead();
         m_brainEaten[brain->GetRow()] = true;      
-        // Print debug information
-        std::cout << "Brain eaten in row " << brain->GetRow() << "!" << std::endl;    
         break;
       }
     }
@@ -190,6 +196,28 @@ LevelStatus GameWorld::Update() {
       return LevelStatus::LOSING;
     }
   }
+  // ===== 僵尸 vs 植物碰撞检测 =====
+  for (auto& zombieObj : m_objects) {
+    if (!zombieObj->IsZombie()) continue;
+    if (zombieObj->IsDead()) continue;
+    RegularZombie* zombie = static_cast<RegularZombie*>(zombieObj.get());
+    bool isEating = false;
+    for (auto& plantObj : m_objects) {
+      if (!plantObj->IsPlant()) continue;
+      if (plantObj->IsDead()) continue;
+      if (IsColliding(zombieObj.get(), plantObj.get())) {
+        std::cout << "Zombie is eating a plant!" << std::endl;
+        zombie->StartEating();
+        isEating = true;
+        Plant* plant = static_cast<Plant*>(plantObj.get());
+        plant->TakeDamage(4);
+        break;
+      }
+    }
+    if (!isEating) {
+      zombie->StopEating();
+    }
+  } 
   RemoveDeadObjects();
   m_sunCountText->SetText(std::to_string(m_sunCount));
   int remaining = 0;

@@ -342,6 +342,30 @@ RegularZombie.cpp.s:
 	cd /d C:\Users\29972\Desktop\i_zombie\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\GameObject.dir\build.make src/GameObject/CMakeFiles/GameObject.dir/RegularZombie.cpp.s
 .PHONY : RegularZombie.cpp.s
 
+SunFlower.obj: SunFlower.cpp.obj
+.PHONY : SunFlower.obj
+
+# target to build an object file
+SunFlower.cpp.obj:
+	cd /d C:\Users\29972\Desktop\i_zombie\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\GameObject.dir\build.make src/GameObject/CMakeFiles/GameObject.dir/SunFlower.cpp.obj
+.PHONY : SunFlower.cpp.obj
+
+SunFlower.i: SunFlower.cpp.i
+.PHONY : SunFlower.i
+
+# target to preprocess a source file
+SunFlower.cpp.i:
+	cd /d C:\Users\29972\Desktop\i_zombie\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\GameObject.dir\build.make src/GameObject/CMakeFiles/GameObject.dir/SunFlower.cpp.i
+.PHONY : SunFlower.cpp.i
+
+SunFlower.s: SunFlower.cpp.s
+.PHONY : SunFlower.s
+
+# target to generate assembly for a file
+SunFlower.cpp.s:
+	cd /d C:\Users\29972\Desktop\i_zombie\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\GameObject.dir\build.make src/GameObject/CMakeFiles/GameObject.dir/SunFlower.cpp.s
+.PHONY : SunFlower.cpp.s
+
 ZombieCard.obj: ZombieCard.cpp.obj
 .PHONY : ZombieCard.obj
 
@@ -400,6 +424,9 @@ help:
 	@echo ... RegularZombie.obj
 	@echo ... RegularZombie.i
 	@echo ... RegularZombie.s
+	@echo ... SunFlower.obj
+	@echo ... SunFlower.i
+	@echo ... SunFlower.s
 	@echo ... ZombieCard.obj
 	@echo ... ZombieCard.i
 	@echo ... ZombieCard.s

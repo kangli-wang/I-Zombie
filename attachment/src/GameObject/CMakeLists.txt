@@ -11,6 +11,7 @@ add_library(
   ZombieCard.cpp
   DeployZombie.cpp
   RegularZombie.cpp
+  SunFlower.cpp
 )
 
 target_link_libraries(

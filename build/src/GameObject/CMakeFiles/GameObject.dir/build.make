@@ -191,6 +191,21 @@ src/GameObject/CMakeFiles/GameObject.dir/RegularZombie.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GameObject.dir/RegularZombie.cpp.s"
 	cd /d C:\Users\29972\Desktop\i_zombie\build\src\GameObject && D:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\29972\Desktop\i_zombie\attachment\src\GameObject\RegularZombie.cpp -o CMakeFiles\GameObject.dir\RegularZombie.cpp.s
 
+src/GameObject/CMakeFiles/GameObject.dir/SunFlower.cpp.obj: src/GameObject/CMakeFiles/GameObject.dir/flags.make
+src/GameObject/CMakeFiles/GameObject.dir/SunFlower.cpp.obj: src/GameObject/CMakeFiles/GameObject.dir/includes_CXX.rsp
+src/GameObject/CMakeFiles/GameObject.dir/SunFlower.cpp.obj: C:/Users/29972/Desktop/i_zombie/attachment/src/GameObject/SunFlower.cpp
+src/GameObject/CMakeFiles/GameObject.dir/SunFlower.cpp.obj: src/GameObject/CMakeFiles/GameObject.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\29972\Desktop\i_zombie\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object src/GameObject/CMakeFiles/GameObject.dir/SunFlower.cpp.obj"
+	cd /d C:\Users\29972\Desktop\i_zombie\build\src\GameObject && D:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/GameObject/CMakeFiles/GameObject.dir/SunFlower.cpp.obj -MF CMakeFiles\GameObject.dir\SunFlower.cpp.obj.d -o CMakeFiles\GameObject.dir\SunFlower.cpp.obj -c C:\Users\29972\Desktop\i_zombie\attachment\src\GameObject\SunFlower.cpp
+
+src/GameObject/CMakeFiles/GameObject.dir/SunFlower.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/GameObject.dir/SunFlower.cpp.i"
+	cd /d C:\Users\29972\Desktop\i_zombie\build\src\GameObject && D:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\29972\Desktop\i_zombie\attachment\src\GameObject\SunFlower.cpp > CMakeFiles\GameObject.dir\SunFlower.cpp.i
+
+src/GameObject/CMakeFiles/GameObject.dir/SunFlower.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GameObject.dir/SunFlower.cpp.s"
+	cd /d C:\Users\29972\Desktop\i_zombie\build\src\GameObject && D:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\29972\Desktop\i_zombie\attachment\src\GameObject\SunFlower.cpp -o CMakeFiles\GameObject.dir\SunFlower.cpp.s
+
 # Object files for target GameObject
 GameObject_OBJECTS = \
 "CMakeFiles/GameObject.dir/GameObject.cpp.obj" \
@@ -200,7 +215,8 @@ GameObject_OBJECTS = \
 "CMakeFiles/GameObject.dir/RedLine.cpp.obj" \
 "CMakeFiles/GameObject.dir/ZombieCard.cpp.obj" \
 "CMakeFiles/GameObject.dir/DeployZombie.cpp.obj" \
-"CMakeFiles/GameObject.dir/RegularZombie.cpp.obj"
+"CMakeFiles/GameObject.dir/RegularZombie.cpp.obj" \
+"CMakeFiles/GameObject.dir/SunFlower.cpp.obj"
 
 # External object files for target GameObject
 GameObject_EXTERNAL_OBJECTS =
@@ -213,9 +229,10 @@ lib/libGameObject.a: src/GameObject/CMakeFiles/GameObject.dir/RedLine.cpp.obj
 lib/libGameObject.a: src/GameObject/CMakeFiles/GameObject.dir/ZombieCard.cpp.obj
 lib/libGameObject.a: src/GameObject/CMakeFiles/GameObject.dir/DeployZombie.cpp.obj
 lib/libGameObject.a: src/GameObject/CMakeFiles/GameObject.dir/RegularZombie.cpp.obj
+lib/libGameObject.a: src/GameObject/CMakeFiles/GameObject.dir/SunFlower.cpp.obj
 lib/libGameObject.a: src/GameObject/CMakeFiles/GameObject.dir/build.make
 lib/libGameObject.a: src/GameObject/CMakeFiles/GameObject.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\29972\Desktop\i_zombie\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX static library ..\..\lib\libGameObject.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\29972\Desktop\i_zombie\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX static library ..\..\lib\libGameObject.a"
 	cd /d C:\Users\29972\Desktop\i_zombie\build\src\GameObject && $(CMAKE_COMMAND) -P CMakeFiles\GameObject.dir\cmake_clean_target.cmake
 	cd /d C:\Users\29972\Desktop\i_zombie\build\src\GameObject && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\GameObject.dir\link.txt --verbose=$(VERBOSE)
 
