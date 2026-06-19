@@ -10,7 +10,7 @@ void GameWorld::Init() {
   m_objects.clear();
   
   // Initialize game world state
-  m_sunCount = 150;
+  m_sunCount = 10000;
   m_currentStage = 0;
   
   for (int i = 0; i < 5; ++i) {
@@ -113,6 +113,59 @@ LevelStatus GameWorld::Update() {
         // TODO: Check if all brains are eaten
         break;
       }
+    }
+  }
+
+  // ===== 检查阶段是否完成 =====
+  bool allEaten = true;
+  for (int i = 0; i < 5; ++i) {
+    if (!m_brainEaten[i]) {
+        allEaten = false;
+        break;
+    }
+  }
+
+  if (allEaten) {
+    if (m_currentStage == 4) {
+        // 最终阶段完成 → 胜利
+        std::cout << "🎉 GAME WIN! All stages completed!" << std::endl;
+        return LevelStatus::WINNING;
+    } 
+    else {
+      m_currentStage++;
+      std::cout << "Stage " << (m_currentStage + 1) << " started!" << std::endl;
+
+      for (int i = 0; i < 5; ++i) {
+        m_brainEaten[i] = false;
+      }
+      
+      for (auto& obj : m_objects) {
+        if (obj->IsBrain()) {
+          obj->SetDead();
+        }
+      }
+      
+      for (int row = 0; row < 5; ++row) {
+        int x = 35;
+        int y = FIRST_ROW_CENTER + row * LAWN_GRID_HEIGHT;
+        auto brain = std::make_shared<Brain>(x, y, row);
+        m_objects.push_back(brain);
+      }
+      
+      int deploymentCol = INITIAL_ZOMBIE_DEPLOYMENT_START_COL + m_currentStage;
+      int redLineX = FIRST_COL_CENTER + deploymentCol * LAWN_GRID_WIDTH - LAWN_GRID_WIDTH / 2;
+      m_redLine->SetPosition(redLineX, LAWN_GRID_CENTER_Y);
+      
+      for (auto& obj : m_objects) {
+        if (obj->IsProgressMeter()) {
+          ProgressMeter* meter = static_cast<ProgressMeter*>(obj.get());
+          meter->SetStage(m_currentStage);
+          break;
+        }
+      }
+
+      m_stageText->SetText("Stage: " + std::to_string(m_currentStage + 1) + "/5");
+      m_brainEatenText->SetText("Brains: 0/5");
     }
   }
   RemoveDeadObjects();
