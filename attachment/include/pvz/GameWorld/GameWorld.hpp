@@ -12,6 +12,7 @@
 class ZombieCard;
 class RedLine;
 class DeployZombie;
+
 class GameWorld : public WorldBase {
 public:
   // Consider:
@@ -20,38 +21,43 @@ public:
   GameWorld() = default;
   ~GameWorld() = default;
 
+  // framework methods
   void Init() override;
-
   LevelStatus Update() override;
-
   void CleanUp() override;
 
+  // game object management
   void AddObject(std::shared_ptr<GameObject> object);
-
   void RemoveDeadObjects();
 
+  // game state related methods
   int GetSunCount() const { return m_sunCount; }
+  int GetCurrentStage() const { return m_currentStage; }
   
+  // state modification methods
   void AddSunCount(int amount) { m_sunCount += amount; }
   
+  // Collision world query methods
   bool HasPlantAt(int row, int col) const;
-
-  int GetCurrentStage() const { return m_currentStage; }
-
   bool HasZombieOnRow(int row, int minX) const;
 
+  // plant generation method
   void GeneratePlants();
 
-  void GenerateStage1();
-
-  void GenerateStage2();
-
-  void GenerateStage3();
-
-  void GenerateStage4();
-
-  void GenerateStage5();
 private:
+  // helper methods
+  bool IsColliding(GameObject* a, GameObject* b);
+
+  // Stage-specific plant generation (called by GeneratePlants)
+  void GenerateStage1();
+  void GenerateStage2();
+  void GenerateStage3();
+  void GenerateStage4();
+  void GenerateStage5();
+
+  // Member variables
+
+  // List of all game objects in the world
   std::list<std::shared_ptr<GameObject>> m_objects;
   
   // Game state variables
@@ -60,18 +66,15 @@ private:
   int m_currentStage;
   bool m_plantGrid[5][9];
 
-  // Text objects for displaying game state
+  // UI Text objects
   std::shared_ptr<TextBase> m_sunCountText;
   std::shared_ptr<TextBase> m_brainEatenText;
   std::shared_ptr<TextBase> m_stageText;
   
-  // RedLine object to indicate zombie deployment line
+  // Game objects that need to be accessed globally (e.g., for collision checks)
   std::shared_ptr<RedLine> m_redLine;
-
-  // Zombie card for player to select
   std::shared_ptr<ZombieCard> m_regularCard;
 
-  bool IsColliding(GameObject* a, GameObject* b);
 };
 
 #endif // !GAMEWORLD_HPP__

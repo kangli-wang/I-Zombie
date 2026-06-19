@@ -14,6 +14,7 @@ add_library(
   SunFlower.cpp
   Peashooter.cpp
   Pea.cpp
+  Sun.cpp
 )
 
 target_link_libraries(

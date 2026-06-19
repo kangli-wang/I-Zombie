@@ -16,9 +16,9 @@ public:
     int GetRow() const { return (GetY() - FIRST_ROW_CENTER) / LAWN_GRID_HEIGHT; }
 private:
     GameWorld* m_world;
-    int m_cooldown;              // 攻击冷却计时器
+    int m_cooldown;
     static constexpr int HP = 340;
-    static constexpr int COOLDOWN_MAX = 32;  // 攻击间隔 32 tick
+    static constexpr int COOLDOWN_MAX = 32;
 };
 
 #endif

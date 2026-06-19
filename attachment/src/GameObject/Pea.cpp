@@ -21,8 +21,6 @@ void Pea::Update() {
         SetDead();
         return;
     }
-    // TODO: 检测是否碰到僵尸
-    // 等 GameWorld 提供接口后实现
 }
 
 void Pea::OnClick() {}

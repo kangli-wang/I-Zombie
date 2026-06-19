@@ -16,6 +16,7 @@ src/GameWorld/CMakeFiles/GameWorld.dir/GameWorld.cpp.obj: C:/Users/29972/Desktop
   C:/Users/29972/Desktop/i_zombie/attachment/src/GameObject/ProgressMeter.hpp \
   C:/Users/29972/Desktop/i_zombie/attachment/src/GameObject/RedLine.hpp \
   C:/Users/29972/Desktop/i_zombie/attachment/src/GameObject/RegularZombie.hpp \
+  C:/Users/29972/Desktop/i_zombie/attachment/src/GameObject/Sun.hpp \
   C:/Users/29972/Desktop/i_zombie/attachment/src/GameObject/SunFlower.hpp \
   C:/Users/29972/Desktop/i_zombie/attachment/src/GameObject/ZombieCard.hpp \
   D:/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/backward/auto_ptr.h \
@@ -255,8 +256,6 @@ D:/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/x86_64-w64-mingw32/bits
 
 C:/Users/29972/Desktop/i_zombie/attachment/src/GameObject/Background.hpp:
 
-D:/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/move.h:
-
 C:/Users/29972/Desktop/i_zombie/attachment/include/pvz/GameObject/GameObject.hpp:
 
 D:/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/new:
@@ -304,6 +303,18 @@ D:/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/cxxabi_init_except
 D:/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/basic_string.h:
 
 C:/Users/29972/Desktop/i_zombie/attachment/src/GameObject/RedLine.hpp:
+
+D:/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/stl_uninitialized.h:
+
+D:/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/locale_facets_nonio.tcc:
+
+D:/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/fs_fwd.h:
+
+D:/mingw64/x86_64-w64-mingw32/include/corecrt_stdio_config.h:
+
+D:/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/random.tcc:
+
+C:/Users/29972/Desktop/i_zombie/attachment/src/GameObject/Sun.hpp:
 
 D:/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/stl_tree.h:
 
@@ -389,12 +400,6 @@ D:/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/exception.h:
 
 D:/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/exception_ptr.h:
 
-D:/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/stl_uninitialized.h:
-
-D:/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/locale_facets_nonio.tcc:
-
-D:/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/fs_fwd.h:
-
 D:/mingw64/x86_64-w64-mingw32/include/process.h:
 
 D:/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/stl_construct.h:
@@ -412,6 +417,8 @@ D:/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/list.tcc:
 D:/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/locale_facets.h:
 
 D:/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/locale_facets_nonio.h:
+
+D:/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/move.h:
 
 D:/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/nested_exception.h:
 
@@ -432,10 +439,6 @@ D:/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/stl_multiset.h:
 D:/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/predefined_ops.h:
 
 D:/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/ptr_traits.h:
-
-D:/mingw64/x86_64-w64-mingw32/include/corecrt_stdio_config.h:
-
-D:/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/random.tcc:
 
 D:/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/range_access.h:
 

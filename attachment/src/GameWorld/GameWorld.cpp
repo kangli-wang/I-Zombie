@@ -8,164 +8,182 @@
 #include "../GameObject/RegularZombie.hpp"
 #include "../GameObject/SunFlower.hpp"
 #include "../GameObject/Peashooter.hpp"
-#include <iostream>  // 用于调试输出
+#include "../GameObject/Sun.hpp"
+
+// Init()
+// Called once when the game starts (after pressing Enter).
+// Initializes all game state and creates initial objects.
 void GameWorld::Init() {
   m_objects.clear();
-  
-  // Initialize game world state
-  m_sunCount = 10000;
-  m_currentStage = 0;
-  
+
+  // Initialize game state variables
+  m_sunCount = 150;
+  m_currentStage = 0; 
+
   for (int i = 0; i < 5; ++i) {
-    m_brainEaten[i] = false;
+    m_brainEaten[i] = false;                     // No brains eaten yet
     for (int j = 0; j < 9; ++j) {
-      m_plantGrid[i][j] = false;
+      m_plantGrid[i][j] = false;                 // All grid cells empty
     }
   }
-  
-  m_sunCountText = std::make_shared<TextBase>(
-    SUN_COUNTER_X, 
-    SUN_COUNTER_Y, 
-    std::to_string(m_sunCount),
-    0.0,0.0,0.0,
-    true);
-  
-    m_brainEatenText = std::make_shared<TextBase>(
-    WINDOW_WIDTH - 120,
-    WINDOW_HEIGHT - 35,
-    "Brains: 5/5",
-    1.0,0.2,0.2,
-    false);
-  
-    m_stageText = std::make_shared<TextBase>(
-    WINDOW_WIDTH - 120,
-    WINDOW_HEIGHT - 65,
-    "Stage: 1/5",
-    1.0,0.2,0.2,
-    false);
 
-  // Add background and brains to the game world
+  // Create UI text objects
+  // Sun counter
+  m_sunCountText = std::make_shared<TextBase>(
+    SUN_COUNTER_X, SUN_COUNTER_Y,
+    std::to_string(m_sunCount),
+    0.0, 0.0, 0.0,   // Black
+    true
+  );
+
+  // Brain counter
+  m_brainEatenText = std::make_shared<TextBase>(
+    WINDOW_WIDTH - 120, WINDOW_HEIGHT - 35,
+    "Brains: 5/5",
+    1.0, 0.2, 0.2,   // Red
+    false
+  );
+
+  // Stage indicator
+  m_stageText = std::make_shared<TextBase>(
+    WINDOW_WIDTH - 120, WINDOW_HEIGHT - 65,
+    "Stage: 1/5",
+    1.0, 0.2, 0.2,   // Red
+    false
+  );
+
+  // Create background
   auto background = std::make_shared<Background>();
   m_objects.push_back(background);
 
-  // Add brains to the game world
+  // Create brains
   for (int row = 0; row < 5; ++row) {
-        int x = 35;
-        int y = FIRST_ROW_CENTER + row * LAWN_GRID_HEIGHT;
-        auto brain = std::make_shared<Brain>(x, y, row);
-        m_objects.push_back(brain);
-    }
+    int x = 35;
+    int y = RowToY(row);
+    auto brain = std::make_shared<Brain>(x, y, row);
+    m_objects.push_back(brain);
+  }
 
-  // Add progress meter to the game world
-  int progressX = WINDOW_WIDTH / 2;
-  int progressY = 50;
+  // Create progress meter
+  int progressX = WINDOW_WIDTH - 100;
+  int progressY = 12;
   auto progressMeter = std::make_shared<ProgressMeter>(progressX, progressY, m_currentStage);
   m_objects.push_back(progressMeter);
 
-  // Add RedLine to the game world
+  // Create red line
   int deploymentCol = INITIAL_ZOMBIE_DEPLOYMENT_START_COL + m_currentStage;
   int redLineX = FIRST_COL_CENTER + deploymentCol * LAWN_GRID_WIDTH - LAWN_GRID_WIDTH / 2;
   int redLineY = LAWN_GRID_CENTER_Y;
   m_redLine = std::make_shared<RedLine>(redLineX, redLineY);
   m_objects.push_back(m_redLine);
 
-  // Add zombie card to the game world
+  // Create zombie card
   int cardX = ZOMBIE_CARD_FIRST_X;
   int cardY = ZOMBIE_CARD_Y;
-  m_regularCard = std::make_shared<ZombieCard>(
-    cardX, 
-    cardY, 
-    50,
-    this
-  );
+  m_regularCard = std::make_shared<ZombieCard>(cardX, cardY, 50, this);
   m_objects.push_back(m_regularCard);
-  
-  // Add DeployZombie zones to the game world
+
+  // Create deployment zombie zones
   for (int row = 0; row < GAME_ROWS; ++row) {
     for (int col = 0; col < GAME_COLS; ++col) {
-      int x = FIRST_COL_CENTER + col * LAWN_GRID_WIDTH;
-      int y = FIRST_ROW_CENTER + row * LAWN_GRID_HEIGHT;
+      int x = ColToX(col);
+      int y = RowToY(row);
       auto zone = std::make_shared<DeployZombie>(x, y, row, col, this);
       m_objects.push_back(zone);
     }
   }
 
+  // Generate initial plant defense for stage 0
   GeneratePlants();
 }
 
+// Update()
+// Called every frame (~30 times per second).
+// Updates all objects, handles collisions, stage progression,
+// win/lose conditions, and UI text updates.
 LevelStatus GameWorld::Update() {
+  // Update all alive objects
   for (auto& obj : m_objects) {
     if (!obj->IsDead()) {
       obj->Update();
     }
   }
 
+  // Collision: Zombie vs Brain
   for (auto& zombieObj : m_objects) {
     if (!zombieObj->IsZombie()) continue;
     if (zombieObj->IsDead()) continue;
+
     for (auto& brainObj : m_objects) {
       if (!brainObj->IsBrain()) continue;
-      if (brainObj->IsDead()) continue;     
+      if (brainObj->IsDead()) continue;
+
       Brain* brain = static_cast<Brain*>(brainObj.get());
       if (brain->isEaten()) continue;
+
       if (IsColliding(zombieObj.get(), brainObj.get())) {
-        // Zombie eats the brain
-        brain->setEaten();
-        zombieObj->SetDead();
-        m_brainEaten[brain->GetRow()] = true;      
+        brain->setEaten();             // Mark brain as eaten
+        zombieObj->SetDead();          // Zombie dies after eating
+        m_brainEaten[brain->GetRow()] = true;
         break;
       }
     }
   }
 
-  // ===== 检查阶段是否完成 =====
+  // Stage progression check
   bool allEaten = true;
   for (int i = 0; i < 5; ++i) {
     if (!m_brainEaten[i]) {
-        allEaten = false;
-        break;
+      allEaten = false;
+      break;
     }
   }
 
   if (allEaten) {
+    // All 5 brains eaten -> advance stage or win
     if (m_currentStage == 4) {
-        // 最终阶段完成 → 胜利
-        std::cout << "GAME WIN! All stages completed!" << std::endl;
-        return LevelStatus::WINNING;
-    } 
-    else {
+      // Stage 5 complete -> win
+      return LevelStatus::WINNING;
+    } else {
+      // Advance to next stage
       m_currentStage++;
-      std::cout << "Stage " << (m_currentStage + 1) << " started!" << std::endl;
 
+      // Reset brain eaten flags
       for (int i = 0; i < 5; ++i) {
         m_brainEaten[i] = false;
       }
-      
+
+      // Remove old brains
       for (auto& obj : m_objects) {
         if (obj->IsBrain()) {
           obj->SetDead();
         }
       }
-      
+
+      // Remove old plants
       for (auto& obj : m_objects) {
         if (obj->IsPlant()) {
           obj->SetDead();
         }
       }
 
+      // Create new brains
       for (int row = 0; row < 5; ++row) {
         int x = 35;
-        int y = FIRST_ROW_CENTER + row * LAWN_GRID_HEIGHT;
+        int y = RowToY(row);
         auto brain = std::make_shared<Brain>(x, y, row);
         m_objects.push_back(brain);
       }
 
+      // Generate plants for the new stage
       GeneratePlants();
 
+      // Move red line right by one column
       int deploymentCol = INITIAL_ZOMBIE_DEPLOYMENT_START_COL + m_currentStage;
       int redLineX = FIRST_COL_CENTER + deploymentCol * LAWN_GRID_WIDTH - LAWN_GRID_WIDTH / 2;
       m_redLine->SetPosition(redLineX, LAWN_GRID_CENTER_Y);
-      
+
+      // Update progress meter
       for (auto& obj : m_objects) {
         if (obj->IsProgressMeter()) {
           ProgressMeter* meter = static_cast<ProgressMeter*>(obj.get());
@@ -174,11 +192,14 @@ LevelStatus GameWorld::Update() {
         }
       }
 
+      // Update UI text
       m_stageText->SetText("Stage: " + std::to_string(m_currentStage + 1) + "/5");
       m_brainEatenText->SetText("Brains: 0/5");
     }
   }
-  // ===== 6. 失败检测（新增） =====
+
+  // Lose condition check
+  // Lose if: brains remain, sun < 50, and no zombies on field
   bool anyBrainLeft = false;
   for (int i = 0; i < 5; ++i) {
     if (!m_brainEaten[i]) {
@@ -186,7 +207,7 @@ LevelStatus GameWorld::Update() {
       break;
     }
   }
-    
+
   if (anyBrainLeft) {
     bool hasZombie = false;
     for (auto& obj : m_objects) {
@@ -194,208 +215,239 @@ LevelStatus GameWorld::Update() {
         hasZombie = true;
         break;
       }
-    }       
+    }
+
     if (m_sunCount < 50 && !hasZombie) {
-      std::cout << "GAME LOSE! No sun, no zombies, brains remain!" << std::endl;
       CleanUp();
       return LevelStatus::LOSING;
     }
   }
-  // ===== 僵尸 vs 植物碰撞检测 =====
+
+  // Collision: Zombie vs Plant 
   for (auto& zombieObj : m_objects) {
     if (!zombieObj->IsZombie()) continue;
     if (zombieObj->IsDead()) continue;
+
     RegularZombie* zombie = static_cast<RegularZombie*>(zombieObj.get());
     bool isEating = false;
+
     for (auto& plantObj : m_objects) {
       if (!plantObj->IsPlant()) continue;
       if (plantObj->IsDead()) continue;
+
       if (IsColliding(zombieObj.get(), plantObj.get())) {
-        std::cout << "Zombie is eating a plant!" << std::endl;
-        zombie->StartEating();
+        zombie->StartEating();       // Stop moving, play eat animation
         isEating = true;
+
         Plant* plant = static_cast<Plant*>(plantObj.get());
         plant->TakeDamage(4);
+
+        // Sunflower drops 6 suns when it dies
+        if (plant->IsDead() && plant->IsSunflower()) {
+          for (int i = 0; i < 6; ++i) {
+            int sunX = plant->GetX() + randInt(-30, 30);
+            int sunY = plant->GetY() + randInt(-30, 30);
+            auto sun = std::make_shared<Sun>(sunX, sunY, this);
+            m_objects.push_back(sun);
+          }
+        }
         break;
       }
     }
+
+    // If not eating any plant, resume walking
     if (!isEating) {
       zombie->StopEating();
     }
-  } 
-  // ===== 豌豆 vs 僵尸碰撞检测 =====
+  }
+
+  // Collision: Pea vs Zombie
   for (auto& peaObj : m_objects) {
     if (!peaObj->IsPea()) continue;
     if (peaObj->IsDead()) continue;
-    
+
     for (auto& zombieObj : m_objects) {
       if (!zombieObj->IsZombie()) continue;
       if (zombieObj->IsDead()) continue;
+
       if (IsColliding(peaObj.get(), zombieObj.get())) {
         RegularZombie* zombie = static_cast<RegularZombie*>(zombieObj.get());
         zombie->TakeDamage(24);
-        peaObj->SetDead();
-        std::cout << "Pea hit zombie!" << std::endl;
+        peaObj->SetDead();           // Pea disappears on hit
         break;
       }
     }
   }
+
+  // Remove dead objects
   RemoveDeadObjects();
+
+  // Update UI text
   m_sunCountText->SetText(std::to_string(m_sunCount));
+
   int remaining = 0;
   for (int i = 0; i < 5; ++i) {
     if (!m_brainEaten[i]) remaining++;
   }
   m_brainEatenText->SetText("Brains: " + std::to_string(remaining) + "/5");
   m_stageText->SetText("Stage: " + std::to_string(m_currentStage + 1) + "/5");
+
   return LevelStatus::ONGOING;
 }
 
+// CleanUp()
+// Called when game ends. Clears all objects.
 void GameWorld::CleanUp() {
   m_objects.clear();
 }
 
+// AddObject()
+// Adds a new game object to the world.
+// Called by other objects (e.g., Peashooter creating Pea).
 void GameWorld::AddObject(std::shared_ptr<GameObject> object) {
   m_objects.push_back(object);
 }
 
+// RemoveDeadObjects()
+// Removes all objects marked as dead from the container.
+// Called every frame after all updates and collisions.
+// Uses iterator-based loop for safe deletion.
 void GameWorld::RemoveDeadObjects() {
   auto it = m_objects.begin();
   while (it != m_objects.end()) {
     if ((*it)->IsDead()) {
       it = m_objects.erase(it);
-    } 
-    else {
+    } else {
       ++it;
     }
   }
 }
 
+// IsColliding()
+// Checks if two GameObject rectangles overlap.
 bool GameWorld::IsColliding(GameObject* a, GameObject* b) {
-    int ax1 = a->GetX() - a->GetWidth() / 2;
-    int ax2 = a->GetX() + a->GetWidth() / 2;
-    int ay1 = a->GetY() - a->GetHeight() / 2;
-    int ay2 = a->GetY() + a->GetHeight() / 2;
-    
-    int bx1 = b->GetX() - b->GetWidth() / 2;
-    int bx2 = b->GetX() + b->GetWidth() / 2;
-    int by1 = b->GetY() - b->GetHeight() / 2;
-    int by2 = b->GetY() + b->GetHeight() / 2;
-    
-    return !(ax2 < bx1 || ax1 > bx2 || ay2 < by1 || ay1 > by2);
+  // Calculate edges of object A
+  int ax1 = a->GetX() - a->GetWidth() / 2;
+  int ax2 = a->GetX() + a->GetWidth() / 2;
+  int ay1 = a->GetY() - a->GetHeight() / 2;
+  int ay2 = a->GetY() + a->GetHeight() / 2;
+
+  // Calculate edges of object B
+  int bx1 = b->GetX() - b->GetWidth() / 2;
+  int bx2 = b->GetX() + b->GetWidth() / 2;
+  int by1 = b->GetY() - b->GetHeight() / 2;
+  int by2 = b->GetY() + b->GetHeight() / 2;
+
+  // No overlap if one is completely left/right/above/below the other
+  return !(ax2 < bx1 || ax1 > bx2 || ay2 < by1 || ay1 > by2);
 }
 
+// HasPlantAt()
+// Checks if a specific grid cell has a living plant.
+// Used by DeployZombie to prevent deployment on occupied cells.
 bool GameWorld::HasPlantAt(int row, int col) const {
-    int targetX = ColToX(col);
-    int targetY = RowToY(row);
-    for (auto& obj : m_objects) {
-        if (!obj->IsPlant()) continue;
-        if (obj->IsDead()) continue;
-        if (std::abs(obj->GetX() - targetX) < 40 && std::abs(obj->GetY() - targetY) < 50) {
-            return true;
-        }
+  int targetX = ColToX(col);
+  int targetY = RowToY(row);
+
+  for (auto& obj : m_objects) {
+    if (!obj->IsPlant()) continue;
+    if (obj->IsDead()) continue;
+
+    // Approximate check: within half the grid cell size
+    if (std::abs(obj->GetX() - targetX) < 40 &&
+        std::abs(obj->GetY() - targetY) < 50) {
+      return true;
     }
-    return false;
+  }
+  return false;
 }
 
+// HasZombieOnRow()
+// Checks if there is a zombie on a given row to the right of minX.
+// Used by Peashooter to decide whether to fire.
 bool GameWorld::HasZombieOnRow(int row, int minX) const {
-    int targetY = RowToY(row); 
-    for (auto& obj : m_objects) {
-        if (!obj->IsZombie()) continue;
-        if (obj->IsDead()) continue;
-        if (obj->GetY() != targetY) continue;
-        if (obj->GetX() < minX) continue;
-        return true;
-    }
-    return false;
+  int targetY = RowToY(row);
+
+  for (auto& obj : m_objects) {
+    if (!obj->IsZombie()) continue;
+    if (obj->IsDead()) continue;
+    if (obj->GetY() != targetY) continue;   // Same row
+    if (obj->GetX() < minX) continue;       // To the right
+    return true;
+  }
+  return false;
 }
 
+// GeneratePlants()
+// Generates plants based on the current stage.
+// Called during Init() and after each stage advancement.
 void GameWorld::GeneratePlants() {
-    switch (m_currentStage) {
-        case 0:
-            GenerateStage1();
-            break;
-        case 1:
-            GenerateStage2();
-            break;
-        case 2:
-            GenerateStage3();
-            break;
-        case 3:
-            GenerateStage4();
-            break;
-        case 4:
-            GenerateStage5();
-            break;
-        default:
-            break;
-    }
+  switch (m_currentStage) {
+    case 0: GenerateStage1(); break;
+    case 1: GenerateStage2(); break;
+    case 2: GenerateStage3(); break;
+    case 3: GenerateStage4(); break;
+    case 4: GenerateStage5(); break;
+    default: break;
+  }
 }
 
-// 第1阶段：简单入门
+// Stage 1
+// 2 sunflowers + 3 peashooters
 void GameWorld::GenerateStage1() {
-    // 行0：列4 豌豆射手
-    m_objects.push_back(std::make_shared<Peashooter>(ColToX(4), RowToY(0), this));
-    // 行1：列2 向日葵
-    m_objects.push_back(std::make_shared<Sunflower>(ColToX(2), RowToY(1)));
-    // 行2：列4 豌豆射手
-    m_objects.push_back(std::make_shared<Peashooter>(ColToX(4), RowToY(2), this));
-    // 行3：列2 向日葵
-    m_objects.push_back(std::make_shared<Sunflower>(ColToX(2), RowToY(3)));
-    // 行4：列3 豌豆射手
-    m_objects.push_back(std::make_shared<Peashooter>(ColToX(3), RowToY(4), this));
+  m_objects.push_back(std::make_shared<Peashooter>(ColToX(4), RowToY(0), this));
+  m_objects.push_back(std::make_shared<Sunflower>(ColToX(2), RowToY(1)));
+  m_objects.push_back(std::make_shared<Peashooter>(ColToX(4), RowToY(2), this));
+  m_objects.push_back(std::make_shared<Sunflower>(ColToX(2), RowToY(3)));
+  m_objects.push_back(std::make_shared<Peashooter>(ColToX(3), RowToY(4), this));
 }
 
-// 第2阶段：增加植物密度
+// Stage 2
+// One peashooter per row + extra sunflowers
 void GameWorld::GenerateStage2() {
-    // 每行至少一个攻击植物
-    for (int row = 0; row < 5; ++row) {
-        m_objects.push_back(std::make_shared<Peashooter>(ColToX(4), RowToY(row), this));
-    }
-    // 额外向日葵
-    m_objects.push_back(std::make_shared<Sunflower>(ColToX(2), RowToY(1)));
-    m_objects.push_back(std::make_shared<Sunflower>(ColToX(2), RowToY(3)));
+  for (int row = 0; row < 5; ++row) {
+    m_objects.push_back(std::make_shared<Peashooter>(ColToX(4), RowToY(row), this));
+  }
+  m_objects.push_back(std::make_shared<Sunflower>(ColToX(2), RowToY(1)));
+  m_objects.push_back(std::make_shared<Sunflower>(ColToX(2), RowToY(3)));
 }
 
-// 第3阶段：增加后排植物
+// Stage 3
+// Two peashooters per row (columns 4 and 5)
 void GameWorld::GenerateStage3() {
-    // 前排豌豆射手（列4-5）
-    for (int row = 0; row < 5; ++row) {
-        m_objects.push_back(std::make_shared<Peashooter>(ColToX(4), RowToY(row), this));
-        m_objects.push_back(std::make_shared<Peashooter>(ColToX(5), RowToY(row), this));
-    }
-    // 向日葵
-    m_objects.push_back(std::make_shared<Sunflower>(ColToX(2), RowToY(0)));
-    m_objects.push_back(std::make_shared<Sunflower>(ColToX(2), RowToY(2)));
-    m_objects.push_back(std::make_shared<Sunflower>(ColToX(2), RowToY(4)));
+  for (int row = 0; row < 5; ++row) {
+    m_objects.push_back(std::make_shared<Peashooter>(ColToX(4), RowToY(row), this));
+    m_objects.push_back(std::make_shared<Peashooter>(ColToX(5), RowToY(row), this));
+  }
+  m_objects.push_back(std::make_shared<Sunflower>(ColToX(2), RowToY(0)));
+  m_objects.push_back(std::make_shared<Sunflower>(ColToX(2), RowToY(2)));
+  m_objects.push_back(std::make_shared<Sunflower>(ColToX(2), RowToY(4)));
 }
 
-// 第4阶段：更密集
+// Stage 4
+// Peashooters in columns 3 and 5 on all rows,
+// plus extra in column 4 on even rows
 void GameWorld::GenerateStage4() {
-    // 多行多列豌豆射手
-    for (int row = 0; row < 5; ++row) {
-        m_objects.push_back(std::make_shared<Peashooter>(ColToX(3), RowToY(row), this));
-        m_objects.push_back(std::make_shared<Peashooter>(ColToX(5), RowToY(row), this));
-        // 偶数列额外增加
-        if (row % 2 == 0) {
-            m_objects.push_back(std::make_shared<Peashooter>(ColToX(4), RowToY(row), this));
-        }
+  for (int row = 0; row < 5; ++row) {
+    m_objects.push_back(std::make_shared<Peashooter>(ColToX(3), RowToY(row), this));
+    m_objects.push_back(std::make_shared<Peashooter>(ColToX(5), RowToY(row), this));
+    if (row % 2 == 0) {
+      m_objects.push_back(std::make_shared<Peashooter>(ColToX(4), RowToY(row), this));
     }
-    // 向日葵
-    m_objects.push_back(std::make_shared<Sunflower>(ColToX(2), RowToY(1)));
-    m_objects.push_back(std::make_shared<Sunflower>(ColToX(2), RowToY(3)));
+  }
+  m_objects.push_back(std::make_shared<Sunflower>(ColToX(2), RowToY(1)));
+  m_objects.push_back(std::make_shared<Sunflower>(ColToX(2), RowToY(3)));
 }
 
-// 第5阶段：最终防线（最密集）
+// Stage 5
+// Peashooters in columns 3, 4, 5 on all rows
 void GameWorld::GenerateStage5() {
-    // 所有行，列3-5 全部填满豌豆射手
-    for (int row = 0; row < 5; ++row) {
-        for (int col = 3; col <= 5; ++col) {
-            m_objects.push_back(std::make_shared<Peashooter>(ColToX(col), RowToY(row), this));
-        }
+  for (int row = 0; row < 5; ++row) {
+    for (int col = 3; col <= 5; ++col) {
+      m_objects.push_back(std::make_shared<Peashooter>(ColToX(col), RowToY(row), this));
     }
-    // 向日葵
-    m_objects.push_back(std::make_shared<Sunflower>(ColToX(2), RowToY(0)));
-    m_objects.push_back(std::make_shared<Sunflower>(ColToX(2), RowToY(2)));
-    m_objects.push_back(std::make_shared<Sunflower>(ColToX(2), RowToY(4)));
+  }
+  m_objects.push_back(std::make_shared<Sunflower>(ColToX(2), RowToY(0)));
+  m_objects.push_back(std::make_shared<Sunflower>(ColToX(2), RowToY(2)));
+  m_objects.push_back(std::make_shared<Sunflower>(ColToX(2), RowToY(4)));
 }

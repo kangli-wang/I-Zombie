@@ -27,6 +27,8 @@ public:
     virtual bool IsProgressMeter() const { return false; }
     virtual bool IsPlant() const { return false; }
     virtual bool IsPea() const { return false; }
+    virtual bool IsSun() const { return false; }
+    
 private:
     bool m_isDead;
     GameWorld* m_world = nullptr;

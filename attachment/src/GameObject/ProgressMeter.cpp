@@ -3,12 +3,12 @@
 
 ProgressMeter::ProgressMeter(int x, int y, int stage)
     : GameObject(
-        ImageID::PROGRESS_METER_STAGE_1,  // 默认显示第 1 阶段
+        ImageID::PROGRESS_METER_STAGE_1,
         x,
         y,
         LayerID::UI,
-        158,//width
-        24,//height
+        158,
+        24,
         AnimID::NO_ANIMATION
       )
     , m_stage(stage) {}

@@ -30,13 +30,13 @@ void DeployZombie::OnClick() {
     if (world->GetSunCount() < 50) {
         return;
     }
-    
+    // check if there is already a plant on this cell
     if (world->HasPlantAt(m_row, m_col)) {
         return;
     }
-
+    // Deduct sun cost and deploy a new zombie
     world->AddSunCount(-50);
-    // Create a new RegularZombie at the clicked position and add it to the game world
+    // create a new RegularZombie at the clicked position and add it to the game world
     auto zombie = std::make_shared<RegularZombie>(GetX(), GetY());
     world->AddObject(zombie);
 }

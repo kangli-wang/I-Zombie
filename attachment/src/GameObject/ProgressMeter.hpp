@@ -12,6 +12,7 @@ public:
     
     void SetStage(int stage);
     bool IsProgressMeter() const override { return true; }
+    
 private:
     int m_stage;
 };

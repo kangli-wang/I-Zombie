@@ -19,19 +19,18 @@ Peashooter::Peashooter(int x, int y, GameWorld* world)
 
 void Peashooter::Update() {
     if (IsDead()) return;
-    
+    // cd > 0
     if (m_cooldown > 0) {
         m_cooldown--;
         return;
     }
     int row = GetRow();
     int minX = GetX();
-    
+    // check if there is any zombie on the right side of this peashooter in the same row
     if (m_world->HasZombieOnRow(row, minX)) {
         auto pea = std::make_shared<Pea>(GetX() + 30, GetY() + 20, m_world);
         m_world->AddObject(pea);
-        
-        m_cooldown = COOLDOWN_MAX;  // 重置冷却
+        m_cooldown = COOLDOWN_MAX;
     }
 }
 

@@ -9,6 +9,8 @@ public:
     
     void Update() override;
     void OnClick() override;
+
+    bool IsSunflower() const override { return true; }
     
 private:
     static constexpr int HP = 340;

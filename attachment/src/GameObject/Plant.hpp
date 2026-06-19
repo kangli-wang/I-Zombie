@@ -14,9 +14,13 @@ public:
     
     virtual void Update() override = 0;
     virtual void OnClick() override = 0;
+    
     bool IsPlant() const override { return true; }
+    virtual bool IsSunflower() const { return false; }
+    
     int GetHp() const { return m_hp; }
     int GetMaxHp() const { return m_maxHp; }
+    
     void TakeDamage(int damage) {
         m_hp -= damage;
         if (m_hp <= 0) {

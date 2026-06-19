@@ -17,6 +17,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/29972/Desktop/i_zombie/attachment/src/GameObject/ProgressMeter.cpp" "src/GameObject/CMakeFiles/GameObject.dir/ProgressMeter.cpp.obj" "gcc" "src/GameObject/CMakeFiles/GameObject.dir/ProgressMeter.cpp.obj.d"
   "C:/Users/29972/Desktop/i_zombie/attachment/src/GameObject/RedLine.cpp" "src/GameObject/CMakeFiles/GameObject.dir/RedLine.cpp.obj" "gcc" "src/GameObject/CMakeFiles/GameObject.dir/RedLine.cpp.obj.d"
   "C:/Users/29972/Desktop/i_zombie/attachment/src/GameObject/RegularZombie.cpp" "src/GameObject/CMakeFiles/GameObject.dir/RegularZombie.cpp.obj" "gcc" "src/GameObject/CMakeFiles/GameObject.dir/RegularZombie.cpp.obj.d"
+  "C:/Users/29972/Desktop/i_zombie/attachment/src/GameObject/Sun.cpp" "src/GameObject/CMakeFiles/GameObject.dir/Sun.cpp.obj" "gcc" "src/GameObject/CMakeFiles/GameObject.dir/Sun.cpp.obj.d"
   "C:/Users/29972/Desktop/i_zombie/attachment/src/GameObject/SunFlower.cpp" "src/GameObject/CMakeFiles/GameObject.dir/SunFlower.cpp.obj" "gcc" "src/GameObject/CMakeFiles/GameObject.dir/SunFlower.cpp.obj.d"
   "C:/Users/29972/Desktop/i_zombie/attachment/src/GameObject/ZombieCard.cpp" "src/GameObject/CMakeFiles/GameObject.dir/ZombieCard.cpp.obj" "gcc" "src/GameObject/CMakeFiles/GameObject.dir/ZombieCard.cpp.obj.d"
   )
