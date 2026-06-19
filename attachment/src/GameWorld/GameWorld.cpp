@@ -10,7 +10,7 @@ void GameWorld::Init() {
   m_objects.clear();
   
   // Initialize game world state
-  m_sunCount = 10000;
+  m_sunCount = 150;
   m_currentStage = 0;
   
   for (int i = 0; i < 5; ++i) {
@@ -110,7 +110,6 @@ LevelStatus GameWorld::Update() {
         m_brainEaten[brain->GetRow()] = true;      
         // Print debug information
         std::cout << "Brain eaten in row " << brain->GetRow() << "!" << std::endl;    
-        // TODO: Check if all brains are eaten
         break;
       }
     }
@@ -166,6 +165,29 @@ LevelStatus GameWorld::Update() {
 
       m_stageText->SetText("Stage: " + std::to_string(m_currentStage + 1) + "/5");
       m_brainEatenText->SetText("Brains: 0/5");
+    }
+  }
+  // ===== 6. 失败检测（新增） =====
+  bool anyBrainLeft = false;
+  for (int i = 0; i < 5; ++i) {
+    if (!m_brainEaten[i]) {
+      anyBrainLeft = true;
+      break;
+    }
+  }
+    
+  if (anyBrainLeft) {
+    bool hasZombie = false;
+    for (auto& obj : m_objects) {
+      if (obj->IsZombie() && !obj->IsDead()) {
+        hasZombie = true;
+        break;
+      }
+    }       
+    if (m_sunCount < 50 && !hasZombie) {
+      std::cout << "💀 GAME LOSE! No sun, no zombies, brains remain!" << std::endl;
+      CleanUp();
+      return LevelStatus::LOSING;
     }
   }
   RemoveDeadObjects();
