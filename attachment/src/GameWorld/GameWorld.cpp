@@ -9,6 +9,10 @@
 #include "../GameObject/SunFlower.hpp"
 #include "../GameObject/Peashooter.hpp"
 #include "../GameObject/Sun.hpp"
+#include "../GameObject/WallNut.hpp"
+#include "../GameObject/ConeheadZombie.hpp"
+#include "../GameObject/BucketheadZombie.hpp"
+#include "../GameObject/PoleVaultingZombie.hpp"
 
 // Init()
 // Called once when the game starts (after pressing Enter).
@@ -80,8 +84,37 @@ void GameWorld::Init() {
   // Create zombie card
   int cardX = ZOMBIE_CARD_FIRST_X;
   int cardY = ZOMBIE_CARD_Y;
-  m_regularCard = std::make_shared<ZombieCard>(cardX, cardY, 50, this);
-  m_objects.push_back(m_regularCard);
+  auto regularCard = std::make_shared<ZombieCard>(
+    cardX, cardY, 50,
+    ZombieType::Regular,
+    ImageID::ZOMBIE_CARD_REGULAR,
+    this
+  );
+  m_objects.push_back(regularCard);
+
+  auto coneheadCard = std::make_shared<ZombieCard>(
+    cardX + ZOMBIE_CARD_SPACING, cardY, 75,
+    ZombieType::Conehead,
+    ImageID::ZOMBIE_CARD_CONEHEAD,
+    this
+  );
+  m_objects.push_back(coneheadCard);
+
+  auto bucketheadCard = std::make_shared<ZombieCard>(
+    cardX + 2 * ZOMBIE_CARD_SPACING, cardY, 100,
+    ZombieType::Buckethead,
+    ImageID::ZOMBIE_CARD_BUCKET,
+    this
+  );
+  m_objects.push_back(bucketheadCard);
+
+  auto poleCard = std::make_shared<ZombieCard>(
+    cardX + 3 * ZOMBIE_CARD_SPACING, cardY, 75,
+    ZombieType::PoleVaulting,
+    ImageID::ZOMBIE_CARD_POLE,
+    this
+  );
+  m_objects.push_back(poleCard);
 
   // Create deployment zombie zones
   for (int row = 0; row < GAME_ROWS; ++row) {
@@ -236,7 +269,9 @@ LevelStatus GameWorld::Update() {
       if (plantObj->IsDead()) continue;
 
       if (IsColliding(zombieObj.get(), plantObj.get())) {
-        zombie->StartEating();       // Stop moving, play eat animation
+        if (!zombie->IsEating()) {
+          zombie->StartEating();
+        }
         isEating = true;
 
         Plant* plant = static_cast<Plant*>(plantObj.get());
@@ -428,26 +463,84 @@ void GameWorld::GenerateStage3() {
 // Peashooters in columns 3 and 5 on all rows,
 // plus extra in column 4 on even rows
 void GameWorld::GenerateStage4() {
-  for (int row = 0; row < 5; ++row) {
-    m_objects.push_back(std::make_shared<Peashooter>(ColToX(3), RowToY(row), this));
-    m_objects.push_back(std::make_shared<Peashooter>(ColToX(5), RowToY(row), this));
-    if (row % 2 == 0) {
-      m_objects.push_back(std::make_shared<Peashooter>(ColToX(4), RowToY(row), this));
+    // 前排坚果墙（列2）
+    m_objects.push_back(std::make_shared<WallNut>(ColToX(2), RowToY(0)));
+    m_objects.push_back(std::make_shared<WallNut>(ColToX(2), RowToY(2)));
+    m_objects.push_back(std::make_shared<WallNut>(ColToX(2), RowToY(4)));
+
+    // 豌豆射手（列4-5）
+    for (int row = 0; row < 5; ++row) {
+        m_objects.push_back(std::make_shared<Peashooter>(ColToX(4), RowToY(row), this));
+        m_objects.push_back(std::make_shared<Peashooter>(ColToX(5), RowToY(row), this));
+        if (row % 2 == 0) {
+            m_objects.push_back(std::make_shared<Peashooter>(ColToX(3), RowToY(row), this));
+        }
     }
-  }
-  m_objects.push_back(std::make_shared<Sunflower>(ColToX(2), RowToY(1)));
-  m_objects.push_back(std::make_shared<Sunflower>(ColToX(2), RowToY(3)));
+    // 向日葵
+    m_objects.push_back(std::make_shared<Sunflower>(ColToX(2), RowToY(1)));
+    m_objects.push_back(std::make_shared<Sunflower>(ColToX(2), RowToY(3)));
 }
 
 // Stage 5
 // Peashooters in columns 3, 4, 5 on all rows
 void GameWorld::GenerateStage5() {
-  for (int row = 0; row < 5; ++row) {
-    for (int col = 3; col <= 5; ++col) {
-      m_objects.push_back(std::make_shared<Peashooter>(ColToX(col), RowToY(row), this));
+    // 前排坚果墙（列2-3）
+    for (int row = 0; row < 5; ++row) {
+        m_objects.push_back(std::make_shared<WallNut>(ColToX(2), RowToY(row)));
+        if (row % 2 == 0) {
+            m_objects.push_back(std::make_shared<WallNut>(ColToX(3), RowToY(row)));
+        }
+    }
+    // 豌豆射手（列4-5）
+    for (int row = 0; row < 5; ++row) {
+        for (int col = 4; col <= 5; ++col) {
+            m_objects.push_back(std::make_shared<Peashooter>(ColToX(col), RowToY(row), this));
+        }
+    }
+    // 向日葵
+    m_objects.push_back(std::make_shared<Sunflower>(ColToX(2), RowToY(1)));
+    m_objects.push_back(std::make_shared<Sunflower>(ColToX(2), RowToY(3)));
+}
+
+void GameWorld::DeployZombieByType(int x, int y, ZombieType type) {
+  std::shared_ptr<Zombie> zombie;
+
+  switch (type) {
+    case ZombieType::Regular:
+      zombie = std::make_shared<RegularZombie>(x, y);
+      break;
+    case ZombieType::Conehead:
+      zombie = std::make_shared<ConeheadZombie>(x, y);
+      break;
+    case ZombieType::Buckethead:
+      zombie = std::make_shared<BucketheadZombie>(x, y);
+      break;
+    case ZombieType::PoleVaulting:
+      zombie = std::make_shared<PoleVaultingZombie>(x, y);
+      zombie->SetWorld(this);
+      break;
+    default:
+      zombie = std::make_shared<RegularZombie>(x, y);
+      break;
+  }
+  AddObject(zombie);
+}
+
+void GameWorld::DeselectAllCards() {
+  for (auto& obj : m_objects) {
+    if (auto card = std::dynamic_pointer_cast<ZombieCard>(obj)) {
+      card->SetSelected(false);
     }
   }
-  m_objects.push_back(std::make_shared<Sunflower>(ColToX(2), RowToY(0)));
-  m_objects.push_back(std::make_shared<Sunflower>(ColToX(2), RowToY(2)));
-  m_objects.push_back(std::make_shared<Sunflower>(ColToX(2), RowToY(4)));
+}
+
+bool GameWorld::HasPlantNear(int x, int y, int range) const {
+    for (auto& obj : m_objects) {
+        if (!obj->IsPlant()) continue;
+        if (obj->IsDead()) continue;
+        if (std::abs(obj->GetX() - x) < range && std::abs(obj->GetY() - y) < 50) {
+            return true;
+        }
+    }
+    return false;
 }

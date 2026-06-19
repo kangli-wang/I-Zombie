@@ -44,6 +44,13 @@ public:
   // plant generation method
   void GeneratePlants();
 
+  void SetSelectedZombieType(ZombieType type) { m_selectedZombieType = type; m_hasSelected = true; }
+  ZombieType GetSelectedZombieType() const { return m_selectedZombieType; }
+  void DeployZombieByType(int x, int y, ZombieType type);
+  void ClearSelectedZombieType(){m_hasSelected = false;};
+  bool HasSelectedZombieType() const { return m_hasSelected; }
+  void DeselectAllCards();
+  bool HasPlantNear(int x, int y, int range) const;
 private:
   // helper methods
   bool IsColliding(GameObject* a, GameObject* b);
@@ -73,8 +80,9 @@ private:
   
   // Game objects that need to be accessed globally (e.g., for collision checks)
   std::shared_ptr<RedLine> m_redLine;
-  std::shared_ptr<ZombieCard> m_regularCard;
 
+  ZombieType m_selectedZombieType = ZombieType::Regular;
+  bool m_hasSelected = false;
 };
 
 #endif // !GAMEWORLD_HPP__

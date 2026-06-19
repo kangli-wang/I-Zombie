@@ -251,6 +251,81 @@ src/GameObject/CMakeFiles/GameObject.dir/Sun.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GameObject.dir/Sun.cpp.s"
 	cd /d C:\Users\29972\Desktop\i_zombie\build\src\GameObject && D:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\29972\Desktop\i_zombie\attachment\src\GameObject\Sun.cpp -o CMakeFiles\GameObject.dir\Sun.cpp.s
 
+src/GameObject/CMakeFiles/GameObject.dir/Zombie.cpp.obj: src/GameObject/CMakeFiles/GameObject.dir/flags.make
+src/GameObject/CMakeFiles/GameObject.dir/Zombie.cpp.obj: src/GameObject/CMakeFiles/GameObject.dir/includes_CXX.rsp
+src/GameObject/CMakeFiles/GameObject.dir/Zombie.cpp.obj: C:/Users/29972/Desktop/i_zombie/attachment/src/GameObject/Zombie.cpp
+src/GameObject/CMakeFiles/GameObject.dir/Zombie.cpp.obj: src/GameObject/CMakeFiles/GameObject.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\29972\Desktop\i_zombie\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object src/GameObject/CMakeFiles/GameObject.dir/Zombie.cpp.obj"
+	cd /d C:\Users\29972\Desktop\i_zombie\build\src\GameObject && D:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/GameObject/CMakeFiles/GameObject.dir/Zombie.cpp.obj -MF CMakeFiles\GameObject.dir\Zombie.cpp.obj.d -o CMakeFiles\GameObject.dir\Zombie.cpp.obj -c C:\Users\29972\Desktop\i_zombie\attachment\src\GameObject\Zombie.cpp
+
+src/GameObject/CMakeFiles/GameObject.dir/Zombie.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/GameObject.dir/Zombie.cpp.i"
+	cd /d C:\Users\29972\Desktop\i_zombie\build\src\GameObject && D:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\29972\Desktop\i_zombie\attachment\src\GameObject\Zombie.cpp > CMakeFiles\GameObject.dir\Zombie.cpp.i
+
+src/GameObject/CMakeFiles/GameObject.dir/Zombie.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GameObject.dir/Zombie.cpp.s"
+	cd /d C:\Users\29972\Desktop\i_zombie\build\src\GameObject && D:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\29972\Desktop\i_zombie\attachment\src\GameObject\Zombie.cpp -o CMakeFiles\GameObject.dir\Zombie.cpp.s
+
+src/GameObject/CMakeFiles/GameObject.dir/ConeHeadZombie.cpp.obj: src/GameObject/CMakeFiles/GameObject.dir/flags.make
+src/GameObject/CMakeFiles/GameObject.dir/ConeHeadZombie.cpp.obj: src/GameObject/CMakeFiles/GameObject.dir/includes_CXX.rsp
+src/GameObject/CMakeFiles/GameObject.dir/ConeHeadZombie.cpp.obj: C:/Users/29972/Desktop/i_zombie/attachment/src/GameObject/ConeHeadZombie.cpp
+src/GameObject/CMakeFiles/GameObject.dir/ConeHeadZombie.cpp.obj: src/GameObject/CMakeFiles/GameObject.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\29972\Desktop\i_zombie\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object src/GameObject/CMakeFiles/GameObject.dir/ConeHeadZombie.cpp.obj"
+	cd /d C:\Users\29972\Desktop\i_zombie\build\src\GameObject && D:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/GameObject/CMakeFiles/GameObject.dir/ConeHeadZombie.cpp.obj -MF CMakeFiles\GameObject.dir\ConeHeadZombie.cpp.obj.d -o CMakeFiles\GameObject.dir\ConeHeadZombie.cpp.obj -c C:\Users\29972\Desktop\i_zombie\attachment\src\GameObject\ConeHeadZombie.cpp
+
+src/GameObject/CMakeFiles/GameObject.dir/ConeHeadZombie.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/GameObject.dir/ConeHeadZombie.cpp.i"
+	cd /d C:\Users\29972\Desktop\i_zombie\build\src\GameObject && D:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\29972\Desktop\i_zombie\attachment\src\GameObject\ConeHeadZombie.cpp > CMakeFiles\GameObject.dir\ConeHeadZombie.cpp.i
+
+src/GameObject/CMakeFiles/GameObject.dir/ConeHeadZombie.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GameObject.dir/ConeHeadZombie.cpp.s"
+	cd /d C:\Users\29972\Desktop\i_zombie\build\src\GameObject && D:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\29972\Desktop\i_zombie\attachment\src\GameObject\ConeHeadZombie.cpp -o CMakeFiles\GameObject.dir\ConeHeadZombie.cpp.s
+
+src/GameObject/CMakeFiles/GameObject.dir/BucketHeadZombie.cpp.obj: src/GameObject/CMakeFiles/GameObject.dir/flags.make
+src/GameObject/CMakeFiles/GameObject.dir/BucketHeadZombie.cpp.obj: src/GameObject/CMakeFiles/GameObject.dir/includes_CXX.rsp
+src/GameObject/CMakeFiles/GameObject.dir/BucketHeadZombie.cpp.obj: C:/Users/29972/Desktop/i_zombie/attachment/src/GameObject/BucketHeadZombie.cpp
+src/GameObject/CMakeFiles/GameObject.dir/BucketHeadZombie.cpp.obj: src/GameObject/CMakeFiles/GameObject.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\29972\Desktop\i_zombie\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object src/GameObject/CMakeFiles/GameObject.dir/BucketHeadZombie.cpp.obj"
+	cd /d C:\Users\29972\Desktop\i_zombie\build\src\GameObject && D:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/GameObject/CMakeFiles/GameObject.dir/BucketHeadZombie.cpp.obj -MF CMakeFiles\GameObject.dir\BucketHeadZombie.cpp.obj.d -o CMakeFiles\GameObject.dir\BucketHeadZombie.cpp.obj -c C:\Users\29972\Desktop\i_zombie\attachment\src\GameObject\BucketHeadZombie.cpp
+
+src/GameObject/CMakeFiles/GameObject.dir/BucketHeadZombie.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/GameObject.dir/BucketHeadZombie.cpp.i"
+	cd /d C:\Users\29972\Desktop\i_zombie\build\src\GameObject && D:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\29972\Desktop\i_zombie\attachment\src\GameObject\BucketHeadZombie.cpp > CMakeFiles\GameObject.dir\BucketHeadZombie.cpp.i
+
+src/GameObject/CMakeFiles/GameObject.dir/BucketHeadZombie.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GameObject.dir/BucketHeadZombie.cpp.s"
+	cd /d C:\Users\29972\Desktop\i_zombie\build\src\GameObject && D:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\29972\Desktop\i_zombie\attachment\src\GameObject\BucketHeadZombie.cpp -o CMakeFiles\GameObject.dir\BucketHeadZombie.cpp.s
+
+src/GameObject/CMakeFiles/GameObject.dir/WallNut.cpp.obj: src/GameObject/CMakeFiles/GameObject.dir/flags.make
+src/GameObject/CMakeFiles/GameObject.dir/WallNut.cpp.obj: src/GameObject/CMakeFiles/GameObject.dir/includes_CXX.rsp
+src/GameObject/CMakeFiles/GameObject.dir/WallNut.cpp.obj: C:/Users/29972/Desktop/i_zombie/attachment/src/GameObject/WallNut.cpp
+src/GameObject/CMakeFiles/GameObject.dir/WallNut.cpp.obj: src/GameObject/CMakeFiles/GameObject.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\29972\Desktop\i_zombie\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object src/GameObject/CMakeFiles/GameObject.dir/WallNut.cpp.obj"
+	cd /d C:\Users\29972\Desktop\i_zombie\build\src\GameObject && D:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/GameObject/CMakeFiles/GameObject.dir/WallNut.cpp.obj -MF CMakeFiles\GameObject.dir\WallNut.cpp.obj.d -o CMakeFiles\GameObject.dir\WallNut.cpp.obj -c C:\Users\29972\Desktop\i_zombie\attachment\src\GameObject\WallNut.cpp
+
+src/GameObject/CMakeFiles/GameObject.dir/WallNut.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/GameObject.dir/WallNut.cpp.i"
+	cd /d C:\Users\29972\Desktop\i_zombie\build\src\GameObject && D:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\29972\Desktop\i_zombie\attachment\src\GameObject\WallNut.cpp > CMakeFiles\GameObject.dir\WallNut.cpp.i
+
+src/GameObject/CMakeFiles/GameObject.dir/WallNut.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GameObject.dir/WallNut.cpp.s"
+	cd /d C:\Users\29972\Desktop\i_zombie\build\src\GameObject && D:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\29972\Desktop\i_zombie\attachment\src\GameObject\WallNut.cpp -o CMakeFiles\GameObject.dir\WallNut.cpp.s
+
+src/GameObject/CMakeFiles/GameObject.dir/PoleVaultingZombie.cpp.obj: src/GameObject/CMakeFiles/GameObject.dir/flags.make
+src/GameObject/CMakeFiles/GameObject.dir/PoleVaultingZombie.cpp.obj: src/GameObject/CMakeFiles/GameObject.dir/includes_CXX.rsp
+src/GameObject/CMakeFiles/GameObject.dir/PoleVaultingZombie.cpp.obj: C:/Users/29972/Desktop/i_zombie/attachment/src/GameObject/PoleVaultingZombie.cpp
+src/GameObject/CMakeFiles/GameObject.dir/PoleVaultingZombie.cpp.obj: src/GameObject/CMakeFiles/GameObject.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\29972\Desktop\i_zombie\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object src/GameObject/CMakeFiles/GameObject.dir/PoleVaultingZombie.cpp.obj"
+	cd /d C:\Users\29972\Desktop\i_zombie\build\src\GameObject && D:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/GameObject/CMakeFiles/GameObject.dir/PoleVaultingZombie.cpp.obj -MF CMakeFiles\GameObject.dir\PoleVaultingZombie.cpp.obj.d -o CMakeFiles\GameObject.dir\PoleVaultingZombie.cpp.obj -c C:\Users\29972\Desktop\i_zombie\attachment\src\GameObject\PoleVaultingZombie.cpp
+
+src/GameObject/CMakeFiles/GameObject.dir/PoleVaultingZombie.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/GameObject.dir/PoleVaultingZombie.cpp.i"
+	cd /d C:\Users\29972\Desktop\i_zombie\build\src\GameObject && D:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\29972\Desktop\i_zombie\attachment\src\GameObject\PoleVaultingZombie.cpp > CMakeFiles\GameObject.dir\PoleVaultingZombie.cpp.i
+
+src/GameObject/CMakeFiles/GameObject.dir/PoleVaultingZombie.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GameObject.dir/PoleVaultingZombie.cpp.s"
+	cd /d C:\Users\29972\Desktop\i_zombie\build\src\GameObject && D:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\29972\Desktop\i_zombie\attachment\src\GameObject\PoleVaultingZombie.cpp -o CMakeFiles\GameObject.dir\PoleVaultingZombie.cpp.s
+
 # Object files for target GameObject
 GameObject_OBJECTS = \
 "CMakeFiles/GameObject.dir/GameObject.cpp.obj" \
@@ -264,7 +339,12 @@ GameObject_OBJECTS = \
 "CMakeFiles/GameObject.dir/SunFlower.cpp.obj" \
 "CMakeFiles/GameObject.dir/Peashooter.cpp.obj" \
 "CMakeFiles/GameObject.dir/Pea.cpp.obj" \
-"CMakeFiles/GameObject.dir/Sun.cpp.obj"
+"CMakeFiles/GameObject.dir/Sun.cpp.obj" \
+"CMakeFiles/GameObject.dir/Zombie.cpp.obj" \
+"CMakeFiles/GameObject.dir/ConeHeadZombie.cpp.obj" \
+"CMakeFiles/GameObject.dir/BucketHeadZombie.cpp.obj" \
+"CMakeFiles/GameObject.dir/WallNut.cpp.obj" \
+"CMakeFiles/GameObject.dir/PoleVaultingZombie.cpp.obj"
 
 # External object files for target GameObject
 GameObject_EXTERNAL_OBJECTS =
@@ -281,9 +361,14 @@ lib/libGameObject.a: src/GameObject/CMakeFiles/GameObject.dir/SunFlower.cpp.obj
 lib/libGameObject.a: src/GameObject/CMakeFiles/GameObject.dir/Peashooter.cpp.obj
 lib/libGameObject.a: src/GameObject/CMakeFiles/GameObject.dir/Pea.cpp.obj
 lib/libGameObject.a: src/GameObject/CMakeFiles/GameObject.dir/Sun.cpp.obj
+lib/libGameObject.a: src/GameObject/CMakeFiles/GameObject.dir/Zombie.cpp.obj
+lib/libGameObject.a: src/GameObject/CMakeFiles/GameObject.dir/ConeHeadZombie.cpp.obj
+lib/libGameObject.a: src/GameObject/CMakeFiles/GameObject.dir/BucketHeadZombie.cpp.obj
+lib/libGameObject.a: src/GameObject/CMakeFiles/GameObject.dir/WallNut.cpp.obj
+lib/libGameObject.a: src/GameObject/CMakeFiles/GameObject.dir/PoleVaultingZombie.cpp.obj
 lib/libGameObject.a: src/GameObject/CMakeFiles/GameObject.dir/build.make
 lib/libGameObject.a: src/GameObject/CMakeFiles/GameObject.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\29972\Desktop\i_zombie\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX static library ..\..\lib\libGameObject.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\29972\Desktop\i_zombie\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Linking CXX static library ..\..\lib\libGameObject.a"
 	cd /d C:\Users\29972\Desktop\i_zombie\build\src\GameObject && $(CMAKE_COMMAND) -P CMakeFiles\GameObject.dir\cmake_clean_target.cmake
 	cd /d C:\Users\29972\Desktop\i_zombie\build\src\GameObject && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\GameObject.dir\link.txt --verbose=$(VERBOSE)
 

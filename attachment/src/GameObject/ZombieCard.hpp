@@ -7,7 +7,13 @@ class GameWorld;
 
 class ZombieCard : public GameObject {
 public:
-    ZombieCard(int x, int y, int price, GameWorld* world);
+    ZombieCard(
+        int x, 
+        int y, 
+        int price, 
+        ZombieType type, 
+        ImageID imageID, 
+        GameWorld* world);
     
     void Update() override;
     void OnClick() override;
@@ -19,6 +25,7 @@ public:
     
 private:
     int m_price;
+    ZombieType m_type;
     bool m_isSelected;
     GameWorld* m_world;
 };

@@ -15,6 +15,11 @@ add_library(
   Peashooter.cpp
   Pea.cpp
   Sun.cpp
+  Zombie.cpp
+  ConeHeadZombie.cpp
+  BucketHeadZombie.cpp
+  WallNut.cpp
+  PoleVaultingZombie.cpp
 )
 
 target_link_libraries(

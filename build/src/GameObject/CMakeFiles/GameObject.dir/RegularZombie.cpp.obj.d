@@ -1,6 +1,7 @@
 src/GameObject/CMakeFiles/GameObject.dir/RegularZombie.cpp.obj: \
  C:\Users\29972\Desktop\i_zombie\attachment\src\GameObject\RegularZombie.cpp \
  C:\Users\29972\Desktop\i_zombie\attachment\src\GameObject\RegularZombie.hpp \
+ C:\Users\29972\Desktop\i_zombie\attachment\src\GameObject\Zombie.hpp \
  C:/Users/29972/Desktop/i_zombie/attachment/include/pvz/GameObject/GameObject.hpp \
  C:/Users/29972/Desktop/i_zombie/attachment/include/pvz/Framework/ObjectBase.hpp \
  D:/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/iostream \

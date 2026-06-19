@@ -222,6 +222,54 @@ Brain.cpp.s:
 	cd /d C:\Users\29972\Desktop\i_zombie\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\GameObject.dir\build.make src/GameObject/CMakeFiles/GameObject.dir/Brain.cpp.s
 .PHONY : Brain.cpp.s
 
+BucketHeadZombie.obj: BucketHeadZombie.cpp.obj
+.PHONY : BucketHeadZombie.obj
+
+# target to build an object file
+BucketHeadZombie.cpp.obj:
+	cd /d C:\Users\29972\Desktop\i_zombie\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\GameObject.dir\build.make src/GameObject/CMakeFiles/GameObject.dir/BucketHeadZombie.cpp.obj
+.PHONY : BucketHeadZombie.cpp.obj
+
+BucketHeadZombie.i: BucketHeadZombie.cpp.i
+.PHONY : BucketHeadZombie.i
+
+# target to preprocess a source file
+BucketHeadZombie.cpp.i:
+	cd /d C:\Users\29972\Desktop\i_zombie\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\GameObject.dir\build.make src/GameObject/CMakeFiles/GameObject.dir/BucketHeadZombie.cpp.i
+.PHONY : BucketHeadZombie.cpp.i
+
+BucketHeadZombie.s: BucketHeadZombie.cpp.s
+.PHONY : BucketHeadZombie.s
+
+# target to generate assembly for a file
+BucketHeadZombie.cpp.s:
+	cd /d C:\Users\29972\Desktop\i_zombie\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\GameObject.dir\build.make src/GameObject/CMakeFiles/GameObject.dir/BucketHeadZombie.cpp.s
+.PHONY : BucketHeadZombie.cpp.s
+
+ConeHeadZombie.obj: ConeHeadZombie.cpp.obj
+.PHONY : ConeHeadZombie.obj
+
+# target to build an object file
+ConeHeadZombie.cpp.obj:
+	cd /d C:\Users\29972\Desktop\i_zombie\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\GameObject.dir\build.make src/GameObject/CMakeFiles/GameObject.dir/ConeHeadZombie.cpp.obj
+.PHONY : ConeHeadZombie.cpp.obj
+
+ConeHeadZombie.i: ConeHeadZombie.cpp.i
+.PHONY : ConeHeadZombie.i
+
+# target to preprocess a source file
+ConeHeadZombie.cpp.i:
+	cd /d C:\Users\29972\Desktop\i_zombie\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\GameObject.dir\build.make src/GameObject/CMakeFiles/GameObject.dir/ConeHeadZombie.cpp.i
+.PHONY : ConeHeadZombie.cpp.i
+
+ConeHeadZombie.s: ConeHeadZombie.cpp.s
+.PHONY : ConeHeadZombie.s
+
+# target to generate assembly for a file
+ConeHeadZombie.cpp.s:
+	cd /d C:\Users\29972\Desktop\i_zombie\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\GameObject.dir\build.make src/GameObject/CMakeFiles/GameObject.dir/ConeHeadZombie.cpp.s
+.PHONY : ConeHeadZombie.cpp.s
+
 DeployZombie.obj: DeployZombie.cpp.obj
 .PHONY : DeployZombie.obj
 
@@ -317,6 +365,30 @@ Peashooter.s: Peashooter.cpp.s
 Peashooter.cpp.s:
 	cd /d C:\Users\29972\Desktop\i_zombie\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\GameObject.dir\build.make src/GameObject/CMakeFiles/GameObject.dir/Peashooter.cpp.s
 .PHONY : Peashooter.cpp.s
+
+PoleVaultingZombie.obj: PoleVaultingZombie.cpp.obj
+.PHONY : PoleVaultingZombie.obj
+
+# target to build an object file
+PoleVaultingZombie.cpp.obj:
+	cd /d C:\Users\29972\Desktop\i_zombie\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\GameObject.dir\build.make src/GameObject/CMakeFiles/GameObject.dir/PoleVaultingZombie.cpp.obj
+.PHONY : PoleVaultingZombie.cpp.obj
+
+PoleVaultingZombie.i: PoleVaultingZombie.cpp.i
+.PHONY : PoleVaultingZombie.i
+
+# target to preprocess a source file
+PoleVaultingZombie.cpp.i:
+	cd /d C:\Users\29972\Desktop\i_zombie\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\GameObject.dir\build.make src/GameObject/CMakeFiles/GameObject.dir/PoleVaultingZombie.cpp.i
+.PHONY : PoleVaultingZombie.cpp.i
+
+PoleVaultingZombie.s: PoleVaultingZombie.cpp.s
+.PHONY : PoleVaultingZombie.s
+
+# target to generate assembly for a file
+PoleVaultingZombie.cpp.s:
+	cd /d C:\Users\29972\Desktop\i_zombie\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\GameObject.dir\build.make src/GameObject/CMakeFiles/GameObject.dir/PoleVaultingZombie.cpp.s
+.PHONY : PoleVaultingZombie.cpp.s
 
 ProgressMeter.obj: ProgressMeter.cpp.obj
 .PHONY : ProgressMeter.obj
@@ -438,6 +510,54 @@ SunFlower.cpp.s:
 	cd /d C:\Users\29972\Desktop\i_zombie\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\GameObject.dir\build.make src/GameObject/CMakeFiles/GameObject.dir/SunFlower.cpp.s
 .PHONY : SunFlower.cpp.s
 
+WallNut.obj: WallNut.cpp.obj
+.PHONY : WallNut.obj
+
+# target to build an object file
+WallNut.cpp.obj:
+	cd /d C:\Users\29972\Desktop\i_zombie\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\GameObject.dir\build.make src/GameObject/CMakeFiles/GameObject.dir/WallNut.cpp.obj
+.PHONY : WallNut.cpp.obj
+
+WallNut.i: WallNut.cpp.i
+.PHONY : WallNut.i
+
+# target to preprocess a source file
+WallNut.cpp.i:
+	cd /d C:\Users\29972\Desktop\i_zombie\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\GameObject.dir\build.make src/GameObject/CMakeFiles/GameObject.dir/WallNut.cpp.i
+.PHONY : WallNut.cpp.i
+
+WallNut.s: WallNut.cpp.s
+.PHONY : WallNut.s
+
+# target to generate assembly for a file
+WallNut.cpp.s:
+	cd /d C:\Users\29972\Desktop\i_zombie\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\GameObject.dir\build.make src/GameObject/CMakeFiles/GameObject.dir/WallNut.cpp.s
+.PHONY : WallNut.cpp.s
+
+Zombie.obj: Zombie.cpp.obj
+.PHONY : Zombie.obj
+
+# target to build an object file
+Zombie.cpp.obj:
+	cd /d C:\Users\29972\Desktop\i_zombie\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\GameObject.dir\build.make src/GameObject/CMakeFiles/GameObject.dir/Zombie.cpp.obj
+.PHONY : Zombie.cpp.obj
+
+Zombie.i: Zombie.cpp.i
+.PHONY : Zombie.i
+
+# target to preprocess a source file
+Zombie.cpp.i:
+	cd /d C:\Users\29972\Desktop\i_zombie\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\GameObject.dir\build.make src/GameObject/CMakeFiles/GameObject.dir/Zombie.cpp.i
+.PHONY : Zombie.cpp.i
+
+Zombie.s: Zombie.cpp.s
+.PHONY : Zombie.s
+
+# target to generate assembly for a file
+Zombie.cpp.s:
+	cd /d C:\Users\29972\Desktop\i_zombie\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\GameObject.dir\build.make src/GameObject/CMakeFiles/GameObject.dir/Zombie.cpp.s
+.PHONY : Zombie.cpp.s
+
 ZombieCard.obj: ZombieCard.cpp.obj
 .PHONY : ZombieCard.obj
 
@@ -481,6 +601,12 @@ help:
 	@echo ... Brain.obj
 	@echo ... Brain.i
 	@echo ... Brain.s
+	@echo ... BucketHeadZombie.obj
+	@echo ... BucketHeadZombie.i
+	@echo ... BucketHeadZombie.s
+	@echo ... ConeHeadZombie.obj
+	@echo ... ConeHeadZombie.i
+	@echo ... ConeHeadZombie.s
 	@echo ... DeployZombie.obj
 	@echo ... DeployZombie.i
 	@echo ... DeployZombie.s
@@ -493,6 +619,9 @@ help:
 	@echo ... Peashooter.obj
 	@echo ... Peashooter.i
 	@echo ... Peashooter.s
+	@echo ... PoleVaultingZombie.obj
+	@echo ... PoleVaultingZombie.i
+	@echo ... PoleVaultingZombie.s
 	@echo ... ProgressMeter.obj
 	@echo ... ProgressMeter.i
 	@echo ... ProgressMeter.s
@@ -508,6 +637,12 @@ help:
 	@echo ... SunFlower.obj
 	@echo ... SunFlower.i
 	@echo ... SunFlower.s
+	@echo ... WallNut.obj
+	@echo ... WallNut.i
+	@echo ... WallNut.s
+	@echo ... Zombie.obj
+	@echo ... Zombie.i
+	@echo ... Zombie.s
 	@echo ... ZombieCard.obj
 	@echo ... ZombieCard.i
 	@echo ... ZombieCard.s

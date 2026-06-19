@@ -156,4 +156,11 @@ inline int ColToX(int col) {
     return FIRST_COL_CENTER + col * LAWN_GRID_WIDTH;
 }
 
+enum class ZombieType {
+    Regular,
+    Conehead,
+    Buckethead,
+    PoleVaulting
+};
+
 #endif // !UTILS_HPP__

@@ -11,14 +11,19 @@ src/GameWorld/CMakeFiles/GameWorld.dir/GameWorld.cpp.obj
  C:/Users/29972/Desktop/i_zombie/attachment/include/pvz/utils.hpp
  C:/Users/29972/Desktop/i_zombie/attachment/src/GameObject/Background.hpp
  C:/Users/29972/Desktop/i_zombie/attachment/src/GameObject/Brain.hpp
+ C:/Users/29972/Desktop/i_zombie/attachment/src/GameObject/BucketheadZombie.hpp
+ C:/Users/29972/Desktop/i_zombie/attachment/src/GameObject/ConeheadZombie.hpp
  C:/Users/29972/Desktop/i_zombie/attachment/src/GameObject/DeployZombie.hpp
  C:/Users/29972/Desktop/i_zombie/attachment/src/GameObject/Peashooter.hpp
  C:/Users/29972/Desktop/i_zombie/attachment/src/GameObject/Plant.hpp
+ C:/Users/29972/Desktop/i_zombie/attachment/src/GameObject/PoleVaultingZombie.hpp
  C:/Users/29972/Desktop/i_zombie/attachment/src/GameObject/ProgressMeter.hpp
  C:/Users/29972/Desktop/i_zombie/attachment/src/GameObject/RedLine.hpp
  C:/Users/29972/Desktop/i_zombie/attachment/src/GameObject/RegularZombie.hpp
  C:/Users/29972/Desktop/i_zombie/attachment/src/GameObject/Sun.hpp
  C:/Users/29972/Desktop/i_zombie/attachment/src/GameObject/SunFlower.hpp
+ C:/Users/29972/Desktop/i_zombie/attachment/src/GameObject/WallNut.hpp
+ C:/Users/29972/Desktop/i_zombie/attachment/src/GameObject/Zombie.hpp
  C:/Users/29972/Desktop/i_zombie/attachment/src/GameObject/ZombieCard.hpp
  D:/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/backward/auto_ptr.h
  D:/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/backward/binders.h
