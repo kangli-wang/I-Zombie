@@ -34,8 +34,23 @@ public:
   
   void AddSunCount(int amount) { m_sunCount += amount; }
   
+  bool HasPlantAt(int row, int col) const;
+
   int GetCurrentStage() const { return m_currentStage; }
 
+  bool HasZombieOnRow(int row, int minX) const;
+
+  void GeneratePlants();
+
+  void GenerateStage1();
+
+  void GenerateStage2();
+
+  void GenerateStage3();
+
+  void GenerateStage4();
+
+  void GenerateStage5();
 private:
   std::list<std::shared_ptr<GameObject>> m_objects;
   

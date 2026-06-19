@@ -564,6 +564,18 @@
   "output": "src/GameObject/CMakeFiles/GameObject.dir/SunFlower.cpp.obj"
 },
 {
+  "directory": "C:/Users/29972/Desktop/i_zombie/build/src/GameObject",
+  "command": "D:\\mingw64\\bin\\g++.exe -DPVZ_SOURCE_DIR=\\\"C:/Users/29972/Desktop/i_zombie/attachment\\\" @CMakeFiles/GameObject.dir/includes_CXX.rsp -g -std=gnu++17 -Wall -Wextra -Wpedantic -Wno-unused-variable -o CMakeFiles\\GameObject.dir\\Peashooter.cpp.obj -c C:\\Users\\29972\\Desktop\\i_zombie\\attachment\\src\\GameObject\\Peashooter.cpp",
+  "file": "C:/Users/29972/Desktop/i_zombie/attachment/src/GameObject/Peashooter.cpp",
+  "output": "src/GameObject/CMakeFiles/GameObject.dir/Peashooter.cpp.obj"
+},
+{
+  "directory": "C:/Users/29972/Desktop/i_zombie/build/src/GameObject",
+  "command": "D:\\mingw64\\bin\\g++.exe -DPVZ_SOURCE_DIR=\\\"C:/Users/29972/Desktop/i_zombie/attachment\\\" @CMakeFiles/GameObject.dir/includes_CXX.rsp -g -std=gnu++17 -Wall -Wextra -Wpedantic -Wno-unused-variable -o CMakeFiles\\GameObject.dir\\Pea.cpp.obj -c C:\\Users\\29972\\Desktop\\i_zombie\\attachment\\src\\GameObject\\Pea.cpp",
+  "file": "C:/Users/29972/Desktop/i_zombie/attachment/src/GameObject/Pea.cpp",
+  "output": "src/GameObject/CMakeFiles/GameObject.dir/Pea.cpp.obj"
+},
+{
   "directory": "C:/Users/29972/Desktop/i_zombie/build/src/GameWorld",
   "command": "D:\\mingw64\\bin\\g++.exe -DPVZ_SOURCE_DIR=\\\"C:/Users/29972/Desktop/i_zombie/attachment\\\" @CMakeFiles/GameWorld.dir/includes_CXX.rsp -g -std=gnu++17 -Wall -Wextra -Wpedantic -Wno-unused-variable -o CMakeFiles\\GameWorld.dir\\GameWorld.cpp.obj -c C:\\Users\\29972\\Desktop\\i_zombie\\attachment\\src\\GameWorld\\GameWorld.cpp",
   "file": "C:/Users/29972/Desktop/i_zombie/attachment/src/GameWorld/GameWorld.cpp",

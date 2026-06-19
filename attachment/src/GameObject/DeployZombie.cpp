@@ -30,6 +30,11 @@ void DeployZombie::OnClick() {
     if (world->GetSunCount() < 50) {
         return;
     }
+    
+    if (world->HasPlantAt(m_row, m_col)) {
+        return;
+    }
+
     world->AddSunCount(-50);
     // Create a new RegularZombie at the clicked position and add it to the game world
     auto zombie = std::make_shared<RegularZombie>(GetX(), GetY());

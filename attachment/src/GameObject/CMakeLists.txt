@@ -12,6 +12,8 @@ add_library(
   DeployZombie.cpp
   RegularZombie.cpp
   SunFlower.cpp
+  Peashooter.cpp
+  Pea.cpp
 )
 
 target_link_libraries(

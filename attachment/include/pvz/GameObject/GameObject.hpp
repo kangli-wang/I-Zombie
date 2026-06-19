@@ -26,7 +26,7 @@ public:
     virtual bool IsBrain() const { return false; }
     virtual bool IsProgressMeter() const { return false; }
     virtual bool IsPlant() const { return false; }
-    
+    virtual bool IsPea() const { return false; }
 private:
     bool m_isDead;
     GameWorld* m_world = nullptr;

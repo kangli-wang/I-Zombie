@@ -270,6 +270,54 @@ GameObject.cpp.s:
 	cd /d C:\Users\29972\Desktop\i_zombie\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\GameObject.dir\build.make src/GameObject/CMakeFiles/GameObject.dir/GameObject.cpp.s
 .PHONY : GameObject.cpp.s
 
+Pea.obj: Pea.cpp.obj
+.PHONY : Pea.obj
+
+# target to build an object file
+Pea.cpp.obj:
+	cd /d C:\Users\29972\Desktop\i_zombie\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\GameObject.dir\build.make src/GameObject/CMakeFiles/GameObject.dir/Pea.cpp.obj
+.PHONY : Pea.cpp.obj
+
+Pea.i: Pea.cpp.i
+.PHONY : Pea.i
+
+# target to preprocess a source file
+Pea.cpp.i:
+	cd /d C:\Users\29972\Desktop\i_zombie\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\GameObject.dir\build.make src/GameObject/CMakeFiles/GameObject.dir/Pea.cpp.i
+.PHONY : Pea.cpp.i
+
+Pea.s: Pea.cpp.s
+.PHONY : Pea.s
+
+# target to generate assembly for a file
+Pea.cpp.s:
+	cd /d C:\Users\29972\Desktop\i_zombie\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\GameObject.dir\build.make src/GameObject/CMakeFiles/GameObject.dir/Pea.cpp.s
+.PHONY : Pea.cpp.s
+
+Peashooter.obj: Peashooter.cpp.obj
+.PHONY : Peashooter.obj
+
+# target to build an object file
+Peashooter.cpp.obj:
+	cd /d C:\Users\29972\Desktop\i_zombie\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\GameObject.dir\build.make src/GameObject/CMakeFiles/GameObject.dir/Peashooter.cpp.obj
+.PHONY : Peashooter.cpp.obj
+
+Peashooter.i: Peashooter.cpp.i
+.PHONY : Peashooter.i
+
+# target to preprocess a source file
+Peashooter.cpp.i:
+	cd /d C:\Users\29972\Desktop\i_zombie\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\GameObject.dir\build.make src/GameObject/CMakeFiles/GameObject.dir/Peashooter.cpp.i
+.PHONY : Peashooter.cpp.i
+
+Peashooter.s: Peashooter.cpp.s
+.PHONY : Peashooter.s
+
+# target to generate assembly for a file
+Peashooter.cpp.s:
+	cd /d C:\Users\29972\Desktop\i_zombie\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\GameObject.dir\build.make src/GameObject/CMakeFiles/GameObject.dir/Peashooter.cpp.s
+.PHONY : Peashooter.cpp.s
+
 ProgressMeter.obj: ProgressMeter.cpp.obj
 .PHONY : ProgressMeter.obj
 
@@ -415,6 +463,12 @@ help:
 	@echo ... GameObject.obj
 	@echo ... GameObject.i
 	@echo ... GameObject.s
+	@echo ... Pea.obj
+	@echo ... Pea.i
+	@echo ... Pea.s
+	@echo ... Peashooter.obj
+	@echo ... Peashooter.i
+	@echo ... Peashooter.s
 	@echo ... ProgressMeter.obj
 	@echo ... ProgressMeter.i
 	@echo ... ProgressMeter.s

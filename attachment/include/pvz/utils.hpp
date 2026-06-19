@@ -148,4 +148,12 @@ enum class LayerID {
 
 const int MS_PER_FRAME = 33;
 
+inline int RowToY(int row) {
+    return FIRST_ROW_CENTER + row * LAWN_GRID_HEIGHT;
+}
+
+inline int ColToX(int col) {
+    return FIRST_COL_CENTER + col * LAWN_GRID_WIDTH;
+}
+
 #endif // !UTILS_HPP__

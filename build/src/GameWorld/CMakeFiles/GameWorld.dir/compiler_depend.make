@@ -11,6 +11,7 @@ src/GameWorld/CMakeFiles/GameWorld.dir/GameWorld.cpp.obj: C:/Users/29972/Desktop
   C:/Users/29972/Desktop/i_zombie/attachment/src/GameObject/Background.hpp \
   C:/Users/29972/Desktop/i_zombie/attachment/src/GameObject/Brain.hpp \
   C:/Users/29972/Desktop/i_zombie/attachment/src/GameObject/DeployZombie.hpp \
+  C:/Users/29972/Desktop/i_zombie/attachment/src/GameObject/Peashooter.hpp \
   C:/Users/29972/Desktop/i_zombie/attachment/src/GameObject/Plant.hpp \
   C:/Users/29972/Desktop/i_zombie/attachment/src/GameObject/ProgressMeter.hpp \
   C:/Users/29972/Desktop/i_zombie/attachment/src/GameObject/RedLine.hpp \
@@ -254,8 +255,6 @@ D:/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/x86_64-w64-mingw32/bits
 
 C:/Users/29972/Desktop/i_zombie/attachment/src/GameObject/Background.hpp:
 
-D:/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/nested_exception.h:
-
 D:/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/move.h:
 
 C:/Users/29972/Desktop/i_zombie/attachment/include/pvz/GameObject/GameObject.hpp:
@@ -289,6 +288,10 @@ D:/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/alloc_traits.h:
 D:/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/allocated_ptr.h:
 
 C:/Users/29972/Desktop/i_zombie/attachment/src/GameObject/DeployZombie.hpp:
+
+D:/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/fs_path.h:
+
+C:/Users/29972/Desktop/i_zombie/attachment/src/GameObject/Peashooter.hpp:
 
 C:/Users/29972/Desktop/i_zombie/attachment/src/GameObject/Plant.hpp:
 
@@ -392,8 +395,6 @@ D:/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/locale_facets_noni
 
 D:/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/fs_fwd.h:
 
-D:/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/fs_path.h:
-
 D:/mingw64/x86_64-w64-mingw32/include/process.h:
 
 D:/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/stl_construct.h:
@@ -411,6 +412,8 @@ D:/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/list.tcc:
 D:/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/locale_facets.h:
 
 D:/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/locale_facets_nonio.h:
+
+D:/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/nested_exception.h:
 
 D:/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/new_allocator.h:
 

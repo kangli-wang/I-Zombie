@@ -12,6 +12,7 @@ src/GameWorld/CMakeFiles/GameWorld.dir/GameWorld.cpp.obj
  C:/Users/29972/Desktop/i_zombie/attachment/src/GameObject/Background.hpp
  C:/Users/29972/Desktop/i_zombie/attachment/src/GameObject/Brain.hpp
  C:/Users/29972/Desktop/i_zombie/attachment/src/GameObject/DeployZombie.hpp
+ C:/Users/29972/Desktop/i_zombie/attachment/src/GameObject/Peashooter.hpp
  C:/Users/29972/Desktop/i_zombie/attachment/src/GameObject/Plant.hpp
  C:/Users/29972/Desktop/i_zombie/attachment/src/GameObject/ProgressMeter.hpp
  C:/Users/29972/Desktop/i_zombie/attachment/src/GameObject/RedLine.hpp
