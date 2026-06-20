@@ -486,6 +486,30 @@ RegularZombie.cpp.s:
 	cd /d C:\Users\29972\Desktop\i_zombie\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\GameObject.dir\build.make src/GameObject/CMakeFiles/GameObject.dir/RegularZombie.cpp.s
 .PHONY : RegularZombie.cpp.s
 
+Repeater.obj: Repeater.cpp.obj
+.PHONY : Repeater.obj
+
+# target to build an object file
+Repeater.cpp.obj:
+	cd /d C:\Users\29972\Desktop\i_zombie\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\GameObject.dir\build.make src/GameObject/CMakeFiles/GameObject.dir/Repeater.cpp.obj
+.PHONY : Repeater.cpp.obj
+
+Repeater.i: Repeater.cpp.i
+.PHONY : Repeater.i
+
+# target to preprocess a source file
+Repeater.cpp.i:
+	cd /d C:\Users\29972\Desktop\i_zombie\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\GameObject.dir\build.make src/GameObject/CMakeFiles/GameObject.dir/Repeater.cpp.i
+.PHONY : Repeater.cpp.i
+
+Repeater.s: Repeater.cpp.s
+.PHONY : Repeater.s
+
+# target to generate assembly for a file
+Repeater.cpp.s:
+	cd /d C:\Users\29972\Desktop\i_zombie\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\GameObject.dir\build.make src/GameObject/CMakeFiles/GameObject.dir/Repeater.cpp.s
+.PHONY : Repeater.cpp.s
+
 Sun.obj: Sun.cpp.obj
 .PHONY : Sun.obj
 
@@ -658,6 +682,9 @@ help:
 	@echo ... RegularZombie.obj
 	@echo ... RegularZombie.i
 	@echo ... RegularZombie.s
+	@echo ... Repeater.obj
+	@echo ... Repeater.i
+	@echo ... Repeater.s
 	@echo ... Sun.obj
 	@echo ... Sun.i
 	@echo ... Sun.s

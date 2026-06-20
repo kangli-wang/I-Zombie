@@ -13,6 +13,7 @@
 #include "../GameObject/ConeheadZombie.hpp"
 #include "../GameObject/BucketheadZombie.hpp"
 #include "../GameObject/PoleVaultingZombie.hpp"
+#include "../GameObject/Repeater.hpp"
 
 // Init()
 // Called once when the game starts (after pressing Enter).
@@ -592,7 +593,7 @@ void GameWorld::GenerateStage3() {
 void GameWorld::GenerateStage4() {
   for (int row = 0; row < 5; ++row) {
     // 列1：射手
-    m_objects.push_back(std::make_shared<Peashooter>(ColToX(1), RowToY(row), this));
+    m_objects.push_back(std::make_shared<Repeater>(ColToX(1), RowToY(row), this));
 
     // 列2
     m_objects.push_back(std::make_shared<Sunflower>(ColToX(2), RowToY(row)));
@@ -623,7 +624,7 @@ void GameWorld::GenerateStage4() {
 void GameWorld::GenerateStage5() {
   for (int row = 0; row < 5; ++row) {
     // 列1：射手
-    m_objects.push_back(std::make_shared<Peashooter>(ColToX(1), RowToY(row), this));
+    m_objects.push_back(std::make_shared<Repeater>(ColToX(1), RowToY(row), this));
 
     // 列2
     if (row % 2 == 0) {

@@ -31,7 +31,7 @@ void ZombieCard::OnClick() {
     if (m_isOnCooldown) {
         return;
     }
-    
+
     if (m_world->GetSunCount() < m_price) {
         m_isSelected = false;
         m_world->ClearSelectedZombieType();

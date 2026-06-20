@@ -24,29 +24,33 @@ void DeployZombie::OnClick() {
     if (!world->HasSelectedZombieType()) {
         return;
     }
-    // check if the zombie is on the right side of the red line
+
+    // Check if the cell is to the right of the red line
     int deploymentCol = INITIAL_ZOMBIE_DEPLOYMENT_START_COL + world->GetCurrentStage();
     if (m_col <= deploymentCol) {
         return;
     }
+
     ZombieType type = world->GetSelectedZombieType();
-    // check if the player has enough sun to deploy a zombie
+
+    // Get the price for the selected zombie type
     int price = 50;
     switch (type) {
-        case ZombieType::Regular:   price = 50; break;
-        case ZombieType::Conehead:  price = 75; break;
-        case ZombieType::Buckethead: price = 125; break;
+        case ZombieType::Regular:     price = 50;  break;
+        case ZombieType::Conehead:    price = 75;  break;
+        case ZombieType::Buckethead:  price = 125; break;
         case ZombieType::PoleVaulting: price = 75; break;
     }
+
+    // Check if the player has enough sun
     if (world->GetSunCount() < price) {
         return;
     }
-    // check if there is already a plant on this cell
-    if (m_world->HasPlantAt(m_row, m_col)) {
-        return;
-    }
-    // Deduct sun cost and deploy a new zombie
+
+    // Deduct sun cost and deploy the zombie
     world->AddSunCount(-price);
-    // create a new RegularZombie at the clicked position and add it to the game world
     world->DeployZombieByType(GetX(), GetY(), type);
+
+    world->ClearSelectedZombieType();
+    world->DeselectAllCards();
 }

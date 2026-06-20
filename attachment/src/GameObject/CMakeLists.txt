@@ -21,6 +21,7 @@ add_library(
   WallNut.cpp
   PoleVaultingZombie.cpp
   CooldownMask.cpp
+  Repeater.cpp
 )
 
 target_link_libraries(

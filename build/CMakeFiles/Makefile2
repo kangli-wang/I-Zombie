@@ -199,7 +199,7 @@ CMakeFiles/PvZ.dir/all: src/GameObject/CMakeFiles/GameObject.dir/all
 CMakeFiles/PvZ.dir/all: src/GameWorld/CMakeFiles/GameWorld.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\PvZ.dir\build.make CMakeFiles/PvZ.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\PvZ.dir\build.make CMakeFiles/PvZ.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\29972\Desktop\i_zombie\build\CMakeFiles --progress-num=24 "Built target PvZ"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\29972\Desktop\i_zombie\build\CMakeFiles --progress-num=24,25 "Built target PvZ"
 .PHONY : CMakeFiles/PvZ.dir/all
 
 # Build rule for subdir invocation for target.
@@ -216,7 +216,7 @@ PvZ: CMakeFiles/PvZ.dir/rule
 # codegen rule for target.
 CMakeFiles/PvZ.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\PvZ.dir\build.make CMakeFiles/PvZ.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\29972\Desktop\i_zombie\build\CMakeFiles --progress-num=24 "Finished codegen for target PvZ"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\29972\Desktop\i_zombie\build\CMakeFiles --progress-num=24,25 "Finished codegen for target PvZ"
 .PHONY : CMakeFiles/PvZ.dir/codegen
 
 # clean rule for target.
@@ -231,12 +231,12 @@ CMakeFiles/PvZ.dir/clean:
 SOIL/CMakeFiles/SOIL.dir/all:
 	$(MAKE) $(MAKESILENT) -f SOIL\CMakeFiles\SOIL.dir\build.make SOIL/CMakeFiles/SOIL.dir/depend
 	$(MAKE) $(MAKESILENT) -f SOIL\CMakeFiles\SOIL.dir\build.make SOIL/CMakeFiles/SOIL.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\29972\Desktop\i_zombie\build\CMakeFiles --progress-num=25,26,27,28,29 "Built target SOIL"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\29972\Desktop\i_zombie\build\CMakeFiles --progress-num=26,27,28,29 "Built target SOIL"
 .PHONY : SOIL/CMakeFiles/SOIL.dir/all
 
 # Build rule for subdir invocation for target.
 SOIL/CMakeFiles/SOIL.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\29972\Desktop\i_zombie\build\CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\29972\Desktop\i_zombie\build\CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 SOIL/CMakeFiles/SOIL.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\29972\Desktop\i_zombie\build\CMakeFiles 0
 .PHONY : SOIL/CMakeFiles/SOIL.dir/rule
@@ -248,7 +248,7 @@ SOIL: SOIL/CMakeFiles/SOIL.dir/rule
 # codegen rule for target.
 SOIL/CMakeFiles/SOIL.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f SOIL\CMakeFiles\SOIL.dir\build.make SOIL/CMakeFiles/SOIL.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\29972\Desktop\i_zombie\build\CMakeFiles --progress-num=25,26,27,28,29 "Finished codegen for target SOIL"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\29972\Desktop\i_zombie\build\CMakeFiles --progress-num=26,27,28,29 "Finished codegen for target SOIL"
 .PHONY : SOIL/CMakeFiles/SOIL.dir/codegen
 
 # clean rule for target.
@@ -333,7 +333,7 @@ src/Framework/CMakeFiles/Framework.dir/all: freeglut/CMakeFiles/freeglut.dir/all
 
 # Build rule for subdir invocation for target.
 src/Framework/CMakeFiles/Framework.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\29972\Desktop\i_zombie\build\CMakeFiles 44
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\29972\Desktop\i_zombie\build\CMakeFiles 43
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/Framework/CMakeFiles/Framework.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\29972\Desktop\i_zombie\build\CMakeFiles 0
 .PHONY : src/Framework/CMakeFiles/Framework.dir/rule
@@ -367,7 +367,7 @@ src/GameObject/CMakeFiles/GameObject.dir/all: src/Framework/CMakeFiles/Framework
 
 # Build rule for subdir invocation for target.
 src/GameObject/CMakeFiles/GameObject.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\29972\Desktop\i_zombie\build\CMakeFiles 61
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\29972\Desktop\i_zombie\build\CMakeFiles 60
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/GameObject/CMakeFiles/GameObject.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\29972\Desktop\i_zombie\build\CMakeFiles 0
 .PHONY : src/GameObject/CMakeFiles/GameObject.dir/rule
@@ -402,7 +402,7 @@ src/GameWorld/CMakeFiles/GameWorld.dir/all: src/GameObject/CMakeFiles/GameObject
 
 # Build rule for subdir invocation for target.
 src/GameWorld/CMakeFiles/GameWorld.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\29972\Desktop\i_zombie\build\CMakeFiles 63
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\29972\Desktop\i_zombie\build\CMakeFiles 62
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/GameWorld/CMakeFiles/GameWorld.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\29972\Desktop\i_zombie\build\CMakeFiles 0
 .PHONY : src/GameWorld/CMakeFiles/GameWorld.dir/rule

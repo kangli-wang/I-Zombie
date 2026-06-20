@@ -248,4 +248,5 @@ src/GameWorld/CMakeFiles/GameWorld.dir/GameWorld.cpp.obj: \
  C:/Users/29972/Desktop/i_zombie/attachment/src/GameObject/WallNut.hpp \
  C:/Users/29972/Desktop/i_zombie/attachment/src/GameObject/ConeheadZombie.hpp \
  C:/Users/29972/Desktop/i_zombie/attachment/src/GameObject/BucketheadZombie.hpp \
- C:/Users/29972/Desktop/i_zombie/attachment/src/GameObject/PoleVaultingZombie.hpp
+ C:/Users/29972/Desktop/i_zombie/attachment/src/GameObject/PoleVaultingZombie.hpp \
+ C:/Users/29972/Desktop/i_zombie/attachment/src/GameObject/Repeater.hpp
