@@ -51,6 +51,7 @@ public:
   bool HasSelectedZombieType() const { return m_hasSelected; }
   void DeselectAllCards();
   bool HasPlantNear(int x, int y, int range) const;
+  int GetNearestPlantX(int x, int y, int range) const;
 private:
   // helper methods
   bool IsColliding(GameObject* a, GameObject* b);

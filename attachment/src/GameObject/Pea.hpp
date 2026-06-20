@@ -17,7 +17,6 @@ public:
 private:
     GameWorld* m_world;
     static constexpr int SPEED = 8;
-    static constexpr int DAMAGE = 24;
 };
 
 #endif

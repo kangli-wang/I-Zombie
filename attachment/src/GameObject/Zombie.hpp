@@ -24,7 +24,8 @@ public:
     bool IsEating() const { return m_isEating; }
     void StartEating() { m_isEating = true; PlayAnimation(AnimID::EAT); }
     void StopEating() { m_isEating = false; PlayAnimation(AnimID::WALK); }
-
+    virtual bool IsJumping() const { return false; }
+    
     void SetWorld(GameWorld* world) { m_world = world; }
     GameWorld* GetWorld() const { return m_world; }
 protected:

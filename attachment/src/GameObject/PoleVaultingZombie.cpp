@@ -6,8 +6,7 @@ PoleVaultingZombie::PoleVaultingZombie(int x, int y)
     : Zombie(ImageID::POLE_VAULTING_ZOMBIE, x, y, MAX_HP, AnimID::RUN)
     , m_hasJumped(false)
     , m_isJumping(false)
-    , m_jumpTimer(0)
-    , m_jumpStartX(x) {}
+    , m_jumpTimer(0){}
 
 void PoleVaultingZombie::OnClick() {}
 
@@ -16,18 +15,15 @@ void PoleVaultingZombie::Update() {
     // State 1: Jumping animation in progress
     // The zombie moves gradually left over the jump duration.
     if (m_isJumping) {
-        // Calculate progress: fraction of jump completed
-        int elapsed = JUMP_DURATION - m_jumpTimer;          // frames elapsed so far
-        int totalDistance = JUMP_DISTANCE;                  // total pixels to move
-
-        // Compute current X position using linear interpolation
-        // (elapsed / JUMP_DURATION) * totalDistance
-        int currentX = m_jumpStartX - (totalDistance * elapsed) / JUMP_DURATION;
-        MoveTo(currentX, GetY());
-
         m_jumpTimer--;
+        int progress = 42 - m_jumpTimer;
+        int totalDist = GetX() - m_jumpTargetX;
+        int currentX = GetX() - (totalDist * 1) / 42;
+        MoveTo(currentX, GetY());
+    
         if (m_jumpTimer <= 0) {
             m_isJumping = false;
+            MoveTo(m_jumpTargetX, GetY());
             PlayAnimation(AnimID::WALK);
         }
         return;
@@ -38,10 +34,12 @@ void PoleVaultingZombie::Update() {
         // Check if there is a plant 40 pixels to the left
         if (m_world->HasPlantNear(GetX() - 40, GetY(), 40)) {
             // Start jumping: record start position, set state, play animation
+            int plantX = m_world->GetNearestPlantX(GetX() - 40, GetY(), 40);
+            int targetX = plantX - 220;
             m_hasJumped = true;
             m_isJumping = true;
             m_jumpTimer = JUMP_DURATION;
-            m_jumpStartX = GetX();          // remember where we started the jump
+            m_jumpTargetX = targetX;
             PlayAnimation(AnimID::JUMP);
             return;                         // No movement this frame (starts jump)
         }
