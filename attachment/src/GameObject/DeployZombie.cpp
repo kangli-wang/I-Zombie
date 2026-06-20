@@ -42,7 +42,7 @@ void DeployZombie::OnClick() {
         return;
     }
     // check if there is already a plant on this cell
-    if (world->HasPlantAt(m_row, m_col)) {
+    if (m_world->HasPlantAt(m_row, m_col)) {
         return;
     }
     // Deduct sun cost and deploy a new zombie

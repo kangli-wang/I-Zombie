@@ -4,6 +4,7 @@
 #include "pvz/GameObject/GameObject.hpp"
 
 class GameWorld;
+class CooldownMask;
 
 class ZombieCard : public GameObject {
 public:
@@ -22,12 +23,22 @@ public:
     
     bool IsSelected() const { return m_isSelected; }
     void SetSelected(bool selected) { m_isSelected = selected; }
+
+    void StartCooldown();
+    bool IsOnCooldown() const { return m_isOnCooldown; }
+
+    ZombieType GetZombieType() const { return m_type; }
     
 private:
     int m_price;
     ZombieType m_type;
     bool m_isSelected;
     GameWorld* m_world;
+
+    int m_cooldownTimer;
+    int m_cooldownMax;
+    bool m_isOnCooldown;
+    std::shared_ptr<CooldownMask> m_cooldownMask;
 };
 
 #endif

@@ -270,6 +270,30 @@ ConeHeadZombie.cpp.s:
 	cd /d C:\Users\29972\Desktop\i_zombie\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\GameObject.dir\build.make src/GameObject/CMakeFiles/GameObject.dir/ConeHeadZombie.cpp.s
 .PHONY : ConeHeadZombie.cpp.s
 
+CooldownMask.obj: CooldownMask.cpp.obj
+.PHONY : CooldownMask.obj
+
+# target to build an object file
+CooldownMask.cpp.obj:
+	cd /d C:\Users\29972\Desktop\i_zombie\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\GameObject.dir\build.make src/GameObject/CMakeFiles/GameObject.dir/CooldownMask.cpp.obj
+.PHONY : CooldownMask.cpp.obj
+
+CooldownMask.i: CooldownMask.cpp.i
+.PHONY : CooldownMask.i
+
+# target to preprocess a source file
+CooldownMask.cpp.i:
+	cd /d C:\Users\29972\Desktop\i_zombie\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\GameObject.dir\build.make src/GameObject/CMakeFiles/GameObject.dir/CooldownMask.cpp.i
+.PHONY : CooldownMask.cpp.i
+
+CooldownMask.s: CooldownMask.cpp.s
+.PHONY : CooldownMask.s
+
+# target to generate assembly for a file
+CooldownMask.cpp.s:
+	cd /d C:\Users\29972\Desktop\i_zombie\build && $(MAKE) $(MAKESILENT) -f src\GameObject\CMakeFiles\GameObject.dir\build.make src/GameObject/CMakeFiles/GameObject.dir/CooldownMask.cpp.s
+.PHONY : CooldownMask.cpp.s
+
 DeployZombie.obj: DeployZombie.cpp.obj
 .PHONY : DeployZombie.obj
 
@@ -607,6 +631,9 @@ help:
 	@echo ... ConeHeadZombie.obj
 	@echo ... ConeHeadZombie.i
 	@echo ... ConeHeadZombie.s
+	@echo ... CooldownMask.obj
+	@echo ... CooldownMask.i
+	@echo ... CooldownMask.s
 	@echo ... DeployZombie.obj
 	@echo ... DeployZombie.i
 	@echo ... DeployZombie.s

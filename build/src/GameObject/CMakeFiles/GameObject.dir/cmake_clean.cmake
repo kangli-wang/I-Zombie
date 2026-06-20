@@ -9,6 +9,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/GameObject.dir/BucketHeadZombie.cpp.obj.d"
   "CMakeFiles/GameObject.dir/ConeHeadZombie.cpp.obj"
   "CMakeFiles/GameObject.dir/ConeHeadZombie.cpp.obj.d"
+  "CMakeFiles/GameObject.dir/CooldownMask.cpp.obj"
+  "CMakeFiles/GameObject.dir/CooldownMask.cpp.obj.d"
   "CMakeFiles/GameObject.dir/DeployZombie.cpp.obj"
   "CMakeFiles/GameObject.dir/DeployZombie.cpp.obj.d"
   "CMakeFiles/GameObject.dir/GameObject.cpp.obj"

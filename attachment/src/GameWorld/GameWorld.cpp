@@ -180,6 +180,7 @@ LevelStatus GameWorld::Update() {
     } else {
       // Advance to next stage
       m_currentStage++;
+      m_sunCount = 150;
 
       // Reset brain eaten flags
       for (int i = 0; i < 5; ++i) {
@@ -196,6 +197,13 @@ LevelStatus GameWorld::Update() {
       // Remove old plants
       for (auto& obj : m_objects) {
         if (obj->IsPlant()) {
+          obj->SetDead();
+        }
+      }
+
+      // Remove old zombies
+      for (auto& obj : m_objects) {
+        if (obj->IsZombie()) {
           obj->SetDead();
         }
       }
@@ -418,96 +426,11 @@ bool GameWorld::HasZombieOnRow(int row, int minX) const {
   return false;
 }
 
-// GeneratePlants()
-// Generates plants based on the current stage.
-// Called during Init() and after each stage advancement.
-void GameWorld::GeneratePlants() {
-  switch (m_currentStage) {
-    case 0: GenerateStage1(); break;
-    case 1: GenerateStage2(); break;
-    case 2: GenerateStage3(); break;
-    case 3: GenerateStage4(); break;
-    case 4: GenerateStage5(); break;
-    default: break;
-  }
-}
-
-// Stage 1
-// 3 sunflowers + 3 peashooters
-void GameWorld::GenerateStage1() {
-  m_objects.push_back(std::make_shared<Sunflower>(ColToX(2), RowToY(0)));
-  m_objects.push_back(std::make_shared<Sunflower>(ColToX(2), RowToY(2)));
-  m_objects.push_back(std::make_shared<Sunflower>(ColToX(2), RowToY(4)));
-
-  m_objects.push_back(std::make_shared<Peashooter>(ColToX(4), RowToY(1), this));
-  m_objects.push_back(std::make_shared<Peashooter>(ColToX(4), RowToY(3), this));
-  m_objects.push_back(std::make_shared<Peashooter>(ColToX(3), RowToY(4), this));
-}
-
-// Stage 2
-// One peashooter per row + extra sunflowers
-void GameWorld::GenerateStage2() {
-  m_objects.push_back(std::make_shared<Sunflower>(ColToX(2), RowToY(0)));
-  m_objects.push_back(std::make_shared<Sunflower>(ColToX(2), RowToY(1)));
-  m_objects.push_back(std::make_shared<Sunflower>(ColToX(2), RowToY(3)));
-  m_objects.push_back(std::make_shared<Sunflower>(ColToX(2), RowToY(4)));
-
-  for (int row = 0; row < 5; ++row) {
-    m_objects.push_back(std::make_shared<Peashooter>(ColToX(4), RowToY(row), this));
-  }
-}
-
-// Stage 3
-// Two peashooters per row (columns 4 and 5)
-void GameWorld::GenerateStage3() {
-  for (int row = 0; row < 5; ++row) {
-    m_objects.push_back(std::make_shared<Peashooter>(ColToX(4), RowToY(row), this));
-    m_objects.push_back(std::make_shared<Peashooter>(ColToX(5), RowToY(row), this));
-  }
-  m_objects.push_back(std::make_shared<Sunflower>(ColToX(2), RowToY(0)));
-  m_objects.push_back(std::make_shared<Sunflower>(ColToX(2), RowToY(1)));
-  m_objects.push_back(std::make_shared<Sunflower>(ColToX(2), RowToY(3)));
-  m_objects.push_back(std::make_shared<Sunflower>(ColToX(2), RowToY(4)));
-}
-
-// Stage 4
-// Peashooters in columns 3 and 5 on all rows,
-// plus extra in column 4 on even rows
-void GameWorld::GenerateStage4() {
-  // 前排坚果墙（列3）
-  for (int row = 0; row < 5; ++row) {
-    m_objects.push_back(std::make_shared<WallNut>(ColToX(3), RowToY(row)));
-  }
-
-  // 豌豆射手（列4-5）
-  for (int row = 0; row < 5; ++row) {
-    m_objects.push_back(std::make_shared<Peashooter>(ColToX(4), RowToY(row), this));
-    m_objects.push_back(std::make_shared<Peashooter>(ColToX(5), RowToY(row), this));
-  }
-  // 向日葵
-  for (int row = 0; row < 5; ++row) {
-    m_objects.push_back(std::make_shared<Sunflower>(ColToX(2), RowToY(row)));
-  }
-}
-
-// Stage 5
-// Peashooters in columns 3, 4, 5 on all rows
-void GameWorld::GenerateStage5() {
-  // 前排坚果墙（列2-3）
-  for (int row = 0; row < 5; ++row) {
-    m_objects.push_back(std::make_shared<WallNut>(ColToX(3), RowToY(row)));
-  }
-  // 中排坚果墙（列4）
-  for (int row = 0; row < 5; ++row) {
-    m_objects.push_back(std::make_shared<WallNut>(ColToX(4), RowToY(row)));
-  }
-  // 豌豆射手（列4-5）
-  for (int row = 0; row < 5; ++row) {
-    m_objects.push_back(std::make_shared<Peashooter>(ColToX(5), RowToY(row), this));
-  }
-  // 向日葵
-  for (int row = 0; row < 5; ++row) {
-    m_objects.push_back(std::make_shared<Sunflower>(ColToX(2), RowToY(row)));
+void GameWorld::DeselectAllCards() {
+  for (auto& obj : m_objects) {
+    if (auto card = std::dynamic_pointer_cast<ZombieCard>(obj)) {
+      card->SetSelected(false);
+    }
   }
 }
 
@@ -533,40 +456,203 @@ void GameWorld::DeployZombieByType(int x, int y, ZombieType type) {
       break;
   }
   AddObject(zombie);
-}
-
-void GameWorld::DeselectAllCards() {
   for (auto& obj : m_objects) {
     if (auto card = std::dynamic_pointer_cast<ZombieCard>(obj)) {
-      card->SetSelected(false);
+      if (card->GetZombieType() == type && !card->IsOnCooldown()) {
+        card->StartCooldown();
+        break;
+      }
     }
   }
 }
 
 bool GameWorld::HasPlantNear(int x, int y, int range) const {
-    for (auto& obj : m_objects) {
-        if (!obj->IsPlant()) continue;
-        if (obj->IsDead()) continue;
-        if (std::abs(obj->GetX() - x) < range && std::abs(obj->GetY() - y) < 50) {
-            return true;
-        }
+  for (auto& obj : m_objects) {
+    if (!obj->IsPlant()) continue;
+    if (obj->IsDead()) continue;
+    if (std::abs(obj->GetX() - x) < range && std::abs(obj->GetY() - y) < 50) {
+      return true;
     }
-    return false;
+  }
+  return false;
 }
 
 int GameWorld::GetNearestPlantX(int x, int y, int range) const {
-    int nearestX = x;
-    int minDist = range;
-    
-    for (auto& obj : m_objects) {
-        if (!obj->IsPlant()) continue;
-        if (obj->IsDead()) continue;
-        
-        int dx = std::abs(obj->GetX() - x);
-        if (dx < minDist && std::abs(obj->GetY() - y) < 50) {
-            minDist = dx;
-            nearestX = obj->GetX();
-        }
+  int nearestX = x;
+  int minDist = range;
+
+  for (auto& obj : m_objects) {
+    if (!obj->IsPlant()) continue;
+    if (obj->IsDead()) continue;
+
+    int dx = std::abs(obj->GetX() - x);
+    if (dx < minDist && std::abs(obj->GetY() - y) < 50) {
+      minDist = dx;
+      nearestX = obj->GetX();
     }
-    return nearestX;
+  }
+  return nearestX;
+}
+
+// GeneratePlants()
+// Generates plants based on the current stage.
+// Called during Init() and after each stage advancement.
+void GameWorld::GeneratePlants() {
+  switch (m_currentStage) {
+    case 0: GenerateStage1(); break;
+    case 1: GenerateStage2(); break;
+    case 2: GenerateStage3(); break;
+    case 3: GenerateStage4(); break;
+    case 4: GenerateStage5(); break;
+    default: break;
+  }
+}
+
+// Stage 1
+// 3 sunflowers + 3 peashooters
+void GameWorld::GenerateStage1() {
+  // 列1：豌豆射手（脑子最近）
+  for (int row = 0; row < 5; ++row) {
+    m_objects.push_back(std::make_shared<Peashooter>(ColToX(1), RowToY(row), this));
+  }
+
+  // 列2：向日葵
+  for (int row = 0; row < 5; ++row) {
+    m_objects.push_back(std::make_shared<Sunflower>(ColToX(2), RowToY(row)));
+  }
+
+  // 列3：向日葵和豌豆射手交替
+  for (int row = 0; row < 5; ++row) {
+    if (row % 2 == 0) {
+      m_objects.push_back(std::make_shared<Sunflower>(ColToX(3), RowToY(row)));
+    } 
+    else {
+      m_objects.push_back(std::make_shared<Peashooter>(ColToX(3), RowToY(row), this));
+    }
+  }
+
+  // 列4：豌豆射手
+  for (int row = 0; row < 5; ++row) {
+    m_objects.push_back(std::make_shared<Peashooter>(ColToX(4), RowToY(row), this));
+  }
+}
+
+// Stage 2
+// One peashooter per row + extra sunflowers
+void GameWorld::GenerateStage2() {
+  for (int row = 0; row < 5; ++row) {
+    m_objects.push_back(std::make_shared<Peashooter>(ColToX(1), RowToY(row), this));
+    m_objects.push_back(std::make_shared<Sunflower>(ColToX(2), RowToY(row)));
+    m_objects.push_back(std::make_shared<Peashooter>(ColToX(3), RowToY(row), this));
+    m_objects.push_back(std::make_shared<Sunflower>(ColToX(4), RowToY(row)));
+    m_objects.push_back(std::make_shared<Peashooter>(ColToX(5), RowToY(row), this));
+  }
+}
+
+// Stage 3
+// Two peashooters per row (columns 4 and 5)
+void GameWorld::GenerateStage3() {
+  for (int row = 0; row < 5; ++row) {
+    // 列1：射手（脑子最近）
+    m_objects.push_back(std::make_shared<Peashooter>(ColToX(1), RowToY(row), this));
+
+    // 列2：向日葵
+    m_objects.push_back(std::make_shared<Sunflower>(ColToX(2), RowToY(row)));
+
+    // 列3：射手
+    m_objects.push_back(std::make_shared<Peashooter>(ColToX(3), RowToY(row), this));
+
+    // 列4：向日葵/坚果墙交替
+    if (row % 2 == 0) {
+      m_objects.push_back(std::make_shared<Sunflower>(ColToX(4), RowToY(row)));
+    } 
+    else {
+      m_objects.push_back(std::make_shared<WallNut>(ColToX(4), RowToY(row)));
+    }
+
+    // 列5：射手
+    m_objects.push_back(std::make_shared<Peashooter>(ColToX(5), RowToY(row), this));
+
+    // 列6：坚果墙/向日葵交替
+    if (row % 2 == 0) {
+      m_objects.push_back(std::make_shared<WallNut>(ColToX(6), RowToY(row)));
+    } 
+    else {
+      m_objects.push_back(std::make_shared<Sunflower>(ColToX(6), RowToY(row)));
+    }
+
+    // 列7：射手
+    m_objects.push_back(std::make_shared<Peashooter>(ColToX(7), RowToY(row), this));
+  }
+}
+
+// Stage 4
+// Peashooters in columns 3 and 5 on all rows,
+// plus extra in column 4 on even rows
+void GameWorld::GenerateStage4() {
+  for (int row = 0; row < 5; ++row) {
+    // 列1：射手
+    m_objects.push_back(std::make_shared<Peashooter>(ColToX(1), RowToY(row), this));
+
+    // 列2
+    m_objects.push_back(std::make_shared<Sunflower>(ColToX(2), RowToY(row)));
+
+    // 列3：射手
+    m_objects.push_back(std::make_shared<Peashooter>(ColToX(3), RowToY(row), this));
+
+    // 列4
+    m_objects.push_back(std::make_shared<Sunflower>(ColToX(4), RowToY(row)));
+
+    // 列5：射手
+    m_objects.push_back(std::make_shared<Peashooter>(ColToX(5), RowToY(row), this));
+
+    // 列6
+    if (row % 2 == 0) {
+      m_objects.push_back(std::make_shared<WallNut>(ColToX(6), RowToY(row)));
+    } else {
+      m_objects.push_back(std::make_shared<Sunflower>(ColToX(6), RowToY(row)));
+    }
+
+    // 列7：射手
+    m_objects.push_back(std::make_shared<Peashooter>(ColToX(7), RowToY(row), this));
+  }
+}
+
+// Stage 5
+// Peashooters in columns 3, 4, 5 on all rows
+void GameWorld::GenerateStage5() {
+  for (int row = 0; row < 5; ++row) {
+    // 列1：射手
+    m_objects.push_back(std::make_shared<Peashooter>(ColToX(1), RowToY(row), this));
+
+    // 列2
+    if (row % 2 == 0) {
+      m_objects.push_back(std::make_shared<WallNut>(ColToX(2), RowToY(row)));
+    } else {
+      m_objects.push_back(std::make_shared<Sunflower>(ColToX(2), RowToY(row)));
+    }
+
+    // 列3：射手
+    m_objects.push_back(std::make_shared<Peashooter>(ColToX(3), RowToY(row), this));
+
+    // 列4
+    if (row % 2 == 0) {
+      m_objects.push_back(std::make_shared<WallNut>(ColToX(4), RowToY(row)));
+    } else {
+      m_objects.push_back(std::make_shared<Sunflower>(ColToX(4), RowToY(row)));
+    }
+
+    // 列5：射手
+    m_objects.push_back(std::make_shared<Peashooter>(ColToX(5), RowToY(row), this));
+
+    // 列6
+    if (row % 2 == 0) {
+      m_objects.push_back(std::make_shared<WallNut>(ColToX(6), RowToY(row)));
+    } else {
+      m_objects.push_back(std::make_shared<Sunflower>(ColToX(6), RowToY(row)));
+    }
+
+    // 列7：射手
+    m_objects.push_back(std::make_shared<Peashooter>(ColToX(7), RowToY(row), this));
+  }
 }

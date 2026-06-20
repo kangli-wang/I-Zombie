@@ -20,6 +20,7 @@ add_library(
   BucketHeadZombie.cpp
   WallNut.cpp
   PoleVaultingZombie.cpp
+  CooldownMask.cpp
 )
 
 target_link_libraries(
